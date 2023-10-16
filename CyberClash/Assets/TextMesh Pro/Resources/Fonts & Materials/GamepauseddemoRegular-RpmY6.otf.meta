@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 174903900d71ff74c9d7874d2d81fb12
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Game Paused DEMO
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4d8c543b306b30342a8a38bcf66a5bfe, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

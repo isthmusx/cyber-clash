@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 52c99daac05d13148acc2db4c8e66879
+  - enabled: 1
+    path: Assets/Scenes/Adventure Mode.unity
+    guid: ba632b7407d3e014b9a879ffe7c644a1
+  - enabled: 1
+    path: Assets/Scenes/Versus AI.unity
+    guid: 93dd1d22dc48a9147954ab55a9e9f32c
+  - enabled: 1
+    path: Assets/Scenes/Deck Builder.unity
+    guid: 68dbc6d9827f184448b0364d94ef0214
+  - enabled: 1
+    path: Assets/Scenes/Gameplay.unity
+    guid: 48c54f3c70150144ca8720c8990fee3d
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 907db5133a118694db04ffe42c51e82e, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: e9420599dc74fb94f9af1a98431ad200, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 0b380ba4896dbdb439f87144476b3caf, type: 2}
