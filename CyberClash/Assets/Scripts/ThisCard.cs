@@ -68,6 +68,9 @@ public class ThisCard : MonoBehaviour
     public bool useReturn;
     public static bool uCanReturn;
 
+    public int healXpower;
+    public bool canHeal;
+
 
 
 
@@ -89,6 +92,8 @@ public class ThisCard : MonoBehaviour
 
         targeting = false;
         targetingEnemy = false;
+
+        canHeal = true;
 
 
     }
@@ -113,6 +118,8 @@ public class ThisCard : MonoBehaviour
         thisSprite = thisCard[0].cardImage;
 
         returnXcards = thisCard[0].returnXcards;
+
+        healXpower = thisCard[0].healXpower;
 
         nameText.text = "" + cardName;
         factionText.text = "" + cardFaction;
@@ -245,6 +252,12 @@ public class ThisCard : MonoBehaviour
             uCanReturn = false;
         }
 
+        if (canHeal == true && summoned == true)
+        {
+            Heal();
+            canHeal = false;
+        }
+
     }
 
     public void Summon()
@@ -338,4 +351,10 @@ public class ThisCard : MonoBehaviour
             summoningSickness = true;
         }
     }
+
+    public void Heal()
+    {
+        PlayerHealth.staticHP += healXpower;
+    }
+
 }
