@@ -30,4 +30,15 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadSceneAsync(4);
     }
 
+    public static string faction = "";
+    public static void ThreatFaction()
+    {
+            faction = "Threat";
+    }
+    public static void SecurityFaction()
+    {
+        faction = "Security";
+    }
+
+
 }

@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public static float maxHP;
     public static float staticHP;
-    public float hp;
+    public static float hp;
     public Image Health;
     public TMP_Text HPText;
 
@@ -17,7 +17,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         maxHP = 1000;
-        staticHP = 800;
+        staticHP = 1000;
 
     }
 

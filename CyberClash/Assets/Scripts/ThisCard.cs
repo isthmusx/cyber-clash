@@ -72,8 +72,6 @@ public class ThisCard : MonoBehaviour
     public bool canHeal;
 
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -94,13 +92,12 @@ public class ThisCard : MonoBehaviour
         targetingEnemy = false;
 
         canHeal = true;
-
-
     }
 
     // Update is called once per frame
     void Update()
     {
+
         Hand = GameObject.Find("Hand");
         if (this.transform.parent == Hand.transform.parent)
         {
@@ -169,30 +166,30 @@ public class ThisCard : MonoBehaviour
         }
 
 
-            if (TurnSystem.currentDF >= cardCost && summoned == false && beInGraveyard == false)
-            {
-                canBeSummon = true;
-            }
-            else
-            {
-                canBeSummon = false;
-            }
+        if (TurnSystem.currentDF >= cardCost && summoned == false && beInGraveyard == false && TurnSystem.isYourTurn == true)
+        {
+            canBeSummon = true;
+        }
+        else
+        {
+            canBeSummon = false;
+        }
 
-            if (canBeSummon == true)
-            {
-                gameObject.GetComponent<Draggable>().enabled = true;
-            }
-            else
-            {
-                gameObject.GetComponent<Draggable>().enabled = false;
-            }
+        if (canBeSummon == true)
+        {
+            gameObject.GetComponent<Draggable>().enabled = true;
+        }
+        else
+        {
+            gameObject.GetComponent<Draggable>().enabled = false;
+        }
 
-            battleZone = GameObject.Find("Zone");
+        battleZone = GameObject.Find("Zone");
 
-            if (summoned == false && this.transform.parent == battleZone.transform)
-            {
-                Summon();
-            }
+        if (summoned == false && this.transform.parent == battleZone.transform)
+        {
+            Summon();
+        }
         
         if(canAttack == true && beInGraveyard == false)
         {
@@ -201,7 +198,7 @@ public class ThisCard : MonoBehaviour
         {
             attackBorder.SetActive(false);
         }
-
+                
         if (TurnSystem.isYourTurn == false && summoned == true)
         {
             summoningSickness = false;
@@ -241,7 +238,7 @@ public class ThisCard : MonoBehaviour
         }
 
         
-        if (returnXcards > 0 && summoned == true && useReturn == false)
+        if (returnXcards > 0 && summoned == true && useReturn == false && TurnSystem.isYourTurn == true)
         {
             Return(returnXcards);
             useReturn = true;

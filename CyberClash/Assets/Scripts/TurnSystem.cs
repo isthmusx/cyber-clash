@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
+using Random = UnityEngine.Random;
 
 public class TurnSystem : MonoBehaviour
 {
@@ -16,22 +18,26 @@ public class TurnSystem : MonoBehaviour
     public static int currentDF;
     public TMP_Text DFText;
 
-    public static bool startTurn; 
+    public static bool startTurn;
+
+    public int random;
+
+    public bool turnEnd;
+    public TMP_Text timerText;
+    public int seconds;
+    public bool timerStart;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        isYourTurn = true;
-        yourTurn = 1;
-        yourOpponentTurn = 0;
+        StartGame();
 
-        maxDF = 1;
-        currentDF = 1;
-
-        startTurn = false;
+        seconds = 10;
+        timerStart = true;
 
     }
+
 
     // Update is called once per frame
     void Update()
@@ -44,7 +50,22 @@ public class TurnSystem : MonoBehaviour
             turnText.text = "Opponent's Turn";
         }
 
+
         DFText.text = currentDF + "/" + maxDF;
+
+        if (isYourTurn == true && seconds >0 && timerStart == true)
+        {
+            StartCoroutine(Timer());
+            timerStart = false;
+        }
+        if (seconds == 0)
+        {
+            EndYourTurn();
+            timerStart = true;
+            seconds = 10;
+            
+        }
+        timerText.text = "" + seconds;
 
     }
 
@@ -65,6 +86,43 @@ public class TurnSystem : MonoBehaviour
         currentDF = maxDF;
 
         startTurn = true;
+    }
+
+    public void StartGame()
+    {
+        random = Random.Range(0, 2);
+        if (random == 0)
+        {
+            isYourTurn = true;
+            yourTurn = 1;
+            yourOpponentTurn = 0;
+
+            maxDF = 1;
+            currentDF = 1;
+
+            startTurn = false;
+
+        }
+        if (random == 1)
+        {
+            isYourTurn = false;
+            yourTurn = 0;
+            yourOpponentTurn = 1;
+
+            maxDF = 0;
+            currentDF = 0;
+        }
+    }
+
+    IEnumerator Timer()
+    {
+        if (isYourTurn == true && seconds >0)
+        {
+            yield return new WaitForSeconds(1);
+            
+            seconds --;
+            StartCoroutine(Timer());
+        }
     }
 
 }
