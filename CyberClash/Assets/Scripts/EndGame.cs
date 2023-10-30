@@ -32,6 +32,7 @@ public class EndGame : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(EnemyHealth.staticHP);
         if (EnemyHealth.staticHP <= 0)
         {
             mainTextObject.SetActive(true);

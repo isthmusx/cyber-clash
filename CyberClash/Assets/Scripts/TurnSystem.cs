@@ -27,13 +27,18 @@ public class TurnSystem : MonoBehaviour
     public int seconds;
     public bool timerStart;
 
+    public static int maxEnemyDF;
+    public static int currentEnemyDF;
+    public TMP_Text enemyDFText; 
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         StartGame();
 
-        seconds = 10;
+        seconds = 20;
         timerStart = true;
 
     }
@@ -58,21 +63,40 @@ public class TurnSystem : MonoBehaviour
             StartCoroutine(Timer());
             timerStart = false;
         }
-        if (seconds == 0)
+        if (seconds == 0 && isYourTurn == true)
         {
             EndYourTurn();
             timerStart = true;
-            seconds = 10;
+            seconds = 20;
             
         }
         timerText.text = "" + seconds;
 
+        if(isYourTurn == false && seconds >0 && timerStart == true)
+        {
+            StartCoroutine(EnemyTimer());
+            timerStart=false;
+        }
+
+        if(seconds == 0 && isYourTurn == false)
+        {
+            EndYourOpponentTurn();
+            timerStart = true;
+            seconds = 20;
+        }
+        enemyDFText.text = currentEnemyDF + "/" + maxEnemyDF;
     }
 
     public void EndYourTurn()
     {
         isYourTurn = false;
         yourOpponentTurn += 1;
+
+        if (maxEnemyDF < 5)
+        {
+            maxEnemyDF += 1 ;
+        }
+        currentEnemyDF = maxEnemyDF;
     }
     public void EndYourOpponentTurn()
     {
@@ -100,9 +124,13 @@ public class TurnSystem : MonoBehaviour
             maxDF = 1;
             currentDF = 1;
 
+            maxEnemyDF = 0;
+            currentEnemyDF = 0;
+
             startTurn = false;
 
         }
+
         if (random == 1)
         {
             isYourTurn = false;
@@ -111,6 +139,9 @@ public class TurnSystem : MonoBehaviour
 
             maxDF = 0;
             currentDF = 0;
+
+            maxEnemyDF = 1;
+            currentEnemyDF = 1;
         }
     }
 
@@ -122,6 +153,17 @@ public class TurnSystem : MonoBehaviour
             
             seconds --;
             StartCoroutine(Timer());
+        }
+    }
+
+    IEnumerator EnemyTimer()
+    {
+        if (isYourTurn == false && seconds > 0)
+        {
+            yield return new WaitForSeconds(1);
+
+            seconds--;
+            StartCoroutine(EnemyTimer());
         }
     }
 
