@@ -30,6 +30,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadSceneAsync(4);
     }
 
+    public void Shop()
+    {
+        SceneManager.LoadSceneAsync(5);
+    }
+
     public static string faction = "";
     public static void ThreatFaction()
     {
