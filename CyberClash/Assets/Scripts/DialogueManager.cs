@@ -42,13 +42,12 @@ public class DialogueManager : MonoBehaviour
     
     public void DisplayNextSentence()
     {
-        typingSpeed = 0f;
         if (sentences.Count == 0)
         {
             EndDialogue();
             return;
         }
-        typingSpeed = 0.1f;
+        typingSpeed = 0.05f;
         isTalking = true;
 
         string sentence = sentences.Dequeue();

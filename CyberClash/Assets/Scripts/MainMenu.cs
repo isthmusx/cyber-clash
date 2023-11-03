@@ -40,13 +40,40 @@ public class MainMenu : MonoBehaviour
     }
 
     public static string faction = "";
+    public static string mode = "";
     public static void ThreatFaction()
     {
-            faction = "Threat";
+        faction = "Threat";
     }
     public static void SecurityFaction()
     {
         faction = "Security";
+    }
+
+    public static void VersusMode()
+    {
+        mode = "versus";
+    }
+    public static void Story1()
+    {
+        mode = "story1";
+    }
+
+    public static void GameBack()
+    {
+        if(mode == "versus")
+        {
+            SceneManager.LoadSceneAsync(0);
+        } 
+        else if (mode == "story1" && EndGame.isWin == true)
+        {
+            SceneManager.LoadSceneAsync(12);
+        }
+        else if (mode == "story1" && EndGame.isWin == false)
+        {
+            SceneManager.LoadSceneAsync(13);
+        }
+
     }
 
     public static void UnlockNewlevel()

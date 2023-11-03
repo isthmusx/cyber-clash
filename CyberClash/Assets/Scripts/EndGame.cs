@@ -17,7 +17,7 @@ public class EndGame : MonoBehaviour
     public GameObject background;
     public GameObject continueBTN;
     public GameObject turnText;
-
+    public static bool isWin;
 
     //public MainMenu menu;
 
@@ -35,6 +35,7 @@ public class EndGame : MonoBehaviour
         
         if (EnemyHealth.staticHP <= 0)
         {
+            isWin = true;
             mainTextObject.SetActive(true);
             subTextObject.SetActive(true);
             background.SetActive(true);
@@ -54,6 +55,7 @@ public class EndGame : MonoBehaviour
         
         if (PlayerHealth.staticHP <= 0)
         {
+            isWin = false;
             mainTextObject.SetActive(true);
             subTextObject.SetActive(true);
             background.SetActive(true);
@@ -72,4 +74,10 @@ public class EndGame : MonoBehaviour
             
         }
     }
+
+    public void Surrender()
+    {
+        PlayerHealth.staticHP = 0;
+    }
+
 }
