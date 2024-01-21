@@ -97,6 +97,8 @@ public class TurnSystem : MonoBehaviour
             maxEnemyDF += 1 ;
         }
         currentEnemyDF = maxEnemyDF;
+
+        AI.draw = false;
     }
     public void EndYourOpponentTurn()
     {

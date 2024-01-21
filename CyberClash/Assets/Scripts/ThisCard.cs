@@ -184,7 +184,7 @@ public class ThisCard : MonoBehaviour
             gameObject.GetComponent<Draggable>().enabled = false;
         }
 
-        battleZone = GameObject.Find("Zone");
+        battleZone = GameObject.Find("Player Zone");
 
         if (summoned == false && this.transform.parent == battleZone.transform)
         {

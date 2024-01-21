@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerDeck : MonoBehaviour
 {
@@ -26,6 +28,8 @@ public class PlayerDeck : MonoBehaviour
 
     public GameObject Hand;
 
+    public EndGame EndGame;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +49,24 @@ public class PlayerDeck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(deckSize <= 0)
+        {
+            EndGame.mainTextObject.SetActive(true);
+            EndGame.subTextObject.SetActive(true);
+            EndGame.background.SetActive(true);
+            EndGame.turnText.SetActive(false);
+            EndGame.continueBTN.SetActive(true);
+            EndGame.victoryText.text = "<color=#F21B3F>Defeat</color>";
+            if (MainMenu.faction == "Threat")
+            {
+                EndGame.victorySubText.text = "You have failed to breach the system.";
+            }
+            else if (MainMenu.faction == "Security")
+            {
+                EndGame.victorySubText.text = "You have failed to defend the system.";
+            }
+        }
 
         staticDeck = deck;
 
@@ -73,7 +95,7 @@ public class PlayerDeck : MonoBehaviour
 
     }
 
-    IEnumerator Example()
+    IEnumerator ShuffleNow()
     {
         yield return new WaitForSeconds(0.5f);
         Clones = GameObject.FindGameObjectsWithTag("Clone");
@@ -105,7 +127,7 @@ public class PlayerDeck : MonoBehaviour
         }
 
         Instantiate(CardBack, transform.position, transform.rotation);
-        StartCoroutine(Example());
+        StartCoroutine(ShuffleNow());
 
     }
 
