@@ -864,7 +864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: 0}
+  m_AnchoredPosition: {x: 167.65, y: 0}
   m_SizeDelta: {x: 405.3095, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &257683718
@@ -1440,6 +1440,10 @@ PrefabInstance:
     - target: {fileID: 2753558762276249037, guid: ceee33ef672cc0b4e83578104aceefdd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5033316469185896719, guid: ceee33ef672cc0b4e83578104aceefdd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8292777967411844231, guid: ceee33ef672cc0b4e83578104aceefdd, type: 3}
       propertyPath: thisId
@@ -4097,7 +4101,6 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
-  AICanPlay: 0
   Hand: {fileID: 0}
   Zone: {fileID: 0}
   Graveyard: {fileID: 0}
@@ -4109,6 +4112,17 @@ MonoBehaviour:
   CardToHand: {fileID: 2753558762276249036, guid: a6e48d4acf5661c4a8c856b0fbbcec2f, type: 3}
   Clones: []
   CardBack: {fileID: 2753558762276249036, guid: 65a23aba9a4dd2045856522526473a3a, type: 3}
+  currentDF: 0
+  AICanSummon: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  drawPhase: 0
+  summonPhase: 0
+  attackPhase: 0
+  endPhase: 0
+  cardsID: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  summonThisId: 0
+  aiCardToHand: {fileID: 0}
+  summonID: 0
+  howManyCards: 0
 --- !u!1001 &1008855908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4223,6 +4237,10 @@ PrefabInstance:
     - target: {fileID: 2753558762276249037, guid: ceee33ef672cc0b4e83578104aceefdd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5033316469185896719, guid: ceee33ef672cc0b4e83578104aceefdd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8292777967411844231, guid: ceee33ef672cc0b4e83578104aceefdd, type: 3}
       propertyPath: thisId
@@ -6240,6 +6258,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5033316469185896719, guid: ceee33ef672cc0b4e83578104aceefdd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8292777967411844231, guid: ceee33ef672cc0b4e83578104aceefdd, type: 3}
       propertyPath: thisId
       value: 0
@@ -7234,6 +7256,10 @@ PrefabInstance:
     - target: {fileID: 2753558762276249037, guid: ceee33ef672cc0b4e83578104aceefdd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5033316469185896719, guid: ceee33ef672cc0b4e83578104aceefdd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8292777967411844231, guid: ceee33ef672cc0b4e83578104aceefdd, type: 3}
       propertyPath: thisId

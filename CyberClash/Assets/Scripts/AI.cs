@@ -11,7 +11,6 @@ public class AI : MonoBehaviour
     public static List<Card> staticEnemyDeck = new List<Card>();
 
     public List<Card> cardsInHand = new List<Card>();
-    public bool AICanPlay;
 
     public GameObject Hand;
     public GameObject Zone;
@@ -33,6 +32,24 @@ public class AI : MonoBehaviour
 
     public static bool draw;
 
+    public int currentDF;
+
+    public bool[] AICanSummon;
+
+    public bool drawPhase;
+    public bool summonPhase;
+    public bool attackPhase;
+    public bool endPhase;
+
+    public int[] cardsID;
+
+    public int summonThisId;
+
+    public AICardToHand aiCardToHand;
+
+    public int summonID;
+
+    public int howManyCards;
 
 
 
@@ -97,16 +114,119 @@ public class AI : MonoBehaviour
             draw = true;
         }
 
-        if(AICanPlay == true)
+        currentDF = TurnSystem.currentEnemyDF;
+
+        if(0 == 0)
+        {
+            int j = 0;
+            howManyCards = 0;
+
+            foreach (Transform child in Hand.transform)
+            {
+                howManyCards++;
+            }
+
+            foreach (Transform child in Hand.transform)
+            {
+                cardsInHand[j] = child.GetComponent<AICardToHand>().thisCard[0];
+                j++;
+            }
+
+            for (int i = 0; i<40; i++)
+            {
+                if(i >= howManyCards)
+                {
+                    cardsInHand[i] = CardDatabase.cardList[0];
+                }
+            }
+            j = 0;
+        }
+
+        if (TurnSystem.isYourTurn == false)
         {
             for (int i = 0; i < 40; i++)
             {
-                if (AICardToHand.cardsInHandStatic[i].id != 0)
+                if (cardsInHand[i].id != 0)
                 {
-                    cardsInHand[i] = AICardToHand.cardsInHandStatic[i];
+                    if (currentDF >= cardsInHand[i].cardCost)
+                    {
+                        AICanSummon[i] = true;
+                    }
                 }
             }
         }
+        else
+        {
+            for (int i = 0; i < 40; i++)
+            {
+                AICanSummon[i] = false;
+            }
+        }
+
+        if (TurnSystem.isYourTurn == false)
+        {
+            drawPhase = true;
+        }
+
+        if (drawPhase == true && summonPhase == false && attackPhase == false)
+        {
+            StartCoroutine(WaitForSummonPhase());
+        }
+
+        if (TurnSystem.isYourTurn == true)
+        {
+            drawPhase = false;
+            summonPhase = false;
+            attackPhase = false;
+            endPhase = false;
+        }
+
+        // Algorithm Start
+        if (summonPhase == true)
+        {
+            summonID = 0;
+            summonThisId = 0;
+
+            int index = 0;
+            for (int i = 0; i < 40; i++)
+            {
+                if (AICanSummon[i] == true)
+                {
+                    cardsID[index] = cardsInHand[i].id;
+                    index++;
+                }
+            }
+
+            for (int i = 0; i < 40; i++)
+            {
+                if (cardsID[i] != 0)
+                {
+                    if (cardsID[i] > summonID)
+                    {
+                        summonID = cardsID[i];
+                    }
+                }
+            }
+
+            summonThisId = summonID;
+
+            foreach (Transform child in Hand.transform)
+            {
+                if (child.GetComponent<AICardToHand>().id == summonThisId && CardDatabase.cardList[summonThisId].cardCost <= currentDF)
+                {
+                    child.transform.SetParent(Zone.transform);
+                    TurnSystem.currentEnemyDF -= CardDatabase.cardList[summonThisId].cardCost;
+                    break;
+                }
+            }
+
+            summonPhase = false;
+            attackPhase = true;
+
+        }
+
+        // Algorithm End
+
 
     }
 
@@ -156,7 +276,12 @@ public class AI : MonoBehaviour
     IEnumerator WaitFiveSeconds()
     {
         yield return new WaitForSeconds(5);
-        AICanPlay = true;   
+    }
+
+    IEnumerator WaitForSummonPhase()
+    {
+        yield return new WaitForSeconds(5);
+        summonPhase = true;
     }
 
 }

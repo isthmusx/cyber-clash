@@ -38,7 +38,7 @@ public class TurnSystem : MonoBehaviour
     {
         StartGame();
 
-        seconds = 20;
+        seconds = 10;
         timerStart = true;
 
     }
@@ -67,7 +67,7 @@ public class TurnSystem : MonoBehaviour
         {
             EndYourTurn();
             timerStart = true;
-            seconds = 20;
+            seconds = 10;
             
         }
         timerText.text = "" + seconds;
@@ -82,7 +82,7 @@ public class TurnSystem : MonoBehaviour
         {
             EndYourOpponentTurn();
             timerStart = true;
-            seconds = 20;
+            seconds = 10;
         }
         enemyDFText.text = currentEnemyDF + "/" + maxEnemyDF;
     }

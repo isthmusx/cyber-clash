@@ -55,7 +55,6 @@ public class AICardToHand : MonoBehaviour
     void Start()
     {
 
-        cardsInHandStatic = cardsInHand;
 
         thisCard[0] = CardDatabase.cardList[thisId];
         Hand = GameObject.Find("Enemy Hand");
@@ -126,10 +125,7 @@ public class AICardToHand : MonoBehaviour
         }
 
         if(this.tag == "Clone")
-        {
-
-            cardsInHand[cardsInHandNumber] = AI.staticEnemyDeck[numberOfCardsInDeck - 1];
-            cardsInHandNumber++;
+        {  
 
             thisCard[0] = AI.staticEnemyDeck[numberOfCardsInDeck - 1];
             numberOfCardsInDeck -= 1;
@@ -137,13 +133,7 @@ public class AICardToHand : MonoBehaviour
             this.tag = "Untagged";
         }
     
-        for (int i = 0; i < 40; i++)
-        {
-            if (cardsInHand[i].id !=0)
-            {
-                cardsInHandStatic[i] = cardsInHand[i];
-            }
-        }
+        
 
     }
 }
