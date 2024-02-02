@@ -34,6 +34,7 @@ public class ThisCard : MonoBehaviour
     public Image cardFrame;
 
     public bool cardBack;
+    public static bool staticCardBack;
     CardBack CardBackScript;
 
     public GameObject Hand;
@@ -71,14 +72,19 @@ public class ThisCard : MonoBehaviour
     public int healXpower;
     public bool canHeal;
 
+    public GameObject EnemyZone;
+    public GameObject AICardToHand;
+
 
     // Start is called before the first frame update
     void Start()
     {
         CardBackScript = GetComponent<CardBack>();
-        thisCard.Add(CardDatabase.cardList[thisId]);
-        //thisCard[0] = CardDatabase.cardList[thisId];
+        //thisCard.Add(CardDatabase.cardList[thisId]);
+        thisCard[0] = CardDatabase.cardList[thisId];
         numberOfCardInDeck = PlayerDeck.deckSize;
+
+        staticCardBack = cardBack;
 
         canBeSummon = false;
         summoned = false;
@@ -92,6 +98,10 @@ public class ThisCard : MonoBehaviour
         targetingEnemy = false;
 
         canHeal = true;
+
+        EnemyZone = GameObject.Find("Enemy Zone");
+
+        
     }
 
     // Update is called once per frame
@@ -111,7 +121,6 @@ public class ThisCard : MonoBehaviour
         cardCost = thisCard[0].cardCost;
         cardPower = thisCard[0].cardPower;
         cardDescription = thisCard[0].cardDescription;
-
         thisSprite = thisCard[0].cardImage;
 
         returnXcards = thisCard[0].returnXcards;
@@ -146,7 +155,6 @@ public class ThisCard : MonoBehaviour
                 nameText.color = new Color32(255, 153, 20, 255);
                 break;
             default:
-                // Handle the case when none of the types match (optional).
                 break;
         }
 
@@ -154,15 +162,15 @@ public class ThisCard : MonoBehaviour
 
 
 
-        CardBackScript.UpdateCard(cardBack);
+        //CardBackScript.UpdateCard(cardBack);
 
-        if (this.tag == "Clone")
+        if (this.tag == "clone")
         {
             thisCard[0] = PlayerDeck.staticDeck[numberOfCardInDeck - 1];
             numberOfCardInDeck -= 1;
             PlayerDeck.deckSize -= 1;
             cardBack = false;
-            this.tag = "Untagged";
+            this.tag = "untagged";
         }
 
 
@@ -224,7 +232,7 @@ public class ThisCard : MonoBehaviour
             Target = null;
         }
 
-        if (targeting == true && targetingEnemy == true && onlyThisCardAttack == true)
+        if (targeting == true /* && targetingEnemy == true */ && onlyThisCardAttack == true)
         {
             Attack();
         }
@@ -278,10 +286,17 @@ public class ThisCard : MonoBehaviour
                     Destroy();
 
                 }
-
-                if (Target.name == "CardToHand(Clone)")
+            }
+            else
+            {
+                foreach(Transform child in EnemyZone.transform)
                 {
-                    canAttack = true;
+                    if (child.GetComponent<AICardToHand>().isTarget == true)
+                    {
+                        /* child.GetComponent<AICardToHand>().hurted = cardPower;
+                        hurted = child.GetComponent<AICardToHand>().cardPower; */
+                        cantAttack = true;
+                    }
                 }
             }
         }

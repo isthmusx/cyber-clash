@@ -9,8 +9,9 @@ public class AI : MonoBehaviour
     public List<Card> deck = new List<Card>();
     public List<Card> container = new List<Card>();
     public static List<Card> staticEnemyDeck = new List<Card>();
-
     public List<Card> cardsInHand = new List<Card>();
+    public List<Card> cardsInZone = new List<Card>();
+
 
     public GameObject Hand;
     public GameObject Zone;
@@ -51,7 +52,13 @@ public class AI : MonoBehaviour
 
     public int howManyCards;
 
+    public bool[] canAttack;
+    public static bool AIEndPhase;
 
+    void Awake()
+    {
+        //Shuffle();
+    }
 
     void Start()
     {
@@ -71,14 +78,13 @@ public class AI : MonoBehaviour
 
         for(int i = 0; i < deckSize; i++)
         {
-            x = Random.Range(0, 7);
+            x = Random.Range(0, 19);
             deck[i] = CardDatabase.cardList[x];
         }
 
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         staticEnemyDeck = deck;
@@ -132,7 +138,7 @@ public class AI : MonoBehaviour
                 j++;
             }
 
-            for (int i = 0; i<40; i++)
+            for (int i = 0; i<deckSize; i++)
             {
                 if(i >= howManyCards)
                 {
@@ -144,7 +150,7 @@ public class AI : MonoBehaviour
 
         if (TurnSystem.isYourTurn == false)
         {
-            for (int i = 0; i < 40; i++)
+            for (int i = 0; i < deckSize; i++)
             {
                 if (cardsInHand[i].id != 0)
                 {
@@ -157,7 +163,7 @@ public class AI : MonoBehaviour
         }
         else
         {
-            for (int i = 0; i < 40; i++)
+            for (int i = 0; i < deckSize; i++)
             {
                 AICanSummon[i] = false;
             }
@@ -188,7 +194,7 @@ public class AI : MonoBehaviour
             summonThisId = 0;
 
             int index = 0;
-            for (int i = 0; i < 40; i++)
+            for (int i = 0; i < deckSize; i++)
             {
                 if (AICanSummon[i] == true)
                 {
@@ -197,7 +203,7 @@ public class AI : MonoBehaviour
                 }
             }
 
-            for (int i = 0; i < 40; i++)
+            for (int i = 0; i < deckSize; i++)
             {
                 if (cardsID[i] != 0)
                 {
@@ -212,12 +218,14 @@ public class AI : MonoBehaviour
 
             foreach (Transform child in Hand.transform)
             {
-                if (child.GetComponent<AICardToHand>().id == summonThisId && CardDatabase.cardList[summonThisId].cardCost <= currentDF)
+                if (child.GetComponent<AICardToHand>().id == summonThisId && CardDatabase.cardList[summonThisId].cardCost <= TurnSystem.currentEnemyDF)
                 {
                     child.transform.SetParent(Zone.transform);
                     TurnSystem.currentEnemyDF -= CardDatabase.cardList[summonThisId].cardCost;
+                    Debug.Log("Card Cost for ID " + summonThisId + ": " + CardDatabase.cardList[summonThisId].cardCost);
                     break;
                 }
+
             }
 
             summonPhase = false;
@@ -227,6 +235,74 @@ public class AI : MonoBehaviour
 
         // Algorithm End
 
+        if(0 == 0)
+        {
+            int k = 0;
+            int howManyCards2 = 0;
+
+            foreach (Transform child in Zone.transform)
+            {
+                howManyCards2++;
+            }
+
+            foreach (Transform child in Zone.transform)
+            {
+                canAttack[k] = child.GetComponent<AICardToHand>().canAttack;
+                k++;
+            }
+
+            for (int i = 0; i<deckSize; i++)
+            {
+                if(i >= howManyCards2)
+                {
+                    canAttack[i] = false;
+                }
+            }
+            k = 0;
+        }
+
+        if(0 == 0)
+        {
+            int l = 0;
+            int howManyCards3 = 0;
+
+            foreach (Transform child in Zone.transform)
+            {
+                howManyCards3++;
+            }
+
+            foreach (Transform child in Zone.transform)
+            {
+                cardsInZone[l] = child.GetComponent<AICardToHand>().thisCard[0];
+                l++;
+            }
+
+            for (int i = 0; i<deckSize; i++)
+            {
+                if(i >= howManyCards3)
+                {
+                    cardsInHand[i] = CardDatabase.cardList[0];
+                }
+            }
+            l = 0;
+        }
+
+        if( attackPhase == true && endPhase == false)
+        {
+            for(int i = 0; i < 40; i++)
+            {
+                if(canAttack[i] == true)
+                {
+                    PlayerHealth.staticHP -= cardsInZone[i].cardPower;
+                }
+            }
+            endPhase = true;
+        }
+
+        if(endPhase == true)
+        {
+            AIEndPhase = true;
+        }
 
     }
 
@@ -241,6 +317,7 @@ public class AI : MonoBehaviour
         }
         Instantiate(CardBack, transform.position, transform.rotation);
 
+
         StartCoroutine(ShuffleNow());
     }
 
@@ -248,14 +325,14 @@ public class AI : MonoBehaviour
     {
         for (int i = 0; i <= 4; i++)
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1);
             Instantiate(CardToHand, transform.position, transform.rotation);
         }
     }
 
     IEnumerator ShuffleNow()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1);
         Clones = GameObject.FindGameObjectsWithTag("Clone");
 
         foreach ( GameObject Clone in Clones){
@@ -275,12 +352,12 @@ public class AI : MonoBehaviour
 
     IEnumerator WaitFiveSeconds()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(Random.Range(1, 5));
     }
 
     IEnumerator WaitForSummonPhase()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(Random.Range(1, 5));
         summonPhase = true;
     }
 

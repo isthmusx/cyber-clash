@@ -30,23 +30,29 @@ public class PlayerDeck : MonoBehaviour
 
     public EndGame EndGame;
 
-    // Start is called before the first frame update
+
+    void Awake()
+    {
+        //Shuffle();
+    }
+
     void Start()
     {
         x = 0;
         deckSize = 40;
 
-        for (int i=0; i<deckSize; i++)
+        for (int i = 0; i < deckSize; i++)
         {
-            x = Random.Range(0, 7);
+            x = Random.Range(0, 19);
             deck[i] = CardDatabase.cardList[x];
+            
         }
 
         StartCoroutine(StartGame());
 
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
 
@@ -97,7 +103,7 @@ public class PlayerDeck : MonoBehaviour
 
     IEnumerator ShuffleNow()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1);
         Clones = GameObject.FindGameObjectsWithTag("Clone");
 
         foreach(GameObject Clone in Clones)
@@ -111,8 +117,9 @@ public class PlayerDeck : MonoBehaviour
     {
         for(int i=0; i<=4; i++)
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1);
             Instantiate(CardToHand, transform.position, transform.rotation);
+
         }
     }
 
@@ -120,7 +127,7 @@ public class PlayerDeck : MonoBehaviour
     {
         for (int i = 0; i < deckSize; i++)
         {
-            container[0] = deck[1];
+            container[0] = deck[i];
             int randomIndex = Random.Range(i, deckSize);
             deck[i] = deck[randomIndex];
             deck[randomIndex] = container[0];

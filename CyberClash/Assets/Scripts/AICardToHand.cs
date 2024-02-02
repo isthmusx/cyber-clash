@@ -52,6 +52,19 @@ public class AICardToHand : MonoBehaviour
 
     public int numberOfCardsInDeck;
 
+    public bool isTarget;
+    public GameObject graveyard;
+    public GameObject Target;
+    public GameObject Enemy;
+
+    public bool thisCardCanBeDestroyed;
+
+    public GameObject cardBack;
+    public GameObject AIZone;
+
+    public bool canAttack;
+    public bool summoningSickness;
+
     void Start()
     {
 
@@ -61,6 +74,14 @@ public class AICardToHand : MonoBehaviour
 
         z = 0;
         numberOfCardsInDeck = AI.deckSize;
+
+        graveyard = GameObject.Find("Enemy Graveyard");
+        StartCoroutine(AfterVoidStart());
+
+        AIZone = GameObject.Find("Enemy Zone");
+
+        summoningSickness = true;
+
     }
 
     
@@ -120,7 +141,7 @@ public class AICardToHand : MonoBehaviour
                 nameText.color = new Color32(255, 153, 20, 255);
                 break;
             default:
-                // Handle the case when none of the types match (optional).
+                
                 break;
         }
 
@@ -132,8 +153,50 @@ public class AICardToHand : MonoBehaviour
             AI.deckSize -= 1;
             this.tag = "Untagged";
         }
-    
-        
 
+        /*if (thisCardCanBeDestroyed == true)
+        {
+            this.transform.SetParent(graveyard.transform);
+
+        }*/
+
+        if (this.transform.parent == Hand.transform)
+        {
+            cardBack.SetActive(true);
+        }
+        if (this.transform.parent == AIZone.transform)
+        {
+            cardBack.SetActive(false);
+        }
+
+        if (TurnSystem.isYourTurn == false && summoningSickness == false)
+        {
+            canAttack = true;
+        }
+        else
+        {
+            canAttack = false;
+        }
+
+        if (TurnSystem.isYourTurn == true && this.transform.parent == AIZone.transform)
+        {
+            summoningSickness = false;
+        }
     }
+
+    public void BeingTarget()
+    {
+        isTarget = true;
+    }
+    public void DontBeingTarget()
+    {
+        isTarget = false;
+    }
+
+    IEnumerator AfterVoidStart()
+    {
+        yield return new WaitForSeconds(1);
+        thisCardCanBeDestroyed = true;
+    }
+
 }

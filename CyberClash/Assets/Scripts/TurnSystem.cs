@@ -85,6 +85,13 @@ public class TurnSystem : MonoBehaviour
             seconds = 10;
         }
         enemyDFText.text = currentEnemyDF + "/" + maxEnemyDF;
+
+        if (AI.AIEndPhase == true)
+        {
+            EndYourOpponentTurn();
+            AI.AIEndPhase = false;
+        }
+
     }
 
     public void EndYourTurn()

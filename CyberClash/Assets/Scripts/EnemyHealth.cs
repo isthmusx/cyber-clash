@@ -17,7 +17,7 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
         maxHP = 1000;
-        staticHP = 100;
+        staticHP = 1000;
 
     }
 

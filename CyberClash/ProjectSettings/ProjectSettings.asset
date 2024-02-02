@@ -768,11 +768,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: 96c089c2-87eb-4711-9177-c6aeec7243f0
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: CyberClash
+  organizationId: unity_8d6ddcac7ce87bc081bd
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 

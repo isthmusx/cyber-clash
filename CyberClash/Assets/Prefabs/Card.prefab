@@ -1490,7 +1490,7 @@ GameObject:
   - component: {fileID: 2753558762276249038}
   - component: {fileID: 8292777967411844231}
   - component: {fileID: 8176930027188692813}
-  - component: {fileID: 2639423318304668100}
+  - component: {fileID: -3686826390566270057}
   m_Layer: 0
   m_Name: Card
   m_TagString: Deck
@@ -1590,6 +1590,8 @@ MonoBehaviour:
     cardPower: 0
     cardDescription: 
     cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
   thisId: 0
   id: 0
   cardName: 
@@ -1627,6 +1629,12 @@ MonoBehaviour:
   canBeDestroyed: 0
   Graveyard: {fileID: 0}
   beInGraveyard: 0
+  returnXcards: 0
+  useReturn: 0
+  healXpower: 0
+  canHeal: 0
+  EnemyZone: {fileID: 0}
+  AICardToHand: {fileID: 0}
 --- !u!114 &8176930027188692813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1639,9 +1647,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0365fcb584681e84e8f954a05cc459e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardBack: {fileID: 5033316469185896719}
-  cardCostBack: {fileID: 2753558762099850579}
---- !u!114 &2639423318304668100
+  cardBack: {fileID: 2753558762276249036, guid: 65a23aba9a4dd2045856522526473a3a, type: 3}
+--- !u!114 &-3686826390566270057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

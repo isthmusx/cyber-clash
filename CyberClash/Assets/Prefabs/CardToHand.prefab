@@ -332,7 +332,8 @@ MonoBehaviour:
     cardDescription: 
     cardImage: {fileID: 0}
     returnXcards: 0
-  thisId: 0
+    healXpower: 0
+  thisId: 5
   id: 0
   cardName: 
   cardFaction: 
@@ -369,10 +370,12 @@ MonoBehaviour:
   canBeDestroyed: 0
   Graveyard: {fileID: 0}
   beInGraveyard: 0
-  hurted: 0
-  actualPower: 0
   returnXcards: 0
   useReturn: 0
+  healXpower: 0
+  canHeal: 0
+  EnemyZone: {fileID: 0}
+  AICardToHand: {fileID: 0}
 --- !u!114 &9150636471604583500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,7 +389,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardBack: {fileID: 5358776973407934990}
-  cardCostBack: {fileID: 3004260424017708626}
 --- !u!114 &-7200010637595700685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1289,7 +1291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
