@@ -78,7 +78,7 @@ public class AI : MonoBehaviour
 
         for(int i = 0; i < deckSize; i++)
         {
-            x = Random.Range(0, 19);
+            x = Random.Range(0, 20);
             deck[i] = CardDatabase.cardList[x];
         }
 
@@ -294,6 +294,7 @@ public class AI : MonoBehaviour
                 if(canAttack[i] == true)
                 {
                     PlayerHealth.staticHP -= cardsInZone[i].cardPower;
+
                 }
             }
             endPhase = true;
@@ -360,5 +361,4 @@ public class AI : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(1, 5));
         summonPhase = true;
     }
-
 }

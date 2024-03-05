@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class PlayerDeck : MonoBehaviour
 {
@@ -30,6 +31,8 @@ public class PlayerDeck : MonoBehaviour
 
     public EndGame EndGame;
 
+    public GameObject surrenderWindow;
+
 
     void Awake()
     {
@@ -39,14 +42,28 @@ public class PlayerDeck : MonoBehaviour
     void Start()
     {
         x = 0;
-        deckSize = 40;
+        deckSize = 20;
 
-        for (int i = 0; i < deckSize; i++)
+        //for (int i = 0; i < deckSize; i++)
+        //{
+        //    x = Random.Range(0, 20);
+        //    deck[i] = CardDatabase.cardList[x];
+
+        //}
+
+        for (int i = 1; i <= 20; i++)
         {
-            x = Random.Range(0, 19);
-            deck[i] = CardDatabase.cardList[x];
-            
+            if(PlayerPrefs.GetInt("deck" + i, 0) > 0)
+            {
+                for (int j = 1; j <= PlayerPrefs.GetInt("deck" + i, 0); j++ )
+                {
+                    deck[x] = CardDatabase.cardList[i];
+                    x++;
+                }
+            }
         }
+
+        Shuffle();
 
         StartCoroutine(StartGame());
 
@@ -55,8 +72,9 @@ public class PlayerDeck : MonoBehaviour
     
     void Update()
     {
+        staticDeck = deck;
 
-        if(deckSize <= 0)
+        if (deckSize <= 0)
         {
             EndGame.mainTextObject.SetActive(true);
             EndGame.subTextObject.SetActive(true);
@@ -74,7 +92,7 @@ public class PlayerDeck : MonoBehaviour
             }
         }
 
-        staticDeck = deck;
+
 
         if (deckSize < 30)
         {
@@ -146,6 +164,41 @@ public class PlayerDeck : MonoBehaviour
             Instantiate(CardToHand, transform.position, transform.rotation);
         }
     }
-    
+
+    public void OpenWindow()
+    {
+        surrenderWindow.SetActive(true);
+    }
+    public void CloseWindow()
+    {
+        surrenderWindow.SetActive(false);
+    }
+
+    public void Surrender()
+    {
+        StartCoroutine(EndGameNow());
+    }
+
+    IEnumerator EndGameNow()
+    {
+        EndGame.mainTextObject.SetActive(true);
+        EndGame.subTextObject.SetActive(true);
+        EndGame.background.SetActive(true);
+        EndGame.turnText.SetActive(false);
+        EndGame.continueBTN.SetActive(true);
+        EndGame.victoryText.text = "<color=#F21B3F>Defeat</color>";
+        if (MainMenu.faction == "Threat")
+        {
+            EndGame.victorySubText.text = "You have failed to breach the system.";
+        }
+        else if (MainMenu.faction == "Security")
+        {
+            EndGame.victorySubText.text = "You have failed to defend the system.";
+        }
+        surrenderWindow.SetActive(false);
+
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("Main Menu");
+    }
 
 }

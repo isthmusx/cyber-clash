@@ -44,11 +44,11 @@ public class EndGame : MonoBehaviour
             victoryText.text = "<color=#08BDBD>Victory</color>";
             if (MainMenu.faction == "Threat")
             {
-                victorySubText.text = "You have succesfully breached the system.";
+                victorySubText.text = "You have successfully breached the system.";
             }
             else if (MainMenu.faction == "Security")
             {
-                victorySubText.text = "You have succesfully defended the system.";
+                victorySubText.text = "You have successfully defended the system.";
             }
 
         }
@@ -74,10 +74,6 @@ public class EndGame : MonoBehaviour
             
         }
     }
-
-    public void Surrender()
-    {
-        PlayerHealth.staticHP = 0;
-    }
+    
 
 }

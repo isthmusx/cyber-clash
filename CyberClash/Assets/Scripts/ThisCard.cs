@@ -80,8 +80,8 @@ public class ThisCard : MonoBehaviour
     void Start()
     {
         CardBackScript = GetComponent<CardBack>();
-        //thisCard.Add(CardDatabase.cardList[thisId]);
-        thisCard[0] = CardDatabase.cardList[thisId];
+        thisCard.Add(CardDatabase.cardList[thisId]);
+        //thisCard[0] = CardDatabase.cardList[thisId];
         numberOfCardInDeck = PlayerDeck.deckSize;
 
         staticCardBack = cardBack;
@@ -107,7 +107,6 @@ public class ThisCard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         Hand = GameObject.Find("Hand");
         if (this.transform.parent == Hand.transform.parent)
         {
@@ -158,19 +157,15 @@ public class ThisCard : MonoBehaviour
                 break;
         }
 
-
-
-
-
         //CardBackScript.UpdateCard(cardBack);
 
-        if (this.tag == "clone")
+        if (this.tag == "Clone")
         {
             thisCard[0] = PlayerDeck.staticDeck[numberOfCardInDeck - 1];
             numberOfCardInDeck -= 1;
             PlayerDeck.deckSize -= 1;
             cardBack = false;
-            this.tag = "untagged";
+            this.tag = "Untagged";
         }
 
 

@@ -3696,6 +3696,7 @@ GameObject:
   - component: {fileID: 1694035092}
   - component: {fileID: 1694035091}
   - component: {fileID: 1694035094}
+  - component: {fileID: 1694035095}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3781,6 +3782,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca8a898410f2d8c49af9007a14aaefbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1694035095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694035090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ff67c2408be254fa049f4581a75549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinText: {fileID: 239548232}
+  coins: 0
 --- !u!1 &1896398196
 GameObject:
   m_ObjectHideFlags: 0

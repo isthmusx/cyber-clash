@@ -1668,6 +1668,8 @@ MonoBehaviour:
   thisCardCanBeDestroyed: 0
   cardBack: {fileID: 5033316469185896719}
   AIZone: {fileID: 0}
+  canAttack: 0
+  summoningSickness: 0
 --- !u!114 &8176930027188692813
 MonoBehaviour:
   m_ObjectHideFlags: 0
