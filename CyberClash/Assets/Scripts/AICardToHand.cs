@@ -64,11 +64,12 @@ public class AICardToHand : MonoBehaviour
 
     public bool canAttack;
     public bool summoningSickness;
+    
+    public bool isSummoned;
+    public GameObject battleZone;
 
     void Start()
     {
-
-
         thisCard[0] = CardDatabase.cardList[thisId];
         Hand = GameObject.Find("Enemy Hand");
 
@@ -81,6 +82,8 @@ public class AICardToHand : MonoBehaviour
         AIZone = GameObject.Find("Enemy Zone");
 
         summoningSickness = true;
+
+        battleZone = GameObject.Find("Enemy Zone");
 
     }
 
@@ -123,6 +126,8 @@ public class AICardToHand : MonoBehaviour
         typeOutline.preserveAspect = true;
         typeCost.preserveAspect = true;
 
+        healXpower = thisCard[0].healXpower;
+        
         switch (thisCard[0].cardType)
         {
             case "Offense":
@@ -154,11 +159,11 @@ public class AICardToHand : MonoBehaviour
             this.tag = "Untagged";
         }
 
-        /*if (thisCardCanBeDestroyed == true)
+        if (thisCardCanBeDestroyed == true)
         {
             this.transform.SetParent(graveyard.transform);
 
-        }*/
+        }
 
         if (this.transform.parent == Hand.transform)
         {
@@ -182,6 +187,31 @@ public class AICardToHand : MonoBehaviour
         {
             summoningSickness = false;
         }
+
+        if (this.transform.parent == battleZone.transform && isSummoned == false)
+        {
+            if (drawXcards > 0)
+            {
+                DrawX = drawXcards;
+                isSummoned = true;
+            }
+
+            if (healXpower > 0)
+            {
+                EnemyHealth.staticHP += healXpower;
+                isSummoned = true;
+            }
+
+            isSummoned = true;
+
+            //for add mana card
+            /*if (id == 2)
+            {
+                TurnSystem.maxEnemyDF += 1;
+                isSummoned = true;
+            }*/
+        }
+        
     }
 
     public void BeingTarget()
@@ -196,7 +226,7 @@ public class AICardToHand : MonoBehaviour
     IEnumerator AfterVoidStart()
     {
         yield return new WaitForSeconds(1);
-        thisCardCanBeDestroyed = true;
+        //thisCardCanBeDestroyed = true;
     }
 
 }

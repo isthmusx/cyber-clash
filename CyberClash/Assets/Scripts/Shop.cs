@@ -30,8 +30,12 @@ public class Shop : MonoBehaviour
 
     public void BuyPack()
     {
-        coins -= 10;
-        SceneManager.LoadScene("OpenPack");
-        PlayerPrefs.SetInt("coins", coins);
+        if (coins >= 10)
+        {
+            coins -= 10;
+            SceneManager.LoadScene("OpenPack");
+            PlayerPrefs.SetInt("coins", coins);
+        }
+        
     }
 }

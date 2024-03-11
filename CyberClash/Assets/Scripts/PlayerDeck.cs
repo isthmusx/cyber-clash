@@ -63,7 +63,7 @@ public class PlayerDeck : MonoBehaviour
             }
         }
 
-        Shuffle();
+        //Shuffle();
 
         StartCoroutine(StartGame());
 
@@ -113,7 +113,15 @@ public class PlayerDeck : MonoBehaviour
 
         if (TurnSystem.startTurn == true)
         {
-            StartCoroutine(Draw(1));
+            if (CardsInHand.howMany < 10)
+            {
+                StartCoroutine(Draw(1));
+            }
+            else
+            {
+                
+            }
+            
             TurnSystem.startTurn = false;
         }
 

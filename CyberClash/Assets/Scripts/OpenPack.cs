@@ -19,6 +19,8 @@ public class OpenPack : MonoBehaviour
     public GameObject c3;
     public GameObject c4;
     public GameObject c5;
+
+    public GameObject back;
     
     // Start is called before the first frame update
     void Start()
@@ -66,6 +68,9 @@ public class OpenPack : MonoBehaviour
         c4.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         c5.SetActive(true);
+
+        yield return new WaitForSeconds(2f);
+        back.SetActive(true);
     }
 
 }
