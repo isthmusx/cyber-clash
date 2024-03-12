@@ -55,6 +55,7 @@ public class AI : MonoBehaviour
     public bool[] canAttack;
     public static bool AIEndPhase;
 
+    public static int whichEnemy;
     void Awake()
     {
         //Shuffle();
@@ -65,8 +66,7 @@ public class AI : MonoBehaviour
 
         StartCoroutine(WaitFiveSeconds());
 
-        StartCoroutine(StartGame());
-
+        
         Hand = GameObject.Find("Enemy Hand");
         Zone = GameObject.Find("Enemy Zone");
         Graveyard = GameObject.Find("Enemy Graveyard");
@@ -76,12 +76,50 @@ public class AI : MonoBehaviour
 
         draw = true;
 
-        for(int i = 0; i < deckSize; i++)
+        /*for(int i = 0; i < deckSize; i++)
         {
             x = Random.Range(0, 20);
             deck[i] = CardDatabase.cardList[x];
+        }*/
+
+        if (whichEnemy == 1)
+        {
+            for (int i = 0; i < deckSize; i++)
+            {
+                if (i <= 19)
+                {
+                    x = Random.Range(0, 20);
+                    deck[i] = CardDatabase.cardList[x];
+                }
+                else
+                {
+                    x = Random.Range(0, 20);
+                    deck[i] = CardDatabase.cardList[x];
+                }
+            }
         }
 
+        if (whichEnemy == 2)
+        {
+            for (int i = 0; i < deckSize; i++)
+            {
+                if (i <= 19)
+                {
+                    x = Random.Range(0, 20);
+                    deck[i] = CardDatabase.cardList[x];
+                    //deck[i] = CardDatabase.cardList[2];
+                }
+                else
+                {
+                    x = Random.Range(0, 20);
+                    deck[i] = CardDatabase.cardList[x];
+                    //deck[i] = CardDatabase.cardList[3];
+                }
+            }
+        }
+        
+        Shuffle();
+        StartCoroutine(StartGame());
 
     }
 
@@ -315,7 +353,7 @@ public class AI : MonoBehaviour
             deck[i] = deck[randomIndex];
             deck[randomIndex] = container[0];
         }
-        Instantiate(CardBack, transform.position, transform.rotation);
+        //Instantiate(CardBack, transform.position, transform.rotation);
 
 
         StartCoroutine(ShuffleNow());

@@ -48,10 +48,12 @@ public class MainMenu : MonoBehaviour
     public static string mode = "";
     public static void ThreatFaction()
     {
+        AI.whichEnemy = 2;
         faction = "Threat";
     }
     public static void SecurityFaction()
     {
+        AI.whichEnemy = 1;
         faction = "Security";
     }
 

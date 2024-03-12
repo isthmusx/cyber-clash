@@ -101,7 +101,7 @@ public class ThisCard : MonoBehaviour
 
         EnemyZone = GameObject.Find("Enemy Zone");
 
-        
+        Graveyard = GameObject.Find("Player Graveyard");
     }
 
     // Update is called once per frame
@@ -328,22 +328,40 @@ public class ThisCard : MonoBehaviour
         canBeDestroyed = true;
         if (canBeDestroyed == true)
         {
-            this.transform.SetParent(Graveyard.transform);
+            /*this.transform.SetParent(Graveyard.transform);
             canBeDestroyed = false;
             summoned = false;
-            beInGraveyard = true;
+            beInGraveyard = true;*/
+
+            for (int i = 0; i < 40; i++)
+            {
+                if (Graveyard.GetComponent<GraveyardScript>().graveyard[i].id == 0)
+                {
+                    Graveyard.GetComponent<GraveyardScript>().graveyard[i] = CardDatabase.cardList[id-2];
+
+                    Graveyard.GetComponent<GraveyardScript>().objectsInGraveyard[i] = this.gameObject;
+                    
+                    canBeDestroyed = false;
+                    summoned = false;
+                    beInGraveyard = true;
+                    transform.SetParent(Graveyard.transform);
+                    transform.position = new Vector3(transform.position.x + 4000, transform.position.y,
+                        transform.position.z);
+
+                    break;
+                }
+            }
+            
         }
+
     }
 
     public void Return(int x)
     {
-        for (int i = 0; i<=x; i++)
-        {
-            ReturnCard();
-        }
+        Graveyard.GetComponent<GraveyardScript>().returnCard = x;
     }
 
-    public void ReturnCard()
+    /*public void ReturnCard()
     {
         uCanReturn = true;
     }
@@ -357,7 +375,7 @@ public class ThisCard : MonoBehaviour
             beInGraveyard = false;
             summoningSickness = true;
         }
-    }
+    }*/
 
     public void Heal()
     {
