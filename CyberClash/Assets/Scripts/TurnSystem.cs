@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using System.Net.Security;
 using Random = UnityEngine.Random;
 
 public class TurnSystem : MonoBehaviour
@@ -29,8 +30,9 @@ public class TurnSystem : MonoBehaviour
 
     public static int maxEnemyDF;
     public static int currentEnemyDF;
-    public TMP_Text enemyDFText; 
+    public TMP_Text enemyDFText;
 
+    public static bool protectStart;
 
 
     // Start is called before the first frame update
@@ -38,8 +40,11 @@ public class TurnSystem : MonoBehaviour
     {
         StartGame();
 
-        seconds = 10;
+        seconds = 20;
         timerStart = true;
+
+        protectStart = true;
+        StartCoroutine(Protection());
 
     }
 
@@ -67,7 +72,7 @@ public class TurnSystem : MonoBehaviour
         {
             EndYourTurn();
             timerStart = true;
-            seconds = 10;
+            seconds = 20;
             
         }
         timerText.text = "" + seconds;
@@ -82,7 +87,7 @@ public class TurnSystem : MonoBehaviour
         {
             EndYourOpponentTurn();
             timerStart = true;
-            seconds = 10;
+            seconds = 20;
         }
         enemyDFText.text = currentEnemyDF + "/" + maxEnemyDF;
 
@@ -174,6 +179,12 @@ public class TurnSystem : MonoBehaviour
             seconds--;
             StartCoroutine(EnemyTimer());
         }
+    }
+
+    IEnumerator Protection()
+    {
+        yield return new WaitForSeconds(6f);
+        protectStart = false;
     }
 
 }

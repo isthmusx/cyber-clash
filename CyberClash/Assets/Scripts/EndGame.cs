@@ -19,6 +19,9 @@ public class EndGame : MonoBehaviour
     public GameObject turnText;
     public static bool isWin;
 
+    public GameObject coinsWon;
+    public bool gotCoins;
+
     //public MainMenu menu;
 
     void Start()
@@ -49,6 +52,12 @@ public class EndGame : MonoBehaviour
             else if (MainMenu.faction == "Security")
             {
                 victorySubText.text = "You have successfully defended the system.";
+            }
+
+            if (gotCoins == false)
+            {
+                coinsWon.GetComponent<Shop>().coins += 50;
+                gotCoins = true;
             }
 
         }

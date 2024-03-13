@@ -169,7 +169,7 @@ public class ThisCard : MonoBehaviour
         }
 
 
-        if (TurnSystem.currentDF >= cardCost && summoned == false && beInGraveyard == false && TurnSystem.isYourTurn == true)
+        if (TurnSystem.currentDF >= cardCost && summoned == false && beInGraveyard == false && TurnSystem.isYourTurn == true && TurnSystem.protectStart == false)
         {
             canBeSummon = true;
         }

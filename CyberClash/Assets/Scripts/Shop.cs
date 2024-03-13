@@ -11,7 +11,8 @@ public class Shop : MonoBehaviour
     public TMP_Text coinText;
 
     public int coins;
-    
+
+    public bool playAI;
     
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,14 @@ public class Shop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        coinText.text =  coins.ToString();
+        if (playAI == false)
+        {
+            coinText.text =  coins.ToString();
+        }
+        else
+        {
+            PlayerPrefs.SetInt("coins", coins);
+        }
     }
 
     public void BuyPack()
