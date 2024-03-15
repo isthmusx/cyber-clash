@@ -74,7 +74,7 @@ public class ThisCard : MonoBehaviour
 
     public GameObject EnemyZone;
     public GameObject AICardToHand;
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -178,7 +178,7 @@ public class ThisCard : MonoBehaviour
             canBeSummon = false;
         }
 
-        if (canBeSummon == true)
+        if (canBeSummon == true && CardPreview.isEnlarged == false)
         {
             gameObject.GetComponent<Draggable>().enabled = true;
         }

@@ -5,6 +5,13 @@ using UnityEngine.EventSystems;
 
 public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
+    CardPreview cardPreview; // Reference to the CardPreview component
+
+    void Start()
+    {
+        cardPreview = GetComponent<CardPreview>(); // Get the CardPreview component attached to the same GameObject
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (eventData.pointerDrag == null)
@@ -12,12 +19,15 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
             return;
         }
 
-        Draggable d = eventData.pointerDrag.GetComponent<Draggable>();
-        if (d != null)
+        // Check if the card is not enlarged before allowing dropping
+        if (cardPreview != null && !cardPreview.IsEnlarged())
         {
-            d.placeholderParent = this.transform;
+            Draggable d = eventData.pointerDrag.GetComponent<Draggable>();
+            if (d != null)
+            {
+                d.placeholderParent = this.transform;
+            }
         }
-
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -27,24 +37,32 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
             return;
         }
 
-        Draggable d = eventData.pointerDrag.GetComponent<Draggable>();
-        if (d != null && d.placeholderParent == this.transform)
+        // Check if the card is not enlarged before allowing dropping
+        if (cardPreview != null && !cardPreview.IsEnlarged())
         {
-            d.placeholderParent = d.parentToReturnTo;
+            Draggable d = eventData.pointerDrag.GetComponent<Draggable>();
+            if (d != null && d.placeholderParent == this.transform)
+            {
+                d.placeholderParent = d.parentToReturnTo;
+            }
         }
-
     }
 
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log(eventData.pointerDrag.name + " was dropped on " + gameObject.name);
 
-        Draggable d = eventData.pointerDrag.GetComponent<Draggable>();
-        if (d != null)
+        // Check if the card is not enlarged before allowing dropping
+        if (cardPreview != null && !cardPreview.IsEnlarged())
         {
-            d.parentToReturnTo = this.transform;
+            Draggable d = eventData.pointerDrag.GetComponent<Draggable>();
+            if (d != null)
+            {
+                d.parentToReturnTo = this.transform;
+            }
         }
-
     }
+
+    // Method to enable/disable DropZone script
 
 }

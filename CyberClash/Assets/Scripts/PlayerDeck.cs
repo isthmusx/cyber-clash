@@ -63,7 +63,7 @@ public class PlayerDeck : MonoBehaviour
             }
         }
 
-        //Shuffle();
+        Shuffle();
 
         StartCoroutine(StartGame());
 

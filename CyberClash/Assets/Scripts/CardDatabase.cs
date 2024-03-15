@@ -11,7 +11,7 @@ public class CardDatabase : MonoBehaviour
         cardList.Add(new Card(1, "Infiltrator", "Threat", "Offense", 2, 100, "Infiltrate the system.\nDeals <b><color=red>100 Damage</color></b>.", Resources.Load <Sprite> ("Infiltrator"), 0,0));
         cardList.Add(new Card(2, "Fire Wally", "Security", "Defense", 1, 200, "Setup a firewall.\nGain <b><color=blue>50 Shield Power</color></b>.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(3, "Power Interruption", "Universal", "Utility", 5, 300, "Black out the power source.\nUnable enemy to place cards.", Resources.Load<Sprite>("NoImage"), 0, 0));
-        cardList.Add(new Card(4, "File Corruptor", "Threat", "Offense", 1, 100, "Corrupt files.\nDeal 50 damage.", Resources.Load<Sprite>("NoImage"), 0, 0));
+        cardList.Add(new Card(4, "File Corrupter", "Threat", "Offense", 1, 100, "Corrupt files.\nDeal 50 damage.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(5, "Encryptor", "Security", "Defense", 3, 100, "Encrypt files.\nGain 200 shields.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(6, "Test Card13", "Threat", "Offense", 4, 150, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(7, "File Retriever", "Universal", "Utility", 4, 0, "Retrieve deleted files.\nReturn 1 card from graveyard.", Resources.Load<Sprite>("NoImage"), 1, 0));

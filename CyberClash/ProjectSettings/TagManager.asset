@@ -8,6 +8,7 @@ TagManager:
   - Zone
   - First
   - Deck
+  - Canvas
   layers:
   - Default
   - TransparentFX
@@ -47,4 +48,19 @@ TagManager:
     locked: 0
   - name: New Layer 1
     uniqueID: 3457848175
+    locked: 0
+  - name: New Layer 2
+    uniqueID: 1739567195
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 3055351783
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 3778142149
+    locked: 0
+  - name: New Layer 5
+    uniqueID: 3948630525
+    locked: 0
+  - name: Foreground
+    uniqueID: 4024680497
     locked: 0
