@@ -17,6 +17,10 @@ public class EndGame : MonoBehaviour
     public GameObject background;
     public GameObject continueBTN;
     public GameObject turnText;
+    public GameObject rewardsText;
+    public GameObject rewards;
+    public TMP_Text coinText;
+    
     public static bool isWin;
 
     public GameObject coinsWon;
@@ -31,6 +35,8 @@ public class EndGame : MonoBehaviour
         background.SetActive(false);
         turnText.SetActive(true);
         continueBTN.SetActive(false);
+        rewardsText.SetActive(false);
+        rewards.SetActive(false);
     }
 
     void Update()
@@ -44,7 +50,10 @@ public class EndGame : MonoBehaviour
             background.SetActive(true);
             turnText.SetActive(false);
             continueBTN.SetActive(true);
+            rewardsText.SetActive(true);
+            rewards.SetActive(true);
             victoryText.text = "<color=#08BDBD>Victory</color>";
+            
             if (MainMenu.faction == "Threat")
             {
                 victorySubText.text = "You have successfully breached the system.";
@@ -56,7 +65,8 @@ public class EndGame : MonoBehaviour
 
             if (gotCoins == false)
             {
-                coinsWon.GetComponent<Shop>().coins += 50;
+                coinsWon.GetComponent<Shop>().coins += 1000;
+                coinText.text = "1000";
                 gotCoins = true;
             }
 
@@ -70,6 +80,8 @@ public class EndGame : MonoBehaviour
             background.SetActive(true);
             turnText.SetActive(false);
             continueBTN.SetActive(true);
+            rewardsText.SetActive(true);
+            rewards.SetActive(true);
             victoryText.text = "<color=#F21B3F>Defeat</color>";
             if (MainMenu.faction == "Threat")
             {
@@ -80,6 +92,12 @@ public class EndGame : MonoBehaviour
                 victorySubText.text = "You have failed to defend the system.";
             }
 
+            if (gotCoins == false)
+            {
+                coinsWon.GetComponent<Shop>().coins += 200;
+                coinText.text = "200";
+                gotCoins = true;
+            }
             
         }
     }

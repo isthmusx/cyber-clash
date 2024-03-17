@@ -52,6 +52,8 @@ public class TurnSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timerText.text = "" + seconds;
+        
         if(isYourTurn == true)
         {
             turnText.text = "Your Turn";
@@ -75,7 +77,7 @@ public class TurnSystem : MonoBehaviour
             seconds = 20;
             
         }
-        timerText.text = "" + seconds;
+        
 
         if(isYourTurn == false && seconds >0 && timerStart == true)
         {
@@ -102,33 +104,39 @@ public class TurnSystem : MonoBehaviour
     public void EndYourTurn()
     {
         isYourTurn = false;
+        seconds = 20;
         yourOpponentTurn += 1;
 
-        if (maxEnemyDF < 5)
+        if (maxEnemyDF < 7)
         {
             maxEnemyDF += 1 ;
         }
         currentEnemyDF = maxEnemyDF;
 
         AI.draw = false;
+        StartCoroutine(EnemyTimer());
+        
     }
     public void EndYourOpponentTurn()
     {
         isYourTurn = true;
+        seconds = 20;
         yourTurn += 1;
 
-        if (maxDF < 5)
+        if (maxDF < 7)
         {
             maxDF += 1;
         }
         currentDF = maxDF;
 
         startTurn = true;
+        StartCoroutine(Timer());
     }
 
     public void StartGame()
     {
         random = Random.Range(0, 2);
+        Debug.Log(random);
         if (random == 0)
         {
             isYourTurn = true;

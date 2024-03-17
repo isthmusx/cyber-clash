@@ -177,6 +177,7 @@ public class AICardToHand : MonoBehaviour
         if (TurnSystem.isYourTurn == false && summoningSickness == false)
         {
             canAttack = true;
+            thisCardCanBeDestroyed = true;
         }
         else
         {
@@ -186,10 +187,12 @@ public class AICardToHand : MonoBehaviour
         if (TurnSystem.isYourTurn == true && this.transform.parent == AIZone.transform)
         {
             summoningSickness = false;
+            
         }
 
         if (this.transform.parent == battleZone.transform && isSummoned == false)
         {
+            
             if (drawXcards > 0)
             {
                 DrawX = drawXcards;

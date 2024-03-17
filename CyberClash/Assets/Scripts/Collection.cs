@@ -30,13 +30,15 @@ public class Collection : MonoBehaviour
 
     public int cardsInCollection;
     public int numberOfCardsInPage;
+
+    public static string packType;
     
     // Start is called before the first frame update
     void Start()
     {
         x = 0;
 
-        for (int i = 0; i <= 19; i++)
+        for (int i = 0; i < 100; i++)
         {
             HowManyCards[i] = PlayerPrefs.GetInt("x" + i, 0);
         }
@@ -49,7 +51,7 @@ public class Collection : MonoBehaviour
             }
         }
 
-        cardsInCollection = 20;
+        cardsInCollection = 100;
         numberOfCardsInPage = 4;
 
     }
@@ -106,7 +108,7 @@ public class Collection : MonoBehaviour
             }
         }
 
-        for (int i = 0; i <= 19; i++)
+        for (int i = 0; i < 100; i++)
         {
             PlayerPrefs.SetInt("x" + i, HowManyCards[i]);
         }
@@ -171,20 +173,43 @@ public class Collection : MonoBehaviour
 
     public void GetRandomCard()
     {
-        rand = Random.Range(0, 19);
-        PlayerPrefs.SetInt("x"+rand, (int)HowManyCards[rand]++);
-        card = CardDatabase.cardList[rand].cardName;
-        print(""+card);
-
-        for (int i = 1; i<=18; i++)
+        if (packType == "Security")
         {
-            PlayerPrefs.SetInt("x"+i, (int)HowManyCards[i]);
-        }
+            rand = Random.Range(0, 50);
+            PlayerPrefs.SetInt("x"+rand, (int)HowManyCards[rand]++);
+            card = CardDatabase.cardList[rand].cardName;
+            print(""+card);
 
-        o[oo] = rand;
-        oo++;
+            for (int i = 0; i<50; i++)
+            {
+                PlayerPrefs.SetInt("x"+i, (int)HowManyCards[i]);
+            }
+
+            o[oo] = rand;
+            oo++;
         
-        print("card added");
+            print("card added");
+        }
+        else if(packType == "Threat")
+        {
+            rand = Random.Range(50, 100);
+            PlayerPrefs.SetInt("x"+rand, (int)HowManyCards[rand]++);
+            card = CardDatabase.cardList[rand].cardName;
+            print(""+card);
+
+            for (int i = 0; i<50; i++)
+            {
+                PlayerPrefs.SetInt("x"+i, (int)HowManyCards[i]);
+            }
+
+            o[oo] = rand;
+            oo++;
+        
+            print("card added");
+        }
+        
     }
+
+
     
 }

@@ -51,11 +51,11 @@ public class PlayerDeck : MonoBehaviour
 
         //}
 
-        for (int i = 1; i <= 20; i++)
+        for (int i = 0; i < deckSize; i++)
         {
             if(PlayerPrefs.GetInt("deck" + i, 0) > 0)
             {
-                for (int j = 1; j <= PlayerPrefs.GetInt("deck" + i, 0); j++ )
+                for (int j = 0; j < PlayerPrefs.GetInt("deck" + i, 0); j++ )
                 {
                     deck[x] = CardDatabase.cardList[i];
                     x++;
@@ -117,10 +117,7 @@ public class PlayerDeck : MonoBehaviour
             {
                 StartCoroutine(Draw(1));
             }
-            else
-            {
-                
-            }
+            
             
             TurnSystem.startTurn = false;
         }
@@ -194,6 +191,8 @@ public class PlayerDeck : MonoBehaviour
         EndGame.background.SetActive(true);
         EndGame.turnText.SetActive(false);
         EndGame.continueBTN.SetActive(true);
+        EndGame.rewardsText.SetActive(true);
+        EndGame.rewards.SetActive(true);
         EndGame.victoryText.text = "<color=#F21B3F>Defeat</color>";
         if (MainMenu.faction == "Threat")
         {
@@ -202,6 +201,13 @@ public class PlayerDeck : MonoBehaviour
         else if (MainMenu.faction == "Security")
         {
             EndGame.victorySubText.text = "You have failed to defend the system.";
+        }
+
+        if (EndGame.gotCoins == false)
+        {
+            EndGame.coinsWon.GetComponent<Shop>().coins += 200;
+            EndGame.coinText.text = "200";
+            EndGame.gotCoins = true;
         }
         surrenderWindow.SetActive(false);
 

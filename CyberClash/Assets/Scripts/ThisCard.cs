@@ -333,11 +333,11 @@ public class ThisCard : MonoBehaviour
             summoned = false;
             beInGraveyard = true;*/
 
-            for (int i = 0; i < 40; i++)
+            for (int i = 0; i < PlayerDeck.deckSize; i++)
             {
                 if (Graveyard.GetComponent<GraveyardScript>().graveyard[i].id == 0)
                 {
-                    Graveyard.GetComponent<GraveyardScript>().graveyard[i] = CardDatabase.cardList[id-2];
+                    Graveyard.GetComponent<GraveyardScript>().graveyard[i] = CardDatabase.cardList[id];
 
                     Graveyard.GetComponent<GraveyardScript>().objectsInGraveyard[i] = this.gameObject;
                     

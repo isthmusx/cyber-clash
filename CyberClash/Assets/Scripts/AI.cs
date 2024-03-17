@@ -72,7 +72,7 @@ public class AI : MonoBehaviour
         Graveyard = GameObject.Find("Enemy Graveyard");
 
         x = 0;
-        deckSize = 40;
+        deckSize = 50;
 
         draw = true;
 
@@ -88,12 +88,12 @@ public class AI : MonoBehaviour
             {
                 if (i <= 19)
                 {
-                    x = Random.Range(0, 20);
+                    x = Random.Range(0, 50);
                     deck[i] = CardDatabase.cardList[x];
                 }
                 else
                 {
-                    x = Random.Range(0, 20);
+                    x = Random.Range(0, 50);
                     deck[i] = CardDatabase.cardList[x];
                 }
             }
@@ -105,13 +105,13 @@ public class AI : MonoBehaviour
             {
                 if (i <= 19)
                 {
-                    x = Random.Range(0, 20);
+                    x = Random.Range(50, 100);
                     deck[i] = CardDatabase.cardList[x];
                     //deck[i] = CardDatabase.cardList[2];
                 }
                 else
                 {
-                    x = Random.Range(0, 20);
+                    x = Random.Range(50, 100);
                     deck[i] = CardDatabase.cardList[x];
                     //deck[i] = CardDatabase.cardList[3];
                 }
@@ -205,6 +205,8 @@ public class AI : MonoBehaviour
                 AICanSummon[i] = false;
             }
         }
+        
+        // Algorithm Start
 
         if (TurnSystem.isYourTurn == false)
         {
@@ -224,7 +226,7 @@ public class AI : MonoBehaviour
             endPhase = false;
         }
 
-        // Algorithm Start
+        
         if (summonPhase == true)
         {
             summonID = 0;
@@ -258,8 +260,10 @@ public class AI : MonoBehaviour
                 if (child.GetComponent<AICardToHand>().id == summonThisId && CardDatabase.cardList[summonThisId].cardCost <= TurnSystem.currentEnemyDF)
                 {
                     child.transform.SetParent(Zone.transform);
+                    Debug.Log("After DF: " + TurnSystem.currentEnemyDF);
                     TurnSystem.currentEnemyDF -= CardDatabase.cardList[summonThisId].cardCost;
                     Debug.Log("Card Cost for ID " + summonThisId + ": " + CardDatabase.cardList[summonThisId].cardCost);
+                    Debug.Log("After DF: " + TurnSystem.currentEnemyDF);
                     break;
                 }
 
@@ -269,8 +273,7 @@ public class AI : MonoBehaviour
             attackPhase = true;
 
         }
-
-        // Algorithm End
+        
 
         if(0 == 0)
         {
@@ -326,15 +329,16 @@ public class AI : MonoBehaviour
 
         if( attackPhase == true && endPhase == false)
         {
-            for(int i = 0; i < 40; i++)
+            for(int i = 0; i < deckSize; i++)
             {
                 if(canAttack[i] == true)
                 {
                     PlayerHealth.staticHP -= cardsInZone[i].cardPower;
-
                 }
+                
             }
             endPhase = true;
+            
         }
 
         if(endPhase == true)
@@ -343,6 +347,8 @@ public class AI : MonoBehaviour
         }
 
     }
+    // Algorithm End
+
 
     public void Shuffle()
     {
@@ -361,7 +367,7 @@ public class AI : MonoBehaviour
 
     IEnumerator StartGame()
     {
-        for (int i = 0; i <= 4; i++)
+        for (int i = 0; i <= 5; i++)
         {
             yield return new WaitForSeconds(1);
             Instantiate(CardToHand, transform.position, transform.rotation);
@@ -390,12 +396,14 @@ public class AI : MonoBehaviour
 
     IEnumerator WaitFiveSeconds()
     {
-        yield return new WaitForSeconds(Random.Range(1, 5));
+        yield return new WaitForSeconds(Random.Range(3, 5));
     }
 
     IEnumerator WaitForSummonPhase()
     {
-        yield return new WaitForSeconds(Random.Range(1, 5));
+        yield return new WaitForSeconds(Random.Range(3, 5));
         summonPhase = true;
     }
+    
+    
 }

@@ -93,5 +93,13 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+    public void SecurityPack()
+    {
+        Collection.packType = "Security";
+    }
+    public void ThreatPack()
+    {
+        Collection.packType  = "Threat";
+    }
 
 }
