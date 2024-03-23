@@ -25,6 +25,7 @@ public class EndGame : MonoBehaviour
 
     public GameObject coinsWon;
     public bool gotCoins;
+    public bool gotExp;
 
     //public MainMenu menu;
 
@@ -37,6 +38,9 @@ public class EndGame : MonoBehaviour
         continueBTN.SetActive(false);
         rewardsText.SetActive(false);
         rewards.SetActive(false);
+        
+        gotCoins = false;
+        gotExp = false;
     }
 
     void Update()
@@ -69,6 +73,12 @@ public class EndGame : MonoBehaviour
                 coinText.text = "1000";
                 gotCoins = true;
             }
+            if (gotExp == false)
+            {
+                EXPController.WonEXP();
+                gotExp = true;
+                
+            }
 
         }
         
@@ -99,6 +109,12 @@ public class EndGame : MonoBehaviour
                 gotCoins = true;
             }
             
+            if (gotExp == false)
+            {
+                EXPController.WonEXP();
+                gotExp = true;
+            }
+
         }
     }
     

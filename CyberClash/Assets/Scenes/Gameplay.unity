@@ -11545,7 +11545,9 @@ MonoBehaviour:
   rewards: {fileID: 1724524314}
   coinText: {fileID: 199474352}
   coinsWon: {fileID: 2463890}
+  expWon: {fileID: 2463890}
   gotCoins: 0
+  gotExp: 0
 --- !u!1001 &1890529944
 PrefabInstance:
   m_ObjectHideFlags: 0

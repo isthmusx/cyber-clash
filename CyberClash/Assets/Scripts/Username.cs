@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -29,6 +30,11 @@ public class UsernameManager : MonoBehaviour
             mainMenuPanel.SetActive(false);
 
         }
+    }
+
+    public void Update()
+    {
+        userText.text = PlayerPrefs.GetString("PlayerName");
     }
 
     public void SaveUsername()

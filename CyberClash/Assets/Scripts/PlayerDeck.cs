@@ -209,6 +209,8 @@ public class PlayerDeck : MonoBehaviour
             EndGame.coinText.text = "200";
             EndGame.gotCoins = true;
         }
+        
+            
         surrenderWindow.SetActive(false);
 
         yield return new WaitForSeconds(5f);
