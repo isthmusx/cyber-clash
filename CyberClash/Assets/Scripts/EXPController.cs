@@ -11,6 +11,7 @@ public class EXPController : MonoBehaviour
     [SerializeField] private TMP_Text experienceText;
     [SerializeField] private int level;
     public static float currentExp;
+    public string tier;
     [SerializeField] private float targetExp;
     [SerializeField] private Image EXPProgressBar;
     
@@ -27,6 +28,20 @@ public class EXPController : MonoBehaviour
     void Update()
     {
         experienceText.text = currentExp + " / " + targetExp;
+
+        if (level == 1)
+        {
+            tier = " (Noob)";
+        } 
+        else if (level == 10)
+        {
+            tier = " (Skilled)";
+        }
+        else if (level == 20)
+        {
+            tier = " (Expert)";
+        }
+
         
         ExperienceController();
         
@@ -35,7 +50,7 @@ public class EXPController : MonoBehaviour
     public void ExperienceController()
     {
         
-        levelText.text = "Level: " + level.ToString();
+        levelText.text = "LVL " + level.ToString() + tier;
         EXPProgressBar.fillAmount = (currentExp / targetExp);
         
         if (currentExp >= targetExp)
