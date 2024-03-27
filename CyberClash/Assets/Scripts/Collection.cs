@@ -64,17 +64,70 @@ public class Collection : MonoBehaviour
     {
         if (openPack == false)
         {
-            CardOne.GetComponent<CardInCollection>().thisId = x;
-            CardTwo.GetComponent<CardInCollection>().thisId = x + 1;
-            CardThree.GetComponent<CardInCollection>().thisId = x + 2;
-            CardFour.GetComponent<CardInCollection>().thisId = x + 3;
-            CardFive.GetComponent<CardInCollection>().thisId = x + 4;
+            if (MainMenu.deckSelected == "Security")
+            {
+                CardOne.GetComponent<CardInCollection>().thisId = x;
+                CardTwo.GetComponent<CardInCollection>().thisId = x + 1;
+                CardThree.GetComponent<CardInCollection>().thisId = x + 2;
+                CardFour.GetComponent<CardInCollection>().thisId = x + 3;
+                CardFive.GetComponent<CardInCollection>().thisId = x + 4;
 
-            CardOneText.text = "x" + HowManyCards[x];
-            CardTwoText.text = "x" + HowManyCards[x + 1];
-            CardThreeText.text = "x" + HowManyCards[x + 2];
-            CardFourText.text = "x" + HowManyCards[x + 3];
-            CardFiveText.text = "x" + HowManyCards[x + 4];
+                CardOneText.text = "x" + HowManyCards[x];
+                CardTwoText.text = "x" + HowManyCards[x + 1];
+                CardThreeText.text = "x" + HowManyCards[x + 2];
+                CardFourText.text = "x" + HowManyCards[x + 3];
+                CardFiveText.text = "x" + HowManyCards[x + 4];
+                
+                if (x <= 0)
+                {
+                    leftButton.interactable = false;
+                }
+                else
+                {
+                    leftButton.interactable = true;
+                }
+                if (x >= 45)
+                {
+                    rightButton.interactable = false;
+                }
+                else
+                {
+                    rightButton.interactable = true;
+                }
+                
+            }
+            else if (MainMenu.deckSelected == "Threat")
+            {
+                CardOne.GetComponent<CardInCollection>().thisId = x + 50;
+                CardTwo.GetComponent<CardInCollection>().thisId = x + 51;
+                CardThree.GetComponent<CardInCollection>().thisId = x + 52;
+                CardFour.GetComponent<CardInCollection>().thisId = x + 53;
+                CardFive.GetComponent<CardInCollection>().thisId = x + 54;
+
+                CardOneText.text = "x" + HowManyCards[x + 50];
+                CardTwoText.text = "x" + HowManyCards[x + 51];
+                CardThreeText.text = "x" + HowManyCards[x + 52];
+                CardFourText.text = "x" + HowManyCards[x + 53];
+                CardFiveText.text = "x" + HowManyCards[x + 54];
+                
+                if (x <= 0)
+                {
+                    leftButton.interactable = false;
+                }
+                else
+                {
+                    leftButton.interactable = true;
+                }
+                if (x >= 45)
+                {
+                    rightButton.interactable = false;
+                }
+                else
+                {
+                    rightButton.interactable = true;
+                }
+            }
+
 
             if (CardOneText.text == "x0")
             {
@@ -134,24 +187,7 @@ public class Collection : MonoBehaviour
             CardFour.GetComponent<CardInCollection>().thisId = o[3];
             CardFive.GetComponent<CardInCollection>().thisId = o[4];
         }
-        
-        if (x <= 0)
-        {
-            leftButton.interactable = false;
-        }
-        else
-        {
-            leftButton.interactable = true;
-        }
-        if (x >= 95)
-        {
-            rightButton.interactable = false;
-        }
-        else
-        {
-            rightButton.interactable = true;
-        }
-        
+
     }
 
     public void Left()
