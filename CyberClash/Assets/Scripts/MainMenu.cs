@@ -34,9 +34,17 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(5);
     }
-    public void DeckCreator()
+    public void SecurityDeck()
     {
-        SceneManager.LoadSceneAsync(14);
+        SceneManager.LoadSceneAsync(17);
+    }
+    public void ThreatDeck()
+    {
+        SceneManager.LoadSceneAsync(18);
+    }
+    public void DeckSelect()
+    {
+        SceneManager.LoadSceneAsync(16);
     }
 
     public void Inventory()
@@ -46,6 +54,7 @@ public class MainMenu : MonoBehaviour
 
     public static string faction = "";
     public static string mode = "";
+    public static string deckSelected = "";
     public static void ThreatFaction()
     {
         AI.whichEnemy = 2;
@@ -64,6 +73,14 @@ public class MainMenu : MonoBehaviour
     public static void Story1()
     {
         mode = "story1";
+    }
+    public static void SelectSecurity()
+    {
+        deckSelected = "Security";
+    }
+    public static void SelectThreat()
+    {
+        deckSelected = "Threat";
     }
 
     public static void GameBack()

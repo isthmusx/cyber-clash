@@ -22,38 +22,68 @@ public class DeckCreator : MonoBehaviour
     void Start()
     {
         sum = 0;
-        numberOfCardsInDatabase = 18;
+        numberOfCardsInDatabase = 100;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void CreateDeck()
+    public void CreateSecurityDeck()
     {
-        for (int i = 0; i <= numberOfCardsInDatabase; i++)
+        for (int i = 0; i < numberOfCardsInDatabase; i++)
         {
             sum += cardWithThisId[i];
         }
 
         if (sum == 20)
         {
-            for (int i = 0; i <= numberOfCardsInDatabase; i++)
+            for (int i = 0; i < numberOfCardsInDatabase; i++)
             {
-                PlayerPrefs.SetInt("deck" + i, cardWithThisId[i]);
+                PlayerPrefs.SetInt("securityDeck" + i, cardWithThisId[i]);
+                Debug.Log("Deck Created");
             }
         }
 
         sum = 0;
         numberOfDifferentCards = 0;
 
-        for (int i = 0; i <= numberOfCardsInDatabase; i++)
+        for (int i = 0; i < numberOfCardsInDatabase; i++)
         {
-            savedDeck[i] = PlayerPrefs.GetInt("deck" + i, 0);
+            savedDeck[i] = PlayerPrefs.GetInt("securityDeck" + i, 0);
+        }
+        
+        Debug.Log("Deck Created");
+
+    }
+    
+    public void CreateThreatDeck()
+    {
+        for (int i = 0; i < numberOfCardsInDatabase; i++)
+        {
+            sum += cardWithThisId[i];
+            
         }
 
+        if (sum == 20)
+        {
+            for (int i = 0; i < numberOfCardsInDatabase; i++)
+            {
+                PlayerPrefs.SetInt("threatDeck" + i, cardWithThisId[i]);
+                Debug.Log("Deck Created");
+            }
+        }
+
+        sum = 0;
+        numberOfDifferentCards = 0;
+
+        for (int i = 0; i < numberOfCardsInDatabase; i++)
+        {
+            savedDeck[i] = PlayerPrefs.GetInt("threatDeck" + i, 0);
+        }
+        
     }
 
     public void EnterDeck()
@@ -79,6 +109,10 @@ public class DeckCreator : MonoBehaviour
     public void Card4()
     {
         dragged = Collection.x + 3;
+    }
+    public void Card5()
+    {
+        dragged = Collection.x + 4;
     }
 
     public void Drop()

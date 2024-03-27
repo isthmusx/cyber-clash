@@ -51,17 +51,47 @@ public class PlayerDeck : MonoBehaviour
 
         //}
 
-        for (int i = 0; i < deckSize; i++)
+
+        if (MainMenu.faction == "Security")
         {
-            if(PlayerPrefs.GetInt("deck" + i, 0) > 0)
+            for (int i = 0; i < deckSize; i++)
+            {
+                if (PlayerPrefs.GetInt("securityDeck" + i, 0) > 0)
+                {
+                    for (int j = 0; j < PlayerPrefs.GetInt("securityDeck" + i, 0); j++)
+                    {
+                        deck[x] = CardDatabase.cardList[i];
+                        x++;
+                    }
+                }
+            }
+        }
+        else if (MainMenu.faction == "Threat")
+        {
+            for (int i = 50; i < deckSize + 50; i++) 
+            {
+                if (PlayerPrefs.GetInt("threatDeck" + i, 0) > 0) 
+                {
+                    for (int j = 0; j < PlayerPrefs.GetInt("threatDeck" + i, 0); j++) 
+                    {
+                        deck[x] = CardDatabase.cardList[i]; 
+                        x++;
+                    }
+                }
+            }
+        }
+            
+            
+            
+            /*if(PlayerPrefs.GetInt("deck" + i, 0) > 0)
             {
                 for (int j = 0; j < PlayerPrefs.GetInt("deck" + i, 0); j++ )
                 {
                     deck[x] = CardDatabase.cardList[i];
                     x++;
                 }
-            }
-        }
+            }*/
+        
 
         Shuffle();
 

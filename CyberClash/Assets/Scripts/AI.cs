@@ -82,7 +82,7 @@ public class AI : MonoBehaviour
             deck[i] = CardDatabase.cardList[x];
         }*/
 
-        if (whichEnemy == 1)
+        if (whichEnemy == 2)
         {
             for (int i = 0; i < deckSize; i++)
             {
@@ -99,7 +99,7 @@ public class AI : MonoBehaviour
             }
         }
 
-        if (whichEnemy == 2)
+        if (whichEnemy == 1)
         {
             for (int i = 0; i < deckSize; i++)
             {

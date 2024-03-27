@@ -16,7 +16,7 @@ public class WindowInDeck : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        panel = GameObject.Find("Panel");
+        panel = GameObject.Find("Drop");
         creator = GameObject.Find("Collection");
         transform.SetParent(panel.transform);
         transform.localScale = new Vector3(1, 1, 1);

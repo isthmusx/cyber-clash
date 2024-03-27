@@ -11,6 +11,7 @@ public class Collection : MonoBehaviour
     public GameObject CardTwo;
     public GameObject CardThree;
     public GameObject CardFour;
+    public GameObject CardFive;
 
     public static int x;
 
@@ -20,8 +21,11 @@ public class Collection : MonoBehaviour
     public TMP_Text CardTwoText;
     public TMP_Text CardThreeText;
     public TMP_Text CardFourText;
+    public TMP_Text CardFiveText;
 
-    public GameObject CardFive;
+    public Button leftButton;
+    public Button rightButton;
+    
     public bool openPack;
     public int[] o;
     public int oo;
@@ -52,11 +56,10 @@ public class Collection : MonoBehaviour
         }
 
         cardsInCollection = 100;
-        numberOfCardsInPage = 4;
+        numberOfCardsInPage = 5;
 
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (openPack == false)
@@ -65,11 +68,13 @@ public class Collection : MonoBehaviour
             CardTwo.GetComponent<CardInCollection>().thisId = x + 1;
             CardThree.GetComponent<CardInCollection>().thisId = x + 2;
             CardFour.GetComponent<CardInCollection>().thisId = x + 3;
+            CardFive.GetComponent<CardInCollection>().thisId = x + 4;
 
             CardOneText.text = "x" + HowManyCards[x];
             CardTwoText.text = "x" + HowManyCards[x + 1];
             CardThreeText.text = "x" + HowManyCards[x + 2];
             CardFourText.text = "x" + HowManyCards[x + 3];
+            CardFiveText.text = "x" + HowManyCards[x + 4];
 
             if (CardOneText.text == "x0")
             {
@@ -106,6 +111,14 @@ public class Collection : MonoBehaviour
             {
                 CardFour.GetComponent<CardInCollection>().beGray = false;
             }
+            if (CardFiveText.text == "x0")
+            {
+                CardFive.GetComponent<CardInCollection>().beGray = true;
+            }
+            else
+            {
+                CardFive.GetComponent<CardInCollection>().beGray = false;
+            }
         }
 
         for (int i = 0; i < 100; i++)
@@ -120,6 +133,23 @@ public class Collection : MonoBehaviour
             CardThree.GetComponent<CardInCollection>().thisId = o[2];
             CardFour.GetComponent<CardInCollection>().thisId = o[3];
             CardFive.GetComponent<CardInCollection>().thisId = o[4];
+        }
+        
+        if (x <= 0)
+        {
+            leftButton.interactable = false;
+        }
+        else
+        {
+            leftButton.interactable = true;
+        }
+        if (x >= 95)
+        {
+            rightButton.interactable = false;
+        }
+        else
+        {
+            rightButton.interactable = true;
         }
         
     }
@@ -137,6 +167,8 @@ public class Collection : MonoBehaviour
         {
             x += numberOfCardsInPage;
         }
+        
+        Debug.Log(x);
     }
     public void Card1Minus()
     {
@@ -197,7 +229,7 @@ public class Collection : MonoBehaviour
             card = CardDatabase.cardList[rand].cardName;
             print(""+card);
 
-            for (int i = 0; i<50; i++)
+            for (int i = 50; i<100; i++)
             {
                 PlayerPrefs.SetInt("x"+i, (int)HowManyCards[i]);
             }
