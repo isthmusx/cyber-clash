@@ -54,7 +54,7 @@ public class PlayerDeck : MonoBehaviour
 
         if (MainMenu.faction == "Security")
         {
-            for (int i = 0; i < deckSize; i++)
+            for (int i = 0; i < 50; i++)
             {
                 if (PlayerPrefs.GetInt("securityDeck" + i, 0) > 0)
                 {
@@ -68,7 +68,7 @@ public class PlayerDeck : MonoBehaviour
         }
         else if (MainMenu.faction == "Threat")
         {
-            for (int i = 50; i < deckSize + 50; i++) 
+            for (int i = 50; i < 100; i++) 
             {
                 if (PlayerPrefs.GetInt("threatDeck" + i, 0) > 0) 
                 {

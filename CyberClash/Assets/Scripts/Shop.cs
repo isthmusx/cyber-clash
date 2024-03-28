@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
+    public GameObject modal;
 
     public TMP_Text coinText;
 
@@ -38,11 +39,15 @@ public class Shop : MonoBehaviour
 
     public void BuyPack()
     {
-        if (coins >= 10)
+        if (coins >= 100)
         {
-            coins -= 10;
+            coins -= 100;
             SceneManager.LoadScene("OpenPack");
             PlayerPrefs.SetInt("coins", coins);
+        }
+        else
+        {
+            modal.SetActive(true);
         }
         
     }

@@ -72,7 +72,7 @@ public class AI : MonoBehaviour
         Graveyard = GameObject.Find("Enemy Graveyard");
 
         x = 0;
-        deckSize = 50;
+        deckSize = 20;
 
         draw = true;
 

@@ -238,6 +238,10 @@ public class Collection : MonoBehaviour
     {
         HowManyCards[x + 3]++;
     }
+    public void Card5Plus()
+    {
+        HowManyCards[x + 4]++;
+    }
 
     public void GetRandomCard()
     {

@@ -17,7 +17,9 @@ public class DeckCreator : MonoBehaviour
     public bool[] alreadyCreated;
     public static int lastAdded;
     public int[] quantity;
-
+    public GameObject errorModal;
+    public GameObject successModal;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +35,7 @@ public class DeckCreator : MonoBehaviour
 
     public void CreateSecurityDeck()
     {
+
         for (int i = 0; i < numberOfCardsInDatabase; i++)
         {
             sum += cardWithThisId[i];
@@ -43,10 +46,15 @@ public class DeckCreator : MonoBehaviour
             for (int i = 0; i < numberOfCardsInDatabase; i++)
             {
                 PlayerPrefs.SetInt("securityDeck" + i, cardWithThisId[i]);
-                Debug.Log("Deck Created");
             }
+            successModal.SetActive(true);
         }
-
+        else
+        {
+            errorModal.SetActive(true);
+        }
+            
+            
         sum = 0;
         numberOfDifferentCards = 0;
 
@@ -54,10 +62,10 @@ public class DeckCreator : MonoBehaviour
         {
             savedDeck[i] = PlayerPrefs.GetInt("securityDeck" + i, 0);
         }
-        
+
         Debug.Log("Deck Created");
 
-    }
+        }
     
     public void CreateThreatDeck()
     {
@@ -66,14 +74,18 @@ public class DeckCreator : MonoBehaviour
             sum += cardWithThisId[i];
             
         }
-
+        
         if (sum == 20)
         {
             for (int i = 0; i < numberOfCardsInDatabase; i++)
             {
                 PlayerPrefs.SetInt("threatDeck" + i, cardWithThisId[i]);
-                Debug.Log("Deck Created");
             }
+            successModal.SetActive(true);
+        }
+        else
+        {
+            errorModal.SetActive(true);
         }
 
         sum = 0;
@@ -83,6 +95,7 @@ public class DeckCreator : MonoBehaviour
         {
             savedDeck[i] = PlayerPrefs.GetInt("threatDeck" + i, 0);
         }
+        
         
     }
 
@@ -96,28 +109,63 @@ public class DeckCreator : MonoBehaviour
     }
     public void Card1()
     {
-        dragged = Collection.x;
+        if (MainMenu.deckSelected == "Security")
+        {
+            dragged = Collection.x;
+        }
+        else if (MainMenu.deckSelected == "Threat")
+        {
+            dragged = Collection.x + 50;
+        }
     }
     public void Card2()
     {
-        dragged = Collection.x + 1;
+        if (MainMenu.deckSelected == "Security")
+        {
+            dragged = Collection.x + 1;
+        }
+        else if (MainMenu.deckSelected == "Threat")
+        {
+            dragged = Collection.x + 51;
+        }
     }
     public void Card3()
     {
-        dragged = Collection.x + 2;
+        if (MainMenu.deckSelected == "Security")
+        {
+            dragged = Collection.x + 2;
+        }
+        else if (MainMenu.deckSelected == "Threat")
+        {
+            dragged = Collection.x + 52;
+        }
     }
     public void Card4()
     {
-        dragged = Collection.x + 3;
+        if (MainMenu.deckSelected == "Security")
+        {
+            dragged = Collection.x + 3;
+        }
+        else if (MainMenu.deckSelected == "Threat")
+        {
+            dragged = Collection.x + 53;
+        }
     }
     public void Card5()
     {
-        dragged = Collection.x + 4;
+        if (MainMenu.deckSelected == "Security")
+        {
+            dragged = Collection.x + 4;
+        }
+        else if (MainMenu.deckSelected == "Threat")
+        {
+            dragged = Collection.x + 54;
+        }
     }
 
     public void Drop()
     {
-        if (mouseOverDeck == true && coll.GetComponent<Collection>().HowManyCards[dragged] > 0)
+        if (mouseOverDeck == true && coll.GetComponent<Collection>().HowManyCards[dragged] > 0 && CanDragCards())
         {
             cardWithThisId[dragged]++;
 
@@ -155,6 +203,15 @@ public class DeckCreator : MonoBehaviour
         {
             quantity[i]++;
         }
+    }
+    public bool CanDragCards()
+    {
+        int totalCards = 0;
+        for (int i = 0; i < cardWithThisId.Length; i++)
+        {
+            totalCards += cardWithThisId[i];
+        }
+        return totalCards < 20;
     }
 
 }
