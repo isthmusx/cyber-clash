@@ -104,31 +104,18 @@ public class PlayerDeck : MonoBehaviour
     {
         staticDeck = deck;
 
-        if (deckSize <= 0)
+        /*if (deckSize <= 0)
         {
-            EndGame.mainTextObject.SetActive(true);
-            EndGame.subTextObject.SetActive(true);
-            EndGame.background.SetActive(true);
-            EndGame.turnText.SetActive(false);
-            EndGame.continueBTN.SetActive(true);
-            EndGame.victoryText.text = "<color=#F21B3F>Defeat</color>";
-            if (MainMenu.faction == "Threat")
-            {
-                EndGame.victorySubText.text = "You have failed to breach the system.";
-            }
-            else if (MainMenu.faction == "Security")
-            {
-                EndGame.victorySubText.text = "You have failed to defend the system.";
-            }
-        }
+            StartCoroutine(EndGameNow());
+        }*/
 
 
 
-        if (deckSize < 30)
+        if (deckSize < 15)
         {
             cardInDeck1.SetActive(false);
         }
-        if (deckSize < 20)
+        if (deckSize < 10)
         {
             cardInDeck2.SetActive(false);
         }
@@ -143,7 +130,7 @@ public class PlayerDeck : MonoBehaviour
 
         if (TurnSystem.startTurn == true)
         {
-            if (CardsInHand.howMany < 10)
+            if (CardsInHand.howMany < 10 && deckSize > 0)
             {
                 StartCoroutine(Draw(1));
             }

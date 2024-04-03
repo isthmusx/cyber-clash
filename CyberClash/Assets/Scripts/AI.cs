@@ -86,7 +86,7 @@ public class AI : MonoBehaviour
         {
             for (int i = 0; i < deckSize; i++)
             {
-                if (i <= 19)
+                if (i < deckSize)
                 {
                     x = Random.Range(0, 50);
                     deck[i] = CardDatabase.cardList[x];
@@ -103,7 +103,7 @@ public class AI : MonoBehaviour
         {
             for (int i = 0; i < deckSize; i++)
             {
-                if (i <= 19)
+                if (i < deckSize)
                 {
                     x = Random.Range(50, 100);
                     deck[i] = CardDatabase.cardList[x];
@@ -151,7 +151,7 @@ public class AI : MonoBehaviour
         }
         
 
-        if (TurnSystem.startTurn == false && draw == false)
+        if (TurnSystem.startTurn == false && draw == false && deckSize > 0)
         {
             StartCoroutine(Draw(1));
             draw = true;
@@ -260,11 +260,8 @@ public class AI : MonoBehaviour
                 if (child.GetComponent<AICardToHand>().id == summonThisId && CardDatabase.cardList[summonThisId].cardCost <= TurnSystem.currentEnemyDF)
                 {
                     child.transform.SetParent(Zone.transform);
-                    Debug.Log("After DF: " + TurnSystem.currentEnemyDF);
                     TurnSystem.currentEnemyDF -= CardDatabase.cardList[summonThisId].cardCost;
-                    Debug.Log("Card Cost for ID " + summonThisId + ": " + CardDatabase.cardList[summonThisId].cardCost);
-                    Debug.Log("After DF: " + TurnSystem.currentEnemyDF);
-                    break;
+
                 }
 
             }
@@ -326,14 +323,32 @@ public class AI : MonoBehaviour
             }
             l = 0;
         }
+        
 
         if( attackPhase == true && endPhase == false)
         {
             for(int i = 0; i < deckSize; i++)
             {
-                if(canAttack[i] == true)
+                if (canAttack[i])
                 {
-                    PlayerHealth.staticHP -= cardsInZone[i].cardPower;
+                    if (PlayerHealth.shield > 0)
+                    {
+                        if (PlayerHealth.shield >= cardsInZone[i].cardPower)
+                        {
+                            PlayerHealth.shield -= cardsInZone[i].cardPower;
+                        }
+                        else
+                        {
+                            float excessDamage = cardsInZone[i].cardPower - PlayerHealth.shield;
+                            PlayerHealth.shield = 0;
+                            PlayerHealth.staticHP -= excessDamage;
+                        }
+                    }
+                    else
+                    {
+                        PlayerHealth.staticHP -= cardsInZone[i].cardPower;
+                        Debug.Log(PlayerHealth.staticHP -= cardsInZone[i].cardPower);
+                    }
                 }
                 
             }
@@ -401,9 +416,10 @@ public class AI : MonoBehaviour
 
     IEnumerator WaitForSummonPhase()
     {
-        yield return new WaitForSeconds(Random.Range(3, 5));
+        yield return new WaitForSeconds(Random.Range(2, 4));
         summonPhase = true;
     }
+
     
     
 }

@@ -72,6 +72,9 @@ public class ThisCard : MonoBehaviour
     public int healXpower;
     public bool canHeal;
 
+    public int shieldXpower;
+    public bool canShield;
+
     public GameObject EnemyZone;
     public GameObject AICardToHand;
     
@@ -92,12 +95,13 @@ public class ThisCard : MonoBehaviour
         canAttack = false;
         summoningSickness = true;
 
-        Enemy = GameObject.Find("Enemy Health");
+        Enemy = GameObject.Find("Enemy Character");
 
         targeting = false;
         targetingEnemy = false;
 
         canHeal = true;
+        canShield = true;
 
         EnemyZone = GameObject.Find("Enemy Zone");
 
@@ -252,11 +256,7 @@ public class ThisCard : MonoBehaviour
             uCanReturn = false;
         }
 
-        if (canHeal == true && summoned == true)
-        {
-            Heal();
-            canHeal = false;
-        }
+        
 
     }
 
@@ -277,6 +277,18 @@ public class ThisCard : MonoBehaviour
                     EnemyHealth.staticHP -= cardPower;
                     targeting = false;
                     cantAttack = true;
+                    
+                    if (canHeal == true && summoned == true)
+                    {
+                        Heal();
+                        canHeal = false;
+                    }
+        
+                    if (canShield == true && summoned == true)
+                    {
+                        Shield();
+                        canShield = false;
+                    }
 
                     Destroy();
 
@@ -379,7 +391,11 @@ public class ThisCard : MonoBehaviour
 
     public void Heal()
     {
-        PlayerHealth.staticHP += healXpower;
+        PlayerHealth.shield += healXpower;
+    }
+    public void Shield()
+    {
+        PlayerHealth.shield += shieldXpower;
     }
 
 }

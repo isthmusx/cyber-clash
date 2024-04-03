@@ -29,15 +29,15 @@ public class EXPController : MonoBehaviour
     {
         experienceText.text = currentExp + " / " + targetExp;
 
-        if (level == 1)
+        if (level >= 1)
         {
             tier = " (Noob)";
         } 
-        else if (level == 10)
+        else if (level >= 10)
         {
             tier = " (Skilled)";
         }
-        else if (level == 20)
+        else if (level >= 20)
         {
             tier = " (Expert)";
         }
@@ -50,7 +50,7 @@ public class EXPController : MonoBehaviour
     public void ExperienceController()
     {
         
-        levelText.text = "LVL " + level.ToString() + tier;
+        levelText.text = "LEVEL " + level.ToString() + tier;
         EXPProgressBar.fillAmount = (currentExp / targetExp);
         
         if (currentExp >= targetExp)

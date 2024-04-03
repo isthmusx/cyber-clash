@@ -8,7 +8,7 @@ public class CardDatabase : MonoBehaviour
 
     void Awake()
     {
-        cardList.Add(new Card(0, "Security 0", "Threat", "Offense", 4, 150, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
+        cardList.Add(new Card(0, "Security 0", "Threat", "Offense", 1, 150, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 100));
         cardList.Add(new Card(1, "Security 1", "Threat", "Offense", 2, 100, "Infiltrate the system.\nDeals <b><color=red>100 Damage</color></b>.", Resources.Load <Sprite> ("Infiltrator"), 0,0));
         cardList.Add(new Card(2, "Security 2", "Security", "Defense", 1, 200, "Setup a firewall.\nGain <b><color=blue>50 Shield Power</color></b>.", Resources.Load<Sprite>("NoImage"), 0, 100));
         cardList.Add(new Card(3, "Security 3", "Universal", "Utility", 5, 300, "Black out the power source.\nUnable enemy to place cards.", Resources.Load<Sprite>("NoImage"), 0, 0));
@@ -65,19 +65,19 @@ public class CardDatabase : MonoBehaviour
         cardList.Add(new Card(54, "Threat 4", "Threat", "Offense", 1, 100, "Corrupt files.\nDeal 50 damage.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(55, "Threat 5", "Security", "Defense", 3, 100, "Encrypt files.\nGain 200 shields.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(56, "Threat 6", "Threat", "Offense", 4, 150, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
-        cardList.Add(new Card(57, "Threat 7", "Universal", "Utility", 4, 0, "Retrieve deleted files.\nReturn 1 card from graveyard.", Resources.Load<Sprite>("NoImage"), 1, 0));
-        cardList.Add(new Card(58, "Threat 8", "Universal", "Utility", 2, 0, "Restore system files.\nHeal 100 Health.", Resources.Load<Sprite>("NoImage"), 1, 100));
-        cardList.Add(new Card(59, "Threat 9", "Universal", "Utility", 3, 0, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
+        cardList.Add(new Card(57, "Threat 7", "Universal", "Utility", 4, 100, "Retrieve deleted files.\nReturn 1 card from graveyard.", Resources.Load<Sprite>("NoImage"), 1, 0));
+        cardList.Add(new Card(58, "Threat 8", "Universal", "Utility", 2, 100, "Restore system files.\nHeal 100 Health.", Resources.Load<Sprite>("NoImage"), 1, 100));
+        cardList.Add(new Card(59, "Threat 9", "Universal", "Utility", 3, 100, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(60, "Threat 10", "Threat", "Offense", 4, 150, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
-        cardList.Add(new Card(61, "Threat 11", "Security", "Defense", 5, 0, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
+        cardList.Add(new Card(61, "Threat 11", "Security", "Defense", 5, 100, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(62, "Threat 12", "Threat", "Offense", 2, 100, "Infiltrate the system.\nDeals <b><color=red>100 Damage</color></b>.", Resources.Load<Sprite>("Infiltrator"), 0, 0));
         cardList.Add(new Card(63, "Threat 13", "Security", "Defense", 1, 200, "Setup a firewall.\nGain <b><color=blue>50 Shield Power</color></b>.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(64, "Threat 14", "Universal", "Utility", 5, 300, "Black out the power source.\nUnable enemy to place cards.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(65, "Threat 15", "Threat", "Offense", 1, 100, "Corrupt files.\nDeal 50 damage.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(66, "Threat 16", "Security", "Defense", 3, 100, "Encrypt files.\nGain 200 shields.", Resources.Load<Sprite>("NoImage"), 0, 0));
-        cardList.Add(new Card(67, "Threat 17", "Universal", "Utility", 4, 0, "Retrieve deleted files.\nReturn 1 card from graveyard.", Resources.Load<Sprite>("NoImage"), 1, 0));
-        cardList.Add(new Card(68, "Threat 18", "Universal", "Utility", 5, 0, "Restore system files.\nHeal 100 Health.", Resources.Load<Sprite>("NoImage"), 1, 100));
-        cardList.Add(new Card(69, "Threat 19", "Universal", "Utility", 5, 0, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
+        cardList.Add(new Card(67, "Threat 17", "Universal", "Utility", 4, 100, "Retrieve deleted files.\nReturn 1 card from graveyard.", Resources.Load<Sprite>("NoImage"), 1, 0));
+        cardList.Add(new Card(68, "Threat 18", "Universal", "Utility", 5, 100, "Restore system files.\nHeal 100 Health.", Resources.Load<Sprite>("NoImage"), 1, 100));
+        cardList.Add(new Card(69, "Threat 19", "Universal", "Utility", 5, 100, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(70, "Threat 20", "Threat", "Offense", 5, 150, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(71, "Threat 21", "Threat", "Offense", 2, 100, "Infiltrate the system.\nDeals <b><color=red>100 Damage</color></b>.", Resources.Load <Sprite> ("Infiltrator"), 0,0));
         cardList.Add(new Card(72, "Threat 22", "Security", "Defense", 1, 200, "Setup a firewall.\nGain <b><color=blue>50 Shield Power</color></b>.", Resources.Load<Sprite>("NoImage"), 0, 0));
@@ -85,19 +85,19 @@ public class CardDatabase : MonoBehaviour
         cardList.Add(new Card(74, "Threat 24", "Threat", "Offense", 1, 100, "Corrupt files.\nDeal 50 damage.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(75, "Threat 25", "Security", "Defense", 3, 100, "Encrypt files.\nGain 200 shields.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(76, "Threat 26", "Threat", "Offense", 4, 150, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
-        cardList.Add(new Card(77, "Threat 27", "Universal", "Utility", 4, 0, "Retrieve deleted files.\nReturn 1 card from graveyard.", Resources.Load<Sprite>("NoImage"), 1, 0));
-        cardList.Add(new Card(78, "Threat 28", "Universal", "Utility", 2, 0, "Restore system files.\nHeal 100 Health.", Resources.Load<Sprite>("NoImage"), 1, 100));
-        cardList.Add(new Card(79, "Threat 29", "Universal", "Utility", 3, 0, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
+        cardList.Add(new Card(77, "Threat 27", "Universal", "Utility", 4, 100, "Retrieve deleted files.\nReturn 1 card from graveyard.", Resources.Load<Sprite>("NoImage"), 1, 0));
+        cardList.Add(new Card(78, "Threat 28", "Universal", "Utility", 2, 100, "Restore system files.\nHeal 100 Health.", Resources.Load<Sprite>("NoImage"), 1, 100));
+        cardList.Add(new Card(79, "Threat 29", "Universal", "Utility", 3, 100, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(80, "Threat 30", "Threat", "Offense", 4, 150, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
-        cardList.Add(new Card(81, "Threat 31", "Security", "Defense", 5, 0, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
+        cardList.Add(new Card(81, "Threat 31", "Security", "Defense", 5, 100, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(82, "Threat 32", "Threat", "Offense", 2, 100, "Infiltrate the system.\nDeals <b><color=red>100 Damage</color></b>.", Resources.Load<Sprite>("Infiltrator"), 0, 0));
         cardList.Add(new Card(83, "Threat 33", "Security", "Defense", 1, 200, "Setup a firewall.\nGain <b><color=blue>50 Shield Power</color></b>.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(84, "Threat 34", "Universal", "Utility", 5, 300, "Black out the power source.\nUnable enemy to place cards.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(85, "Threat 35", "Threat", "Offense", 1, 100, "Corrupt files.\nDeal 50 damage.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(86, "Threat 36", "Security", "Defense", 3, 100, "Encrypt files.\nGain 200 shields.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(87, "Threat 37", "Universal", "Utility", 4, 0, "Retrieve deleted files.\nReturn 1 card from graveyard.", Resources.Load<Sprite>("NoImage"), 1, 0));
-        cardList.Add(new Card(88, "Threat 38", "Universal", "Utility", 5, 0, "Restore system files.\nHeal 100 Health.", Resources.Load<Sprite>("NoImage"), 1, 100));
-        cardList.Add(new Card(89, "Threat 39", "Universal", "Utility", 5, 0, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
+        cardList.Add(new Card(88, "Threat 38", "Universal", "Utility", 5, 100, "Restore system files.\nHeal 100 Health.", Resources.Load<Sprite>("NoImage"), 1, 100));
+        cardList.Add(new Card(89, "Threat 39", "Universal", "Utility", 5, 100, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(90, "Threat 40", "Threat", "Offense", 5, 150, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(91, "Threat 41", "Threat", "Offense", 2, 100, "Infiltrate the system.\nDeals <b><color=red>100 Damage</color></b>.", Resources.Load <Sprite> ("Infiltrator"), 0,0));
         cardList.Add(new Card(92, "Threat 42", "Security", "Defense", 1, 200, "Setup a firewall.\nGain <b><color=blue>50 Shield Power</color></b>.", Resources.Load<Sprite>("NoImage"), 0, 0));
@@ -105,9 +105,9 @@ public class CardDatabase : MonoBehaviour
         cardList.Add(new Card(94, "Threat 44", "Threat", "Offense", 1, 100, "Corrupt files.\nDeal 50 damage.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(95, "Threat 45", "Security", "Defense", 3, 100, "Encrypt files.\nGain 200 shields.", Resources.Load<Sprite>("NoImage"), 0, 0));
         cardList.Add(new Card(96, "Threat 46", "Threat", "Offense", 4, 150, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
-        cardList.Add(new Card(97, "Threat 47", "Universal", "Utility", 4, 0, "Retrieve deleted files.\nReturn 1 card from graveyard.", Resources.Load<Sprite>("NoImage"), 1, 0));
-        cardList.Add(new Card(98, "Threat 48", "Universal", "Utility", 2, 0, "Restore system files.\nHeal 100 Health.", Resources.Load<Sprite>("NoImage"), 1, 100));
-        cardList.Add(new Card(99, "Threat 49", "Universal", "Utility", 3, 0, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
+        cardList.Add(new Card(97, "Threat 47", "Universal", "Utility", 4, 100, "Retrieve deleted files.\nReturn 1 card from graveyard.", Resources.Load<Sprite>("NoImage"), 1, 0));
+        cardList.Add(new Card(98, "Threat 48", "Universal", "Utility", 2, 100, "Restore system files.\nHeal 100 Health.", Resources.Load<Sprite>("NoImage"), 1, 100));
+        cardList.Add(new Card(99, "Threat 49", "Universal", "Utility", 3, 100, "Sample.", Resources.Load<Sprite>("NoImage"), 0, 0));
         
     }
 }

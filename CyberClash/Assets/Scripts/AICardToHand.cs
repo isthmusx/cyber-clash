@@ -150,14 +150,23 @@ public class AICardToHand : MonoBehaviour
                 break;
         }
 
-        if(this.tag == "Clone")
-        {  
-
-            thisCard[0] = AI.staticEnemyDeck[numberOfCardsInDeck - 1];
-            numberOfCardsInDeck -= 1;
-            AI.deckSize -= 1;
+        if (this.tag == "Clone")
+        {
+            if (numberOfCardsInDeck > 0)
+            {
+                thisCard[0] = AI.staticEnemyDeck[numberOfCardsInDeck - 1];
+                numberOfCardsInDeck -= 1;
+                AI.deckSize -= 1;
+            }
+            else
+            {
+                // Handle the case when numberOfCardsInDeck is already 0
+                // This might involve some additional logic or error handling
+                Debug.Log("No more cards in the deck.");
+            }
             this.tag = "Untagged";
         }
+
 
         if (thisCardCanBeDestroyed == true)
         {

@@ -31,10 +31,20 @@ public class TurnSystem : MonoBehaviour
     public static int maxEnemyDF;
     public static int currentEnemyDF;
     public TMP_Text enemyDFText;
+    public Image playerDF;
+    public Image enemyDF;
+    public float fillEnemyDF;
+    public float fillPlayerDF;
+    public float fillEnemyMaxDF;
+    public float fillPlayerMaxDF;
 
     public static bool protectStart;
+    public Button endTurnBTN;
 
-
+    public int roundCount;
+    public int turnCount;
+    public TMP_Text roundText;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +56,9 @@ public class TurnSystem : MonoBehaviour
         protectStart = true;
         StartCoroutine(Protection());
 
+        roundCount = 1;
+        
+
     }
 
 
@@ -53,17 +66,29 @@ public class TurnSystem : MonoBehaviour
     void Update()
     {
         timerText.text = "" + seconds;
+        roundText.text = "Round " + turnCount;
+        
+        fillPlayerDF = currentDF;
+        fillEnemyDF = currentEnemyDF;
+
+        fillPlayerMaxDF = maxDF;
+        fillEnemyMaxDF = maxEnemyDF;
+
+        playerDF.fillAmount = fillPlayerDF / fillPlayerMaxDF;
+        enemyDF.fillAmount = fillEnemyDF / fillEnemyMaxDF;
         
         if(isYourTurn == true)
         {
             turnText.text = "Your Turn";
+            endTurnBTN.interactable = true;
         } else
         {
-            turnText.text = "Opponent's Turn";
+            turnText.text = "Enemy Turn";
+            endTurnBTN.interactable = false;
         }
 
 
-        DFText.text = currentDF + "/" + maxDF;
+        DFText.text = currentDF + "/" + maxDF + " DF";
 
         if (isYourTurn == true && seconds >0 && timerStart == true)
         {
@@ -91,7 +116,7 @@ public class TurnSystem : MonoBehaviour
             timerStart = true;
             seconds = 20;
         }
-        enemyDFText.text = currentEnemyDF + "/" + maxEnemyDF;
+        enemyDFText.text = currentEnemyDF + "/" + maxEnemyDF + " DF";
 
         if (AI.AIEndPhase == true)
         {
@@ -114,7 +139,12 @@ public class TurnSystem : MonoBehaviour
         currentEnemyDF = maxEnemyDF;
 
         AI.draw = false;
+
+        turnCount++;
+
         StartCoroutine(EnemyTimer());
+        
+        Debug.Log("Round: " + roundCount);
         
     }
     public void EndYourOpponentTurn()
@@ -130,7 +160,12 @@ public class TurnSystem : MonoBehaviour
         currentDF = maxDF;
 
         startTurn = true;
+
+        turnCount++;
+
         StartCoroutine(Timer());
+        
+        Debug.Log("Round: " + roundCount);
     }
 
     public void StartGame()
@@ -151,6 +186,8 @@ public class TurnSystem : MonoBehaviour
 
             startTurn = false;
 
+            turnCount = 1;
+
         }
 
         if (random == 1)
@@ -164,12 +201,14 @@ public class TurnSystem : MonoBehaviour
 
             maxEnemyDF = 1;
             currentEnemyDF = 1;
+
+            turnCount = 1;
         }
     }
 
     IEnumerator Timer()
     {
-        if (isYourTurn == true && seconds >0)
+        if (isYourTurn == true && seconds > 0)
         {
             yield return new WaitForSeconds(1);
             

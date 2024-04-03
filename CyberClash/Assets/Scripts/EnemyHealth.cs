@@ -8,7 +8,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public static float maxHP;
     public static float staticHP;
-    //public static float hp;
+    public static float shield;
     public Image Health;
     public TMP_Text HPText;
 
@@ -18,7 +18,7 @@ public class EnemyHealth : MonoBehaviour
     {
         maxHP = 1000;
         staticHP = 1000;
-
+        shield = 0;
     }
 
     // Update is called once per frame
@@ -31,7 +31,7 @@ public class EnemyHealth : MonoBehaviour
             staticHP = maxHP;
         }
 
-        HPText.text = staticHP.ToString();
+        HPText.text = staticHP + "/" + maxHP + " HP";
 
     }
 }

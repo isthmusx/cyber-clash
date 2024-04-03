@@ -8,8 +8,9 @@ public class PlayerHealth : MonoBehaviour
 {
     public static float maxHP;
     public static float staticHP;
-    public static float hp;
+    public static float shield;
     public Image Health;
+    public Image Shield;
     public TMP_Text HPText;
 
 
@@ -18,20 +19,22 @@ public class PlayerHealth : MonoBehaviour
     {
         maxHP = 1000;
         staticHP = 1000;
-
+        shield = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        hp = staticHP;
-        Health.fillAmount = hp / maxHP;
-
-        if (hp >= maxHP)
+        
+        if (staticHP >= maxHP)
         {
-            hp = maxHP;
+            staticHP = maxHP;
         }
 
-        HPText.text = hp.ToString();
+        Health.fillAmount = staticHP / maxHP;
+        Shield.fillAmount = (staticHP + shield) / maxHP;
+        HPText.text = staticHP + "/" + maxHP + " HP";
+        //Debug.Log("HP: " + staticHP);
+        //Debug.Log("Shield: " + shield);
     }
 }
