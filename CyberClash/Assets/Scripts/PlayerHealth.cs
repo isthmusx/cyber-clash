@@ -25,16 +25,31 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        int defaultMaxHP = 1000;
+
+        // Ensure staticHP doesn't exceed maxHP
         if (staticHP >= maxHP)
         {
             staticHP = maxHP;
         }
+    
+        // Calculate totalHP including shield
+        float totalHP = staticHP + shield;
 
+        // Adjust maxHP based on totalHP
+        if (totalHP > maxHP)
+        {
+            maxHP = totalHP;
+        }
+        else if (totalHP <= defaultMaxHP)
+        {
+            maxHP = defaultMaxHP;
+        }
+    
+        // Update UI elements
         Health.fillAmount = staticHP / maxHP;
         Shield.fillAmount = (staticHP + shield) / maxHP;
         HPText.text = staticHP + "/" + maxHP + " HP";
-        //Debug.Log("HP: " + staticHP);
-        //Debug.Log("Shield: " + shield);
     }
+
 }

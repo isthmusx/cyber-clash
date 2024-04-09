@@ -39,9 +39,51 @@ public class Shop : MonoBehaviour
 
     public void BuyPack()
     {
-        if (coins >= 100)
+        if (coins >= 500)
         {
-            coins -= 100;
+            coins -= 500;
+            SceneManager.LoadScene("OpenPack");
+            PlayerPrefs.SetInt("coins", coins);
+        }
+        else
+        {
+            modal.SetActive(true);
+        }
+        
+    }
+    public void BuyOffensePack()
+    {
+        if (coins >= 800)
+        {
+            coins -= 800;
+            SceneManager.LoadScene("OpenPack");
+            PlayerPrefs.SetInt("coins", coins);
+        }
+        else
+        {
+            modal.SetActive(true);
+        }
+        
+    }
+    public void BuyDefensePack()
+    {
+        if (coins >= 800)
+        {
+            coins -= 800;
+            SceneManager.LoadScene("OpenPack");
+            PlayerPrefs.SetInt("coins", coins);
+        }
+        else
+        {
+            modal.SetActive(true);
+        }
+        
+    }
+    public void BuyUtilityPack()
+    {
+        if (coins >= 800)
+        {
+            coins -= 800;
             SceneManager.LoadScene("OpenPack");
             PlayerPrefs.SetInt("coins", coins);
         }

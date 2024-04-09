@@ -3260,6 +3260,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   thisId: 0
   id: 0
   cardName: 
@@ -3823,7 +3824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2753558762276249037, guid: 65a23aba9a4dd2045856522526473a3a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 192.54999
+      value: 192.55
       objectReference: {fileID: 0}
     - target: {fileID: 2753558762276249037, guid: 65a23aba9a4dd2045856522526473a3a, type: 3}
       propertyPath: m_SizeDelta.y
@@ -4869,6 +4870,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4879,6 +4881,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4889,6 +4892,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4899,6 +4903,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4909,6 +4914,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4919,6 +4925,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4929,6 +4936,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4939,6 +4947,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4949,6 +4958,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4959,6 +4969,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4969,6 +4980,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4979,6 +4991,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4989,6 +5002,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4999,6 +5013,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5009,6 +5024,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5019,6 +5035,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5029,6 +5046,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5039,6 +5057,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5049,6 +5068,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5059,6 +5079,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   container:
   - id: 0
     cardName: 
@@ -5070,6 +5091,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   cardsInHand:
   - id: 0
     cardName: 
@@ -5081,6 +5103,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5091,6 +5114,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5101,6 +5125,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5111,6 +5136,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5121,6 +5147,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5131,6 +5158,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5141,6 +5169,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5151,6 +5180,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5161,6 +5191,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5171,6 +5202,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5181,6 +5213,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5191,6 +5224,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5201,6 +5235,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5211,6 +5246,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5221,6 +5257,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5231,6 +5268,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5241,6 +5279,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5251,6 +5290,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5261,6 +5301,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5271,6 +5312,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5281,6 +5323,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5291,6 +5334,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5301,6 +5345,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5311,6 +5356,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5321,6 +5367,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5331,6 +5378,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5341,6 +5389,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5351,6 +5400,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5361,6 +5411,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5371,6 +5422,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5381,6 +5433,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5391,6 +5444,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5401,6 +5455,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5411,6 +5466,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5421,6 +5477,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5431,6 +5488,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5441,6 +5499,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5451,6 +5510,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5461,6 +5521,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5471,6 +5532,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5481,6 +5543,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5491,6 +5554,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5501,6 +5565,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5511,6 +5576,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5521,6 +5587,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5531,6 +5598,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5541,6 +5609,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5551,6 +5620,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5561,6 +5631,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5571,6 +5642,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   cardsInZone:
   - id: 0
     cardName: 
@@ -5582,6 +5654,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5592,6 +5665,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5602,6 +5676,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5612,6 +5687,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5622,6 +5698,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5632,6 +5709,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5642,6 +5720,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5652,6 +5731,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5662,6 +5742,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5672,6 +5753,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5682,6 +5764,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5692,6 +5775,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5702,6 +5786,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5712,6 +5797,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5722,6 +5808,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5732,6 +5819,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5742,6 +5830,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5752,6 +5841,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5762,6 +5852,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5772,6 +5863,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5782,6 +5874,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5792,6 +5885,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5802,6 +5896,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5812,6 +5907,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5822,6 +5918,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5832,6 +5929,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5842,6 +5940,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5852,6 +5951,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5862,6 +5962,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5872,6 +5973,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5882,6 +5984,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5892,6 +5995,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5902,6 +6006,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5912,6 +6017,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5922,6 +6028,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5932,6 +6039,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5942,6 +6050,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5952,6 +6061,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5962,6 +6072,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5972,6 +6083,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5982,6 +6094,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5992,6 +6105,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6002,6 +6116,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6012,6 +6127,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6022,6 +6138,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6032,6 +6149,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6042,6 +6160,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6052,6 +6171,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6062,6 +6182,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6072,6 +6193,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   Hand: {fileID: 0}
   Zone: {fileID: 0}
   Graveyard: {fileID: 0}
@@ -6295,6 +6417,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1313559015}
+  - {fileID: 1604998823}
   - {fileID: 1777694639}
   - {fileID: 2064351829}
   m_Father: {fileID: 8415815}
@@ -6807,6 +6930,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6817,6 +6941,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6827,6 +6952,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6837,6 +6963,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6847,6 +6974,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6857,6 +6985,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6867,6 +6996,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6877,6 +7007,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6887,6 +7018,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6897,6 +7029,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6907,6 +7040,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6917,6 +7051,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6927,6 +7062,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6937,6 +7073,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6947,6 +7084,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6957,6 +7095,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6967,6 +7106,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6977,6 +7117,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6987,6 +7128,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6997,6 +7139,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7007,6 +7150,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7017,6 +7161,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7027,6 +7172,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7037,6 +7183,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7047,6 +7194,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7057,6 +7205,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7067,6 +7216,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7077,6 +7227,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7087,6 +7238,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7097,6 +7249,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7107,6 +7260,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7117,6 +7271,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7127,6 +7282,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7137,6 +7293,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7147,6 +7304,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7157,6 +7315,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7167,6 +7326,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7177,6 +7337,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7187,6 +7348,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7197,6 +7359,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7207,6 +7370,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7217,6 +7381,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7227,6 +7392,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7237,6 +7403,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7247,6 +7414,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7257,6 +7425,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7267,6 +7436,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7277,6 +7447,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7287,6 +7458,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7297,6 +7469,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7307,6 +7480,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7317,6 +7491,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7327,6 +7502,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7337,6 +7513,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7347,6 +7524,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7357,6 +7535,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7367,6 +7546,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7377,6 +7557,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7387,6 +7568,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7397,6 +7579,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7407,6 +7590,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7417,6 +7601,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7427,6 +7612,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7437,6 +7623,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7447,6 +7634,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7457,6 +7645,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7467,6 +7656,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7477,6 +7667,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7487,6 +7678,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7497,6 +7689,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7507,6 +7700,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7517,6 +7711,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7527,6 +7722,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7537,6 +7733,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7547,6 +7744,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7557,6 +7755,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7567,6 +7766,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7577,6 +7777,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7587,6 +7788,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7597,6 +7799,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7607,6 +7810,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7617,6 +7821,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7627,6 +7832,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7637,6 +7843,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7647,6 +7854,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7657,6 +7865,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7667,6 +7876,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7677,6 +7887,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7687,6 +7898,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7697,6 +7909,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7707,6 +7920,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7717,6 +7931,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7727,6 +7942,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7737,6 +7953,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7747,6 +7964,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7757,6 +7975,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7767,6 +7986,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7777,6 +7997,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7787,6 +8008,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7797,6 +8019,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   howManyCards: 0
   cardBack: {fileID: 205865364}
   graveWindow: {fileID: 1373290763}
@@ -9035,6 +9258,143 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549460006}
   m_CullTransparentMesh: 1
+--- !u!1 &1604998818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1604998823}
+  - component: {fileID: 1604998822}
+  - component: {fileID: 1604998819}
+  - component: {fileID: 1604998821}
+  - component: {fileID: 1604998820}
+  m_Layer: 5
+  m_Name: Shield
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1604998819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604998818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.03137255, g: 0.7411765, b: 0.7411765, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 35144d445e157904584b832cea391e41, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1604998820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604998818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8976237509909671814, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
+          m_TargetAssemblyTypeName: ThisCard, Assembly-CSharp
+          m_MethodName: TargetEnemy
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8976237509909671814, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
+          m_TargetAssemblyTypeName: ThisCard, Assembly-CSharp
+          m_MethodName: UntargetEnemy
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1604998821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604998818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a38c518fcf51d5f46b304e63c2e2767d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: {fileID: 1777694641}
+  Shield: {fileID: 1604998819}
+  HPText: {fileID: 2064351830}
+--- !u!222 &1604998822
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604998818}
+  m_CullTransparentMesh: 1
+--- !u!224 &1604998823
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604998818}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1097080124}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 912.62134, y: 178.49995}
+  m_SizeDelta: {x: 184, y: 24}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1611815515
 GameObject:
   m_ObjectHideFlags: 0
@@ -9467,7 +9827,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 20, y: 52.6}
+  m_AnchoredPosition: {x: 21.5, y: 52.6}
   m_SizeDelta: {x: 184, y: 17}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1674399212
@@ -9638,6 +9998,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9648,6 +10009,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9658,6 +10020,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9668,6 +10031,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9678,6 +10042,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9688,6 +10053,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9698,6 +10064,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9708,6 +10075,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9718,6 +10086,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9728,6 +10097,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9738,6 +10108,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9748,6 +10119,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9758,6 +10130,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9768,6 +10141,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9778,6 +10152,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9788,6 +10163,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9798,6 +10174,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9808,6 +10185,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9818,6 +10196,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -9828,6 +10207,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   container:
   - id: 0
     cardName: 
@@ -9839,6 +10219,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   x: 0
   cardInDeck1: {fileID: 1509865383}
   cardInDeck2: {fileID: 454483134}
@@ -10159,6 +10540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: {fileID: 1777694641}
+  Shield: {fileID: 1604998819}
   HPText: {fileID: 2064351830}
 --- !u!114 &1777694641
 MonoBehaviour:
@@ -11037,6 +11419,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   thisId: 0
   id: 0
   cardName: 
@@ -12946,6 +13329,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   thisId: 0
   id: 0
   cardName: 
@@ -13632,6 +14016,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   thisId: 0
   id: 0
   cardName: 

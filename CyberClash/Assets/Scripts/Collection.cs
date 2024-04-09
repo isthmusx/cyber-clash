@@ -279,6 +279,108 @@ public class Collection : MonoBehaviour
         
             print("card added");
         }
+        else if(packType == "SecurityOffense")
+        {
+            rand = Random.Range(0, 20);
+            PlayerPrefs.SetInt("x"+rand, (int)HowManyCards[rand]++);
+            card = CardDatabase.cardList[rand].cardName;
+            print(""+card);
+
+            for (int i = 0; i < 20; i++)
+            {
+                PlayerPrefs.SetInt("x"+i, (int)HowManyCards[i]);
+            }
+
+            o[oo] = rand;
+            oo++;
+        
+            print("card added");
+        }
+        else if(packType == "SecurityDefense")
+        {
+            rand = Random.Range(20, 40);
+            PlayerPrefs.SetInt("x"+rand, (int)HowManyCards[rand]++);
+            card = CardDatabase.cardList[rand].cardName;
+            print(""+card);
+
+            for (int i = 20; i < 40; i++)
+            {
+                PlayerPrefs.SetInt("x"+i, (int)HowManyCards[i]);
+            }
+
+            o[oo] = rand;
+            oo++;
+        
+            print("card added");
+        }
+        else if(packType == "SecurityUtility")
+        {
+            rand = Random.Range(40, 50);
+            PlayerPrefs.SetInt("x"+rand, (int)HowManyCards[rand]++);
+            card = CardDatabase.cardList[rand].cardName;
+            print(""+card);
+
+            for (int i = 40; i < 50; i++)
+            {
+                PlayerPrefs.SetInt("x"+i, (int)HowManyCards[i]);
+            }
+
+            o[oo] = rand;
+            oo++;
+        
+            print("card added");
+        }
+        else if(packType == "ThreatOffense")
+        {
+            rand = Random.Range(50, 70);
+            PlayerPrefs.SetInt("x"+rand, (int)HowManyCards[rand]++);
+            card = CardDatabase.cardList[rand].cardName;
+            print(""+card);
+
+            for (int i = 50; i < 70; i++)
+            {
+                PlayerPrefs.SetInt("x"+i, (int)HowManyCards[i]);
+            }
+
+            o[oo] = rand;
+            oo++;
+        
+            print("card added");
+        }
+        else if(packType == "ThreatDefense")
+        {
+            rand = Random.Range(70, 90);
+            PlayerPrefs.SetInt("x"+rand, (int)HowManyCards[rand]++);
+            card = CardDatabase.cardList[rand].cardName;
+            print(""+card);
+
+            for (int i = 70; i < 90; i++)
+            {
+                PlayerPrefs.SetInt("x"+i, (int)HowManyCards[i]);
+            }
+
+            o[oo] = rand;
+            oo++;
+        
+            print("card added");
+        }
+        else if(packType == "ThreatUtility")
+        {
+            rand = Random.Range(90, 100);
+            PlayerPrefs.SetInt("x"+rand, (int)HowManyCards[rand]++);
+            card = CardDatabase.cardList[rand].cardName;
+            print(""+card);
+
+            for (int i = 90; i < 100; i++)
+            {
+                PlayerPrefs.SetInt("x"+i, (int)HowManyCards[i]);
+            }
+
+            o[oo] = rand;
+            oo++;
+        
+            print("card added");
+        }
         
     }
 

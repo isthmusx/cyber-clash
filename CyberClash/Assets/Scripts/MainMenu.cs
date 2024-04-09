@@ -114,9 +114,33 @@ public class MainMenu : MonoBehaviour
     {
         Collection.packType = "Security";
     }
+    public void SecurityOffensePack()
+    {
+        Collection.packType = "SecurityOffense";
+    }
+    public void SecurityDefensePack()
+    {
+        Collection.packType = "SecurityDefense";
+    }
+    public void SecurityUtilityPack()
+    {
+        Collection.packType = "SecurityUtility";
+    }
     public void ThreatPack()
     {
         Collection.packType  = "Threat";
+    }
+    public void ThreatOffensePack()
+    {
+        Collection.packType  = "ThreatOffense";
+    }
+    public void ThreatDefensePack()
+    {
+        Collection.packType  = "ThreatDefense";
+    }
+    public void ThreatUtilityPack()
+    {
+        Collection.packType  = "ThreatUtility";
     }
 
 }

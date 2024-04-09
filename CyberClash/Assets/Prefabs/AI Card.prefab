@@ -31,7 +31,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2753558760863253371}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -107,7 +106,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2753558761030321541}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -242,7 +240,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2753558761030321541}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -384,7 +381,6 @@ RectTransform:
   - {fileID: 2753558761030321541}
   - {fileID: 4954034868282740757}
   m_Father: {fileID: 2753558762276249037}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -440,6 +436,7 @@ SortingGroup:
   m_SortingLayerID: -837119121
   m_SortingLayer: 1
   m_SortingOrder: 100
+  m_SortAtRoot: 0
 --- !u!1 &2753558760885250118
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,7 +470,6 @@ RectTransform:
   m_Children:
   - {fileID: 2753558761187733822}
   m_Father: {fileID: 2753558760863253371}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -529,6 +525,7 @@ SortingGroup:
   m_SortingLayerID: -837119121
   m_SortingLayer: 1
   m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1 &2753558761030321540
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,7 +563,6 @@ RectTransform:
   - {fileID: 2753558760815023279}
   - {fileID: 2753558762042347183}
   m_Father: {fileID: 2753558760863253371}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -622,6 +618,7 @@ SortingGroup:
   m_SortingLayerID: -837119121
   m_SortingLayer: 1
   m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1 &2753558761187733821
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,7 +651,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2753558760885250119}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -710,6 +706,7 @@ SortingGroup:
   m_SortingLayerID: -837119121
   m_SortingLayer: 1
   m_SortingOrder: 1
+  m_SortAtRoot: 0
 --- !u!1 &2753558761371123331
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,7 +738,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2753558761030321541}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -876,7 +872,6 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2753558761030321541}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1011,7 +1006,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2753558761030321541}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1156,7 +1150,6 @@ RectTransform:
   - {fileID: 2753558760863253371}
   - {fileID: 3539813904320557012}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1212,6 +1205,7 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!114 &-8642320169592487651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1235,6 +1229,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   cardsInHand:
   - id: 0
     cardName: 
@@ -1246,6 +1241,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1256,6 +1252,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1266,6 +1263,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1276,6 +1274,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1286,6 +1285,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1296,6 +1296,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1306,6 +1307,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1316,6 +1318,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1326,6 +1329,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1336,6 +1340,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1346,6 +1351,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1356,6 +1362,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1366,6 +1373,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1376,6 +1384,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1386,6 +1395,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1396,6 +1406,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1406,6 +1417,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1416,6 +1428,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1426,6 +1439,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1436,6 +1450,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1446,6 +1461,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1456,6 +1472,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1466,6 +1483,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1476,6 +1494,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1486,6 +1505,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1496,6 +1516,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1506,6 +1527,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1516,6 +1538,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1526,6 +1549,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1536,6 +1560,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1546,6 +1571,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1556,6 +1582,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1566,6 +1593,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1576,6 +1604,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1586,6 +1615,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1596,6 +1626,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1606,6 +1637,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1616,6 +1648,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1626,6 +1659,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -1636,6 +1670,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   thisId: 0
   id: 0
   cardName: 
@@ -1659,6 +1694,8 @@ MonoBehaviour:
   returnXcards: 0
   healXpower: 0
   canHeal: 0
+  shieldXpower: 0
+  canShield: 0
   Hand: {fileID: 0}
   z: 0
   It: {fileID: 2753558762276249036}
@@ -1667,7 +1704,6 @@ MonoBehaviour:
   graveyard: {fileID: 0}
   Target: {fileID: 0}
   Enemy: {fileID: 0}
-  thisCardCanBeDestroyed: 0
   cardBack: {fileID: 5033316469185896719}
   AIZone: {fileID: 0}
   canAttack: 0
@@ -1739,11 +1775,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2753558762276249036}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b066a16cb06613143920833e9321966f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  verticalOffset: 50
 --- !u!114 &5878327983023199022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1819,7 +1856,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2753558762276249037}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1895,7 +1931,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8930395259563215409}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2030,7 +2065,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2753558762276249037}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2106,7 +2140,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2753558760863253371}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2182,7 +2215,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2753558762276249037}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2258,12 +2290,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2753558760863253371}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.98, y: 106.3}
-  m_SizeDelta: {x: 108.56, y: 45.29}
+  m_AnchoredPosition: {x: 17.933, y: 106.3}
+  m_SizeDelta: {x: 128.94, y: 45.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7736927100704661345
 CanvasRenderer:
@@ -2320,7 +2351,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15.15
+  m_fontSize: 22
   m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2356,7 +2387,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.738098, y: 0, z: 9.738022, w: 0}
+  m_margin: {x: 0.1079712, y: 0, z: -0.33033752, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2395,7 +2426,6 @@ RectTransform:
   m_Children:
   - {fileID: 7888982307943099191}
   m_Father: {fileID: 2753558760863253371}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2451,3 +2481,4 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
+  m_SortAtRoot: 0

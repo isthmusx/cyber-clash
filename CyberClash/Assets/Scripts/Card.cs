@@ -21,12 +21,15 @@ public class Card
 
     public int healXpower;
 
+    public int shieldXpower;
+    
+
     public Card()
     {
 
     }
 
-    public Card(int Id, string CardName, string CardFaction, string CardType, int CardCost, int CardPower, string CardDescription, Sprite CardImage, int ReturnXcards, int HealXpower)
+    public Card(int Id, string CardName, string CardFaction, string CardType, int CardCost, int CardPower, string CardDescription, Sprite CardImage, int ReturnXcards, int HealXpower, int ShieldXpower)
     {
         id = Id;
         cardName = CardName;
@@ -38,6 +41,7 @@ public class Card
         cardImage = CardImage;
         returnXcards = ReturnXcards;
         healXpower = HealXpower;
+        shieldXpower = ShieldXpower;
     }
 
 }

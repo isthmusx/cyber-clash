@@ -11,6 +11,7 @@ public class AI : MonoBehaviour
     public static List<Card> staticEnemyDeck = new List<Card>();
     public List<Card> cardsInHand = new List<Card>();
     public List<Card> cardsInZone = new List<Card>();
+    
 
 
     public GameObject Hand;
@@ -49,6 +50,7 @@ public class AI : MonoBehaviour
     public AICardToHand aiCardToHand;
 
     public int summonID;
+    public static bool summoned;
 
     public int howManyCards;
 
@@ -56,6 +58,7 @@ public class AI : MonoBehaviour
     public static bool AIEndPhase;
 
     public static int whichEnemy;
+
     void Awake()
     {
         //Shuffle();
@@ -63,18 +66,19 @@ public class AI : MonoBehaviour
 
     void Start()
     {
-
+        
         StartCoroutine(WaitFiveSeconds());
-
         
         Hand = GameObject.Find("Enemy Hand");
         Zone = GameObject.Find("Enemy Zone");
         Graveyard = GameObject.Find("Enemy Graveyard");
+        
 
         x = 0;
         deckSize = 20;
 
         draw = true;
+        summoned = false;
 
         /*for(int i = 0; i < deckSize; i++)
         {
@@ -125,6 +129,8 @@ public class AI : MonoBehaviour
 
     void Update()
     {
+        
+        
         staticEnemyDeck = deck;
 
         if(deckSize < 30)
@@ -151,7 +157,7 @@ public class AI : MonoBehaviour
         }
         
 
-        if (TurnSystem.startTurn == false && draw == false && deckSize > 0)
+        if (TurnSystem.startTurn == false && draw == false && deckSize != 0)
         {
             StartCoroutine(Draw(1));
             draw = true;
@@ -175,7 +181,7 @@ public class AI : MonoBehaviour
                 j++;
             }
 
-            for (int i = 0; i<deckSize; i++)
+            for (int i = 0; i < 50; i++)
             {
                 if(i >= howManyCards)
                 {
@@ -185,9 +191,11 @@ public class AI : MonoBehaviour
             j = 0;
         }
 
+        // Algorithm Start
+        
         if (TurnSystem.isYourTurn == false)
         {
-            for (int i = 0; i < deckSize; i++)
+            for (int i = 0; i < 50; i++)
             {
                 if (cardsInHand[i].id != 0)
                 {
@@ -200,13 +208,13 @@ public class AI : MonoBehaviour
         }
         else
         {
-            for (int i = 0; i < deckSize; i++)
+            for (int i = 0; i < 50; i++)
             {
                 AICanSummon[i] = false;
             }
         }
         
-        // Algorithm Start
+        
 
         if (TurnSystem.isYourTurn == false)
         {
@@ -229,50 +237,12 @@ public class AI : MonoBehaviour
         
         if (summonPhase == true)
         {
-            summonID = 0;
-            summonThisId = 0;
-
-            int index = 0;
-            for (int i = 0; i < deckSize; i++)
-            {
-                if (AICanSummon[i] == true)
-                {
-                    cardsID[index] = cardsInHand[i].id;
-                    index++;
-                }
-            }
-
-            for (int i = 0; i < deckSize; i++)
-            {
-                if (cardsID[i] != 0)
-                {
-                    if (cardsID[i] > summonID)
-                    {
-                        summonID = cardsID[i];
-                    }
-                }
-            }
-
-            summonThisId = summonID;
-
-            foreach (Transform child in Hand.transform)
-            {
-                if (child.GetComponent<AICardToHand>().id == summonThisId && CardDatabase.cardList[summonThisId].cardCost <= TurnSystem.currentEnemyDF)
-                {
-                    child.transform.SetParent(Zone.transform);
-                    TurnSystem.currentEnemyDF -= CardDatabase.cardList[summonThisId].cardCost;
-
-                }
-
-            }
-
-            summonPhase = false;
-            attackPhase = true;
-
+            StartCoroutine(MinimaxDecision());
+            
+            
         }
         
-
-        if(0 == 0)
+        if(true)
         {
             int k = 0;
             int howManyCards2 = 0;
@@ -286,9 +256,10 @@ public class AI : MonoBehaviour
             {
                 canAttack[k] = child.GetComponent<AICardToHand>().canAttack;
                 k++;
+
             }
 
-            for (int i = 0; i<deckSize; i++)
+            for (int i = 0; i < 50; i++)
             {
                 if(i >= howManyCards2)
                 {
@@ -296,9 +267,10 @@ public class AI : MonoBehaviour
                 }
             }
             k = 0;
+
         }
 
-        if(0 == 0)
+        if(true)
         {
             int l = 0;
             int howManyCards3 = 0;
@@ -311,26 +283,31 @@ public class AI : MonoBehaviour
             foreach (Transform child in Zone.transform)
             {
                 cardsInZone[l] = child.GetComponent<AICardToHand>().thisCard[0];
+                AICardToHand.thisCardCanBeDestroyed = false;
                 l++;
             }
 
-            for (int i = 0; i<deckSize; i++)
+            for (int i = 0; i< 50; i++)
             {
                 if(i >= howManyCards3)
                 {
                     cardsInHand[i] = CardDatabase.cardList[0];
+                    
                 }
             }
             l = 0;
         }
-        
 
+        
         if( attackPhase == true && endPhase == false)
         {
-            for(int i = 0; i < deckSize; i++)
+            
+            for(int i = 0; i < 50; i++)
             {
-                if (canAttack[i])
+                if (canAttack[i] == true)
                 {
+                    Debug.Log("Attacking with card: " + cardsInZone[i].cardName + ", Power: " + cardsInZone[i].cardPower + ", Heal: " + cardsInZone[i].healXpower + ", Shield: " + cardsInZone[i].shieldXpower);
+                    
                     if (PlayerHealth.shield > 0)
                     {
                         if (PlayerHealth.shield >= cardsInZone[i].cardPower)
@@ -347,24 +324,39 @@ public class AI : MonoBehaviour
                     else
                     {
                         PlayerHealth.staticHP -= cardsInZone[i].cardPower;
-                        Debug.Log(PlayerHealth.staticHP -= cardsInZone[i].cardPower);
                     }
+                    
+
+                    if (cardsInZone[i].healXpower > 0)
+                    {
+                        EnemyHealth.staticHP += cardsInZone[i].healXpower;
+                    }
+            
+                    if (cardsInZone[i].shieldXpower > 0)
+                    {
+                        EnemyHealth.shield += cardsInZone[i].shieldXpower;
+                    }
+                    AICardToHand.thisCardCanBeDestroyed = true;
                 }
                 
             }
+            
             endPhase = true;
             
         }
-
+        
         if(endPhase == true)
         {
+            
             AIEndPhase = true;
+            
         }
 
     }
     // Algorithm End
 
-
+    
+    
     public void Shuffle()
     {
         for (int i = 0; i<deckSize; i++)
@@ -420,6 +412,110 @@ public class AI : MonoBehaviour
         summonPhase = true;
     }
 
-    
-    
+    IEnumerator MinimaxDecision()
+    {
+        // Initialize variables to store the best move and its value
+        Card bestMove = null;
+        int bestValue = int.MinValue;
+
+        
+        // Iterate over each card in the AI's hand
+        foreach (Transform child in Hand.transform)
+        {
+            AICardToHand cardToHand = child.GetComponent<AICardToHand>();
+
+            
+            Card card = new Card();
+            card.id = cardToHand.id;  // Assuming id is a field in AICardToHand representing the card's ID
+            card.cardPower = cardToHand.cardPower; // Assuming attack is a field in AICardToHand representing the card's attack value
+            card.healXpower = cardToHand.healXpower;
+            card.shieldXpower = cardToHand.shieldXpower;
+            // Simulate summoning the current card and evaluate the resulting game state
+            int value = EvaluateSummon(card);
+
+            // Check if the current card's value is better than the current best move
+            if (value > bestValue)
+            {
+                // Update the best move and its value
+                bestMove = card;
+                bestValue = value;
+            }
+        }
+
+        // Execute the best move (summon the chosen card)
+        yield return StartCoroutine(SimulateSummon(bestMove));
+    }
+
+    int EvaluateSummon(Card card)
+    {
+        // Evaluate the desirability of summoning the given card
+        // This can be based on various factors such as card attributes, game state, etc.
+        // For simplicity, let's assume a basic evaluation function that returns the card's attack value
+        
+        int score = card.cardPower * 2;
+        
+        if (EnemyHealth.staticHP <= (EnemyHealth.maxHP * 0.75))
+        {
+            if (card.healXpower > 0 && EnemyHealth.staticHP < EnemyHealth.maxHP)
+            {
+                score += card.healXpower * 3; 
+            }
+            else if (card.shieldXpower > 0)
+            {
+                score += card.shieldXpower * 2; 
+            }
+        }
+        else
+        {
+            if (card.cardPower > 0)
+            {
+                score += card.cardPower * 2; 
+            }
+        }
+        return score;
+        
+    }
+
+    IEnumerator SimulateSummon(Card card)
+    {
+        summonThisId = 0;
+
+        if (Hand.transform.childCount <= 0 && TurnSystem.turnCount != 1)
+        {
+            EnemyHealth.staticHP = 0;
+        }
+        else
+        {
+            int index = 0;
+            for (int i = 0; i < deckSize; i++)
+            {
+                if (AICanSummon[i] == true)
+                {
+                    cardsID[index] = cardsInHand[i].id;
+                    index++;
+                }
+            }
+
+            summonThisId = card.id;
+
+            foreach (Transform child in Hand.transform)
+            {
+                if (child.GetComponent<AICardToHand>().id == summonThisId && CardDatabase.cardList[summonThisId].cardCost <= TurnSystem.currentEnemyDF)
+                {
+                    child.transform.SetParent(Zone.transform);
+                    TurnSystem.currentEnemyDF -= CardDatabase.cardList[summonThisId].cardCost;
+                    summoned = true;
+                }
+            }
+        }
+
+        summonPhase = false;
+        attackPhase = true;
+
+        yield return null;
+    }
+
+
 }
+    
+

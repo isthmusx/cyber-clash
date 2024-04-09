@@ -261,6 +261,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   thisId: 0
   id: 0
   cardName: 
@@ -271,7 +272,7 @@ MonoBehaviour:
   cardDescription: 
   nameText: {fileID: 1056859086}
   costText: {fileID: 898889304}
-  descriptionText: {fileID: 1960045431}
+  descriptionText: {fileID: 1349997337}
   thisSprite: {fileID: 0}
   thatImage: {fileID: 1261993097}
   typeOutline: {fileID: 740225518}
@@ -534,7 +535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8268770794389114664, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8976237509909671814, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
       propertyPath: m_Enabled
@@ -556,6 +557,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1162837768}
   m_SourcePrefab: {fileID: 100100000, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
+--- !u!114 &203979636 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3004260423957869993, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
+  m_PrefabInstance: {fileID: 186317610}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &452693707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -666,7 +678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8268770794389114664, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8976237509909671814, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
       propertyPath: m_Enabled
@@ -782,17 +794,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &789798158 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3004260424314609636, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
-  m_PrefabInstance: {fileID: 1629132569}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &815589295
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,6 +903,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   thisId: 0
   id: 0
   cardName: 
@@ -912,7 +914,7 @@ MonoBehaviour:
   cardDescription: 
   nameText: {fileID: 2123495205}
   costText: {fileID: 918810224}
-  descriptionText: {fileID: 954160972}
+  descriptionText: {fileID: 1369296615}
   thisSprite: {fileID: 0}
   thatImage: {fileID: 1489700689}
   typeOutline: {fileID: 782411}
@@ -1014,17 +1016,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &954160972 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3004260424314609636, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
-  m_PrefabInstance: {fileID: 1023797304}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &968605113
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,17 +1084,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &995626685 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3004260424314609636, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
-  m_PrefabInstance: {fileID: 186317610}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1023797304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1214,7 +1194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8268770794389114664, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8976237509909671814, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
       propertyPath: m_Enabled
@@ -1449,6 +1429,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   thisId: 0
   id: 0
   cardName: 
@@ -1459,7 +1440,7 @@ MonoBehaviour:
   cardDescription: 
   nameText: {fileID: 1108260276}
   costText: {fileID: 31112520}
-  descriptionText: {fileID: 1890019631}
+  descriptionText: {fileID: 2031546676}
   thisSprite: {fileID: 0}
   thatImage: {fileID: 689747632}
   typeOutline: {fileID: 1248627461}
@@ -1583,6 +1564,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1349997337 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3004260423957869993, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
+  m_PrefabInstance: {fileID: 452693707}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1369296615 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3004260423957869993, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
+  m_PrefabInstance: {fileID: 1023797304}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1408725580 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3004260424745306681, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
@@ -1905,6 +1908,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1606772158 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3004260423957869993, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
+  m_PrefabInstance: {fileID: 1629132569}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1628273030 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3004260424875144271, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
@@ -2026,7 +2040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8268770794389114664, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8976237509909671814, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
       propertyPath: m_Enabled
@@ -2259,7 +2273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8268770794389114664, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8976237509909671814, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
       propertyPath: m_Enabled
@@ -2368,17 +2382,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1890019631 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3004260424314609636, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
-  m_PrefabInstance: {fileID: 1721257259}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1907809447 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3004260424017708639, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
@@ -2423,6 +2426,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   thisId: 0
   id: 0
   cardName: 
@@ -2433,7 +2437,7 @@ MonoBehaviour:
   cardDescription: 
   nameText: {fileID: 1628273030}
   costText: {fileID: 1989699436}
-  descriptionText: {fileID: 789798158}
+  descriptionText: {fileID: 1606772158}
   thisSprite: {fileID: 0}
   thatImage: {fileID: 1408725580}
   typeOutline: {fileID: 1823108994}
@@ -2441,17 +2445,6 @@ MonoBehaviour:
   cardFrame: {fileID: 1823108994}
   beGray: 0
   cardBack: {fileID: 617455277}
---- !u!114 &1960045431 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3004260424314609636, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
-  m_PrefabInstance: {fileID: 452693707}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1961138942 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3004260424017708639, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
@@ -2467,6 +2460,17 @@ MonoBehaviour:
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3004260423305638109, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
   m_PrefabInstance: {fileID: 1629132569}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2031546676 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3004260423957869993, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
+  m_PrefabInstance: {fileID: 1721257259}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -2507,6 +2511,7 @@ MonoBehaviour:
     cardImage: {fileID: 0}
     returnXcards: 0
     healXpower: 0
+    shieldXpower: 0
   thisId: 0
   id: 0
   cardName: 
@@ -2517,7 +2522,7 @@ MonoBehaviour:
   cardDescription: 
   nameText: {fileID: 1254528172}
   costText: {fileID: 182466199}
-  descriptionText: {fileID: 995626685}
+  descriptionText: {fileID: 203979636}
   thisSprite: {fileID: 0}
   thatImage: {fileID: 148356170}
   typeOutline: {fileID: 2098585315}

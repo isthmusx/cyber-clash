@@ -883,7 +883,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 800
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
   m_sharedMaterial: {fileID: 7131499472571203957, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
@@ -1262,8 +1262,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00015604, y: 98.2}
-  m_SizeDelta: {x: 132.68, y: 31.3702}
+  m_AnchoredPosition: {x: -2.0965, y: 98.2}
+  m_SizeDelta: {x: 124.81, y: 31.3702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &148065540
 MonoBehaviour:
@@ -1285,7 +1285,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Random
+  m_text: Offensive Cards
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
   m_sharedMaterial: {fileID: -4952945661901169907, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
@@ -1608,8 +1608,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00015604, y: 98.2}
-  m_SizeDelta: {x: 132.68, y: 31.3702}
+  m_AnchoredPosition: {x: -2.0766, y: 98.2}
+  m_SizeDelta: {x: 124.847, y: 31.3702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &184601927
 MonoBehaviour:
@@ -1631,7 +1631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Random
+  m_text: Utility Cards
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
   m_sharedMaterial: {fileID: -4952945661901169907, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
@@ -3381,8 +3381,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00015604, y: 98.2}
-  m_SizeDelta: {x: 132.68, y: 31.3702}
+  m_AnchoredPosition: {x: -2.2906, y: 98.2}
+  m_SizeDelta: {x: 124.419, y: 31.3702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &385936651
 MonoBehaviour:
@@ -3404,7 +3404,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Random
+  m_text: Offensive Cards
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
   m_sharedMaterial: {fileID: -4952945661901169907, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
@@ -4757,7 +4757,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -9, y: -5}
   m_SizeDelta: {x: 20, y: -17}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &567056457
@@ -4904,7 +4904,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 800
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
   m_sharedMaterial: {fileID: 7131499472571203957, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
@@ -5266,8 +5266,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00015604, y: 98.2}
-  m_SizeDelta: {x: 132.68, y: 31.3702}
+  m_AnchoredPosition: {x: -2.0765, y: 98.2}
+  m_SizeDelta: {x: 124.85, y: 31.3702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &630727481
 MonoBehaviour:
@@ -5289,7 +5289,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Random
+  m_text: Defensive Cards
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
   m_sharedMaterial: {fileID: -4952945661901169907, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
@@ -5806,7 +5806,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1511036905}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: BuyPack
+        m_MethodName: BuyDefensePack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5818,7 +5818,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1325011215}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: SecurityPack
+        m_MethodName: SecurityDefensePack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6838,7 +6838,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1511036905}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: BuyPack
+        m_MethodName: BuyOffensePack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6850,7 +6850,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1325011215}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: SecurityPack
+        m_MethodName: SecurityOffensePack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7942,7 +7942,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1511036905}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: BuyPack
+        m_MethodName: BuyUtilityPack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7954,7 +7954,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1325011215}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: SecurityPack
+        m_MethodName: SecurityUtilityPack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8552,8 +8552,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00015604, y: 98.2}
-  m_SizeDelta: {x: 132.68, y: 31.3702}
+  m_AnchoredPosition: {x: -2.0965, y: 98.2}
+  m_SizeDelta: {x: 124.81, y: 31.3702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1232412903
 MonoBehaviour:
@@ -8575,7 +8575,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Random
+  m_text: Utility Cards
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
   m_sharedMaterial: {fileID: -4952945661901169907, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
@@ -8787,7 +8787,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 800
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
   m_sharedMaterial: {fileID: 7131499472571203957, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
@@ -9186,8 +9186,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00015604, y: 98.2}
-  m_SizeDelta: {x: 132.68, y: 31.3702}
+  m_AnchoredPosition: {x: -2.312, y: 98.2}
+  m_SizeDelta: {x: 124.38, y: 31.3702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1283001849
 MonoBehaviour:
@@ -9209,7 +9209,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Random
+  m_text: Defensive Cards
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
   m_sharedMaterial: {fileID: -4952945661901169907, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
@@ -10095,7 +10095,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 800
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
   m_sharedMaterial: {fileID: 7131499472571203957, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
@@ -10390,7 +10390,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1511036905}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: BuyPack
+        m_MethodName: BuyOffensePack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10402,7 +10402,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1325011215}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: ThreatPack
+        m_MethodName: ThreatOffensePack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10618,8 +10618,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00015604, y: 98.2}
-  m_SizeDelta: {x: 132.68, y: 31.3702}
+  m_AnchoredPosition: {x: -1.9954, y: 98.2}
+  m_SizeDelta: {x: 125.01, y: 31.3702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1464594036
 MonoBehaviour:
@@ -10641,7 +10641,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Random
+  m_text: Random Cards
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
   m_sharedMaterial: {fileID: -4952945661901169907, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
@@ -11140,7 +11140,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1511036905}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: BuyPack
+        m_MethodName: BuyUtilityPack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11152,7 +11152,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1325011215}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: ThreatPack
+        m_MethodName: ThreatUtilityPack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11257,7 +11257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 800
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
   m_sharedMaterial: {fileID: 7131499472571203957, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
@@ -11825,7 +11825,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 800
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
   m_sharedMaterial: {fileID: 7131499472571203957, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
@@ -12013,8 +12013,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00015604, y: 98.2}
-  m_SizeDelta: {x: 132.68, y: 31.3702}
+  m_AnchoredPosition: {x: -1.8811, y: 98.2}
+  m_SizeDelta: {x: 125.238, y: 31.3702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1660598053
 MonoBehaviour:
@@ -12036,7 +12036,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Random
+  m_text: Random Cards
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
   m_sharedMaterial: {fileID: -4952945661901169907, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
@@ -12287,7 +12287,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1511036905}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: BuyPack
+        m_MethodName: BuyDefensePack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12299,7 +12299,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1325011215}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: ThreatPack
+        m_MethodName: ThreatDefensePack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12748,7 +12748,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 500
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
   m_sharedMaterial: {fileID: 7131499472571203957, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
@@ -13266,7 +13266,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 500
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
   m_sharedMaterial: {fileID: 7131499472571203957, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}

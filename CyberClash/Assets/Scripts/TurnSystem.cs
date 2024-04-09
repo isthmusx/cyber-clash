@@ -41,8 +41,8 @@ public class TurnSystem : MonoBehaviour
     public static bool protectStart;
     public Button endTurnBTN;
 
-    public int roundCount;
-    public int turnCount;
+    public static int roundCount;
+    public static int turnCount;
     public TMP_Text roundText;
     
     // Start is called before the first frame update
@@ -144,7 +144,6 @@ public class TurnSystem : MonoBehaviour
 
         StartCoroutine(EnemyTimer());
         
-        Debug.Log("Round: " + roundCount);
         
     }
     public void EndYourOpponentTurn()
@@ -165,7 +164,6 @@ public class TurnSystem : MonoBehaviour
 
         StartCoroutine(Timer());
         
-        Debug.Log("Round: " + roundCount);
     }
 
     public void StartGame()

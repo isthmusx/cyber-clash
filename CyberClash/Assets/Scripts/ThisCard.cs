@@ -129,6 +129,8 @@ public class ThisCard : MonoBehaviour
         returnXcards = thisCard[0].returnXcards;
 
         healXpower = thisCard[0].healXpower;
+        
+        shieldXpower = thisCard[0].shieldXpower;
 
         nameText.text = "" + cardName;
         factionText.text = "" + cardFaction;
@@ -274,7 +276,25 @@ public class ThisCard : MonoBehaviour
             {
                 if (Target == Enemy)
                 {
-                    EnemyHealth.staticHP -= cardPower;
+                    if (EnemyHealth.shield > 0)
+                    {
+                        if (EnemyHealth.shield >= cardPower)
+                        {
+                            EnemyHealth.shield -= cardPower;
+                        }
+                        else
+                        {
+                            float excessDamage = cardPower - EnemyHealth.shield;
+                            EnemyHealth.shield = 0;
+                            EnemyHealth.staticHP -= excessDamage;
+                        }
+                    }
+                    else
+                    {
+                        EnemyHealth.staticHP -= cardPower;
+                    }
+                    
+                    Destroy();
                     targeting = false;
                     cantAttack = true;
                     

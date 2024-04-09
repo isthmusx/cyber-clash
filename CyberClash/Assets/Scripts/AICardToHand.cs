@@ -44,6 +44,9 @@ public class AICardToHand : MonoBehaviour
 
     public int healXpower;
     public bool canHeal;
+    
+    public int shieldXpower;
+    public bool canShield;
 
     public GameObject Hand;
 
@@ -57,7 +60,7 @@ public class AICardToHand : MonoBehaviour
     public GameObject Target;
     public GameObject Enemy;
 
-    public bool thisCardCanBeDestroyed;
+    public static bool thisCardCanBeDestroyed;
 
     public GameObject cardBack;
     public GameObject AIZone;
@@ -67,6 +70,8 @@ public class AICardToHand : MonoBehaviour
     
     public bool isSummoned;
     public GameObject battleZone;
+    
+
 
     void Start()
     {
@@ -92,7 +97,6 @@ public class AICardToHand : MonoBehaviour
     {
         if(z == 0)
         {
-            Hand = GameObject.Find("Enemy Hand");
 
             It.transform.SetParent(Hand.transform);
             It.transform.localScale = new Vector3(0.4f, 0.44f, 0.4f);
@@ -115,6 +119,8 @@ public class AICardToHand : MonoBehaviour
         returnXcards = thisCard[0].returnXcards;
 
         healXpower = thisCard[0].healXpower;
+        
+        shieldXpower = thisCard[0].shieldXpower;
 
         nameText.text = "" + cardName;
         factionText.text = "" + cardFaction;
@@ -157,22 +163,23 @@ public class AICardToHand : MonoBehaviour
                 thisCard[0] = AI.staticEnemyDeck[numberOfCardsInDeck - 1];
                 numberOfCardsInDeck -= 1;
                 AI.deckSize -= 1;
+                
             }
             else
             {
-                // Handle the case when numberOfCardsInDeck is already 0
-                // This might involve some additional logic or error handling
                 Debug.Log("No more cards in the deck.");
             }
             this.tag = "Untagged";
         }
 
-
-        if (thisCardCanBeDestroyed == true)
+        if (thisCardCanBeDestroyed == true && this.transform.parent == AIZone.transform && AI.summoned == true)
         {
             this.transform.SetParent(graveyard.transform);
+            this.transform.position = new Vector3(transform.position.x + 4000, transform.position.y, transform.position.z);
 
         }
+
+
 
         if (this.transform.parent == Hand.transform)
         {
@@ -186,11 +193,11 @@ public class AICardToHand : MonoBehaviour
         if (TurnSystem.isYourTurn == false && summoningSickness == false)
         {
             canAttack = true;
-            thisCardCanBeDestroyed = true;
         }
         else
         {
             canAttack = false;
+            
         }
 
         if (TurnSystem.isYourTurn == true && this.transform.parent == AIZone.transform)
@@ -198,11 +205,13 @@ public class AICardToHand : MonoBehaviour
             summoningSickness = false;
             
         }
+        
 
         if (this.transform.parent == battleZone.transform && isSummoned == false)
         {
-            
-            if (drawXcards > 0)
+            // instant effects
+
+            /*if (drawXcards > 0)
             {
                 DrawX = drawXcards;
                 isSummoned = true;
@@ -213,6 +222,12 @@ public class AICardToHand : MonoBehaviour
                 EnemyHealth.staticHP += healXpower;
                 isSummoned = true;
             }
+            
+            if (shieldXpower > 0)
+            {
+                EnemyHealth.shield += shieldXpower;
+                isSummoned = true;
+            }*/
 
             isSummoned = true;
 
@@ -223,7 +238,7 @@ public class AICardToHand : MonoBehaviour
                 isSummoned = true;
             }*/
         }
-        
+
     }
 
     public void BeingTarget()
@@ -240,5 +255,6 @@ public class AICardToHand : MonoBehaviour
         yield return new WaitForSeconds(1);
         //thisCardCanBeDestroyed = true;
     }
+
 
 }
