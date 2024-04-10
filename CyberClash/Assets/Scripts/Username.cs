@@ -34,6 +34,7 @@ public class UsernameManager : MonoBehaviour
     public void Update()
     {
         userText.text = PlayerPrefs.GetString("PlayerName");
+
     }
 
     public void SaveUsername()

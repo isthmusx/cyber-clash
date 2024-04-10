@@ -294,7 +294,6 @@ public class ThisCard : MonoBehaviour
                         EnemyHealth.staticHP -= cardPower;
                     }
                     
-                    Destroy();
                     targeting = false;
                     cantAttack = true;
                     
@@ -365,7 +364,7 @@ public class ThisCard : MonoBehaviour
             summoned = false;
             beInGraveyard = true;*/
 
-            for (int i = 0; i < PlayerDeck.deckSize; i++)
+            for (int i = 0; i < 100; i++)
             {
                 if (Graveyard.GetComponent<GraveyardScript>().graveyard[i].id == 0)
                 {

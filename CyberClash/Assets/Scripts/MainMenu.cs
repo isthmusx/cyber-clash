@@ -74,6 +74,22 @@ public class MainMenu : MonoBehaviour
     {
         mode = "story1";
     }
+    public static void Story2()
+    {
+        mode = "story2";
+    }
+    public static void Story3()
+    {
+        mode = "story3";
+    }
+    public static void Story4()
+    {
+        mode = "story4";
+    }
+    public static void Story5()
+    {
+        mode = "story5";
+    }
     public static void SelectSecurity()
     {
         deckSelected = "Security";
@@ -97,6 +113,39 @@ public class MainMenu : MonoBehaviour
         {
             SceneManager.LoadSceneAsync(13);
         }
+        else if (mode == "story2" && EndGame.isWin == true)
+        {
+            SceneManager.LoadSceneAsync(19);
+        }
+        else if (mode == "story2" && EndGame.isWin == false)
+        {
+            SceneManager.LoadSceneAsync(20);
+        }
+        else if (mode == "story3" && EndGame.isWin == true)
+        {
+            SceneManager.LoadSceneAsync(21);
+        }
+        else if (mode == "story3" && EndGame.isWin == false)
+        {
+            SceneManager.LoadSceneAsync(22);
+        }
+        else if (mode == "story4" && EndGame.isWin == true)
+        {
+            SceneManager.LoadSceneAsync(23);
+        }
+        else if (mode == "story4" && EndGame.isWin == false)
+        {
+            SceneManager.LoadSceneAsync(24);
+        }
+        else if (mode == "story5" && EndGame.isWin == true)
+        {
+            SceneManager.LoadSceneAsync(25);
+        }
+        else if (mode == "story5" && EndGame.isWin == false)
+        {
+            SceneManager.LoadSceneAsync(26);
+        }
+        
 
     }
 
