@@ -32,7 +32,8 @@ public class PlayerDeck : MonoBehaviour
     public EndGame EndGame;
 
     public GameObject surrenderWindow;
-
+    public GameObject battleZone;
+    public GameObject zoneBlocker;
 
     void Awake()
     {
@@ -41,6 +42,9 @@ public class PlayerDeck : MonoBehaviour
 
     void Start()
     {
+        battleZone = GameObject.Find("Player Zone");
+
+        
         x = 0;
         deckSize = 20;
 
@@ -137,6 +141,15 @@ public class PlayerDeck : MonoBehaviour
             
             
             TurnSystem.startTurn = false;
+        }
+        
+        if (battleZone.transform.childCount <= 5)
+        {
+            zoneBlocker.SetActive(false);
+        }
+        else
+        {
+            zoneBlocker.SetActive(true);
         }
 
     }

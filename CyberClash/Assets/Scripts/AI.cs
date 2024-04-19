@@ -59,6 +59,8 @@ public class AI : MonoBehaviour
 
     public static int whichEnemy;
 
+    public GameObject graveyard;
+
     void Awake()
     {
         //Shuffle();
@@ -66,7 +68,7 @@ public class AI : MonoBehaviour
 
     void Start()
     {
-        
+        graveyard = GameObject.Find("Enemy Graveyard");
         StartCoroutine(WaitFiveSeconds());
         
         Hand = GameObject.Find("Enemy Hand");
@@ -238,8 +240,7 @@ public class AI : MonoBehaviour
         if (summonPhase == true)
         {
             StartCoroutine(MinimaxDecision());
-            
-            
+
         }
         
         if(true)
@@ -283,7 +284,6 @@ public class AI : MonoBehaviour
             foreach (Transform child in Zone.transform)
             {
                 cardsInZone[l] = child.GetComponent<AICardToHand>().thisCard[0];
-                AICardToHand.thisCardCanBeDestroyed = false;
                 l++;
             }
 
@@ -308,35 +308,13 @@ public class AI : MonoBehaviour
                 {
                     Debug.Log("Attacking with card: " + cardsInZone[i].cardName + ", Power: " + cardsInZone[i].cardPower + ", Heal: " + cardsInZone[i].healXpower + ", Shield: " + cardsInZone[i].shieldXpower);
                     
-                    if (PlayerHealth.shield > 0)
-                    {
-                        if (PlayerHealth.shield >= cardsInZone[i].cardPower)
-                        {
-                            PlayerHealth.shield -= cardsInZone[i].cardPower;
-                        }
-                        else
-                        {
-                            float excessDamage = cardsInZone[i].cardPower - PlayerHealth.shield;
-                            PlayerHealth.shield = 0;
-                            PlayerHealth.staticHP -= excessDamage;
-                        }
-                    }
-                    else
-                    {
-                        PlayerHealth.staticHP -= cardsInZone[i].cardPower;
-                    }
+                    Attack(i);
+                    Heal(i);
+                    Shield(i);
+                    
                     
 
-                    if (cardsInZone[i].healXpower > 0)
-                    {
-                        EnemyHealth.staticHP += cardsInZone[i].healXpower;
-                    }
-            
-                    if (cardsInZone[i].shieldXpower > 0)
-                    {
-                        EnemyHealth.shield += cardsInZone[i].shieldXpower;
-                    }
-                    AICardToHand.thisCardCanBeDestroyed = true;
+                    
                 }
                 
             }
@@ -495,16 +473,25 @@ public class AI : MonoBehaviour
                     index++;
                 }
             }
-
+            
             summonThisId = card.id;
 
-            foreach (Transform child in Hand.transform)
+            if (TurnSystem.turnCount == 1) 
             {
-                if (child.GetComponent<AICardToHand>().id == summonThisId && CardDatabase.cardList[summonThisId].cardCost <= TurnSystem.currentEnemyDF)
+                yield return new WaitForSeconds(6f); 
+            }
+            
+            if (Zone.transform.childCount <= 5)
+            {
+                foreach (Transform child in Hand.transform)
                 {
-                    child.transform.SetParent(Zone.transform);
-                    TurnSystem.currentEnemyDF -= CardDatabase.cardList[summonThisId].cardCost;
-                    summoned = true;
+                    if (child.GetComponent<AICardToHand>().id == summonThisId && CardDatabase.cardList[summonThisId].cardCost <= TurnSystem.currentEnemyDF)
+                    {
+                        child.transform.SetParent(Zone.transform);
+                        TurnSystem.currentEnemyDF -= CardDatabase.cardList[summonThisId].cardCost;
+                        summoned = true;
+                    }
+
                 }
             }
         }
@@ -515,6 +502,47 @@ public class AI : MonoBehaviour
         yield return null;
     }
 
+    private void Attack(int i)
+    {
+        if (PlayerHealth.shield > 0)
+        {
+            if (PlayerHealth.shield >= cardsInZone[i].cardPower)
+            {
+                PlayerHealth.shield -= cardsInZone[i].cardPower;
+            }
+            else
+            {
+                float excessDamage = cardsInZone[i].cardPower - PlayerHealth.shield;
+                PlayerHealth.shield = 0;
+                PlayerHealth.staticHP -= excessDamage;
+            }
+        }
+        else
+        {
+            PlayerHealth.staticHP -= cardsInZone[i].cardPower;
+        }
+        
+        Transform cardTransform = Zone.transform.GetChild(i);
+        cardTransform.SetParent(graveyard.transform);
+        cardTransform.position = new Vector3(cardTransform.position.x + 4000, cardTransform.position.y, cardTransform.position.z);
+        
+    }
+
+    private void Heal(int i)
+    {
+        if (cardsInZone[i].healXpower > 0)
+        {
+            EnemyHealth.staticHP += cardsInZone[i].healXpower;
+        }
+    }
+
+    private void Shield(int i)
+    {
+        if (cardsInZone[i].shieldXpower > 0)
+        {
+            EnemyHealth.shield += cardsInZone[i].shieldXpower;
+        }
+    }
 
 }
     

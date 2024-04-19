@@ -284,6 +284,7 @@ RectTransform:
   - {fileID: 1626385569}
   - {fileID: 1982070086}
   - {fileID: 205082139}
+  - {fileID: 359352915}
   - {fileID: 1144176759}
   - {fileID: 852454286}
   - {fileID: 237280984}
@@ -591,8 +592,6 @@ MonoBehaviour:
   fillEnemyMaxDF: 0
   fillPlayerMaxDF: 0
   endTurnBTN: {fileID: 952739392}
-  roundCount: 0
-  turnCount: 0
   roundText: {fileID: 1832243815}
 --- !u!1 &145719532
 GameObject:
@@ -1956,6 +1955,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357180710}
+  m_CullTransparentMesh: 1
+--- !u!1 &359352914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 359352915}
+  - component: {fileID: 359352917}
+  - component: {fileID: 359352916}
+  m_Layer: 5
+  m_Name: Zone Blocker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &359352915
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359352914}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8415815}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.09998922, y: -88.43118}
+  m_SizeDelta: {x: 549, y: 180.6176}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &359352916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359352914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &359352917
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359352914}
   m_CullTransparentMesh: 1
 --- !u!1 &368377983
 GameObject:
@@ -6217,6 +6291,7 @@ MonoBehaviour:
   summonID: 0
   howManyCards: 0
   canAttack: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graveyard: {fileID: 0}
 --- !u!1001 &1008855908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10232,6 +10307,8 @@ MonoBehaviour:
   Hand: {fileID: 1611815515}
   EndGame: {fileID: 1889389520}
   surrenderWindow: {fileID: 1932323009}
+  battleZone: {fileID: 0}
+  zoneBlocker: {fileID: 359352914}
 --- !u!114 &1706369770 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3004260423957869993, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
@@ -13066,7 +13143,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: -50
+  m_Spacing: -100
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0

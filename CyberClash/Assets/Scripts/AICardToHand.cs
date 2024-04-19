@@ -178,8 +178,7 @@ public class AICardToHand : MonoBehaviour
             this.transform.position = new Vector3(transform.position.x + 4000, transform.position.y, transform.position.z);
 
         }
-
-
+        
 
         if (this.transform.parent == Hand.transform)
         {

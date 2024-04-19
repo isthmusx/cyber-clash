@@ -106,6 +106,9 @@ public class ThisCard : MonoBehaviour
         EnemyZone = GameObject.Find("Enemy Zone");
 
         Graveyard = GameObject.Find("Player Graveyard");
+        
+        battleZone = GameObject.Find("Player Zone");
+
     }
 
     // Update is called once per frame
@@ -173,7 +176,7 @@ public class ThisCard : MonoBehaviour
             cardBack = false;
             this.tag = "Untagged";
         }
-
+        Debug.Log(battleZone.transform.childCount);
 
         if (TurnSystem.currentDF >= cardCost && summoned == false && beInGraveyard == false && TurnSystem.isYourTurn == true && TurnSystem.protectStart == false)
         {
@@ -193,9 +196,9 @@ public class ThisCard : MonoBehaviour
             gameObject.GetComponent<Draggable>().enabled = false;
         }
 
-        battleZone = GameObject.Find("Player Zone");
 
-        if (summoned == false && this.transform.parent == battleZone.transform)
+
+        if (summoned == false && this.transform.parent == battleZone.transform  )
         {
             Summon();
         }
@@ -266,6 +269,7 @@ public class ThisCard : MonoBehaviour
     {
         TurnSystem.currentDF -= cardCost;
         summoned = true;
+        
     }
 
     public void Attack()
