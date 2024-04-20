@@ -41,7 +41,7 @@ public class DeckCreator : MonoBehaviour
             sum += cardWithThisId[i];
         }
 
-        if (sum == 20)
+        if (sum == 30)
         {
             for (int i = 0; i < numberOfCardsInDatabase; i++)
             {
@@ -75,7 +75,7 @@ public class DeckCreator : MonoBehaviour
             
         }
         
-        if (sum == 20)
+        if (sum == 30)
         {
             for (int i = 0; i < numberOfCardsInDatabase; i++)
             {
@@ -211,7 +211,7 @@ public class DeckCreator : MonoBehaviour
         {
             totalCards += cardWithThisId[i];
         }
-        return totalCards < 20;
+        return totalCards < 30;
     }
 
 }

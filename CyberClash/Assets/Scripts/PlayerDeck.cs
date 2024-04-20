@@ -46,7 +46,7 @@ public class PlayerDeck : MonoBehaviour
 
         
         x = 0;
-        deckSize = 20;
+        deckSize = 30;
 
         //for (int i = 0; i < deckSize; i++)
         //{
@@ -115,7 +115,7 @@ public class PlayerDeck : MonoBehaviour
 
 
 
-        if (deckSize < 15)
+        if (deckSize < 20)
         {
             cardInDeck1.SetActive(false);
         }
@@ -191,7 +191,7 @@ public class PlayerDeck : MonoBehaviour
 
     }
 
-    IEnumerator Draw(int x)
+    public IEnumerator Draw(int x)
     {
         for (int i = 0; i<x; i++)
         {

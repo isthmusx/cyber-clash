@@ -128,7 +128,7 @@ public class GraveyardScript : MonoBehaviour
             objectsInGraveyard[controller - 4].GetComponent<ThisCard>().summoned = false;
             objectsInGraveyard[controller - 4].GetComponent<ThisCard>().useReturn = false;
             objectsInGraveyard[controller - 4].GetComponent<ThisCard>().beInGraveyard = false;
-            objectsInGraveyard[controller - 4].transform.parent = hand.transform;
+            objectsInGraveyard[controller - 4].transform.SetParent(hand.transform); 
 
             card1.GetComponent<CardInCollection>().thisId = 0;
             
@@ -149,7 +149,7 @@ public class GraveyardScript : MonoBehaviour
             objectsInGraveyard[controller - 3].GetComponent<ThisCard>().summoned = false;
             objectsInGraveyard[controller - 3].GetComponent<ThisCard>().useReturn = false;
             objectsInGraveyard[controller - 3].GetComponent<ThisCard>().beInGraveyard = false;
-            objectsInGraveyard[controller - 3].transform.parent = hand.transform;
+            objectsInGraveyard[controller - 3].transform.SetParent(hand.transform); 
 
             card2.GetComponent<CardInCollection>().thisId = 0;
             
@@ -170,7 +170,7 @@ public class GraveyardScript : MonoBehaviour
             objectsInGraveyard[controller - 2].GetComponent<ThisCard>().summoned = false;
             objectsInGraveyard[controller - 2].GetComponent<ThisCard>().useReturn = false;
             objectsInGraveyard[controller - 2].GetComponent<ThisCard>().beInGraveyard = false;
-            objectsInGraveyard[controller - 2].transform.parent = hand.transform;
+            objectsInGraveyard[controller - 2].transform.SetParent(hand.transform); 
 
             card3.GetComponent<CardInCollection>().thisId = 0;
             
@@ -191,7 +191,7 @@ public class GraveyardScript : MonoBehaviour
             objectsInGraveyard[controller - 1].GetComponent<ThisCard>().summoned = false;
             objectsInGraveyard[controller - 1].GetComponent<ThisCard>().useReturn = false;
             objectsInGraveyard[controller - 1].GetComponent<ThisCard>().beInGraveyard = false;
-            objectsInGraveyard[controller - 1].transform.parent = hand.transform;
+            objectsInGraveyard[controller - 1].transform.SetParent(hand.transform); 
 
             card4.GetComponent<CardInCollection>().thisId = 0;
             

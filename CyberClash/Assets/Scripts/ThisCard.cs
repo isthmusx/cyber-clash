@@ -75,8 +75,12 @@ public class ThisCard : MonoBehaviour
     public int shieldXpower;
     public bool canShield;
 
+    public int drawXcards;
+    
     public GameObject EnemyZone;
     public GameObject AICardToHand;
+
+    public PlayerDeck playerDeck;
     
 
     // Start is called before the first frame update
@@ -104,11 +108,8 @@ public class ThisCard : MonoBehaviour
         canShield = true;
 
         EnemyZone = GameObject.Find("Enemy Zone");
-
         Graveyard = GameObject.Find("Player Graveyard");
-        
-        battleZone = GameObject.Find("Player Zone");
-
+        playerDeck = FindObjectOfType<PlayerDeck>();
     }
 
     // Update is called once per frame
@@ -134,6 +135,8 @@ public class ThisCard : MonoBehaviour
         healXpower = thisCard[0].healXpower;
         
         shieldXpower = thisCard[0].shieldXpower;
+        
+        drawXcards = thisCard[0].drawXcards;
 
         nameText.text = "" + cardName;
         factionText.text = "" + cardFaction;
@@ -176,7 +179,7 @@ public class ThisCard : MonoBehaviour
             cardBack = false;
             this.tag = "Untagged";
         }
-        Debug.Log(battleZone.transform.childCount);
+
 
         if (TurnSystem.currentDF >= cardCost && summoned == false && beInGraveyard == false && TurnSystem.isYourTurn == true && TurnSystem.protectStart == false)
         {
@@ -196,9 +199,9 @@ public class ThisCard : MonoBehaviour
             gameObject.GetComponent<Draggable>().enabled = false;
         }
 
+        battleZone = GameObject.Find("Player Zone");
 
-
-        if (summoned == false && this.transform.parent == battleZone.transform  )
+        if (summoned == false && this.transform.parent == battleZone.transform)
         {
             Summon();
         }
@@ -250,11 +253,11 @@ public class ThisCard : MonoBehaviour
         }
 
         
-        if (returnXcards > 0 && summoned == true && useReturn == false && TurnSystem.isYourTurn == true)
+        /*if (returnXcards > 0 && summoned == true && useReturn == false && TurnSystem.isYourTurn == true)
         {
             Return(returnXcards);
             useReturn = true;
-        }
+        }*/
 
         if (TurnSystem.isYourTurn == false)
         {
@@ -269,7 +272,6 @@ public class ThisCard : MonoBehaviour
     {
         TurnSystem.currentDF -= cardCost;
         summoned = true;
-        
     }
 
     public void Attack()
@@ -313,6 +315,11 @@ public class ThisCard : MonoBehaviour
                         canShield = false;
                     }
 
+                    if (PlayerDeck.deckSize !=0 && summoned == true)
+                    {
+                        StartCoroutine(playerDeck.Draw(drawXcards));
+                    }
+                    
                     Destroy();
 
                 }

@@ -77,7 +77,7 @@ public class AI : MonoBehaviour
         
 
         x = 0;
-        deckSize = 20;
+        deckSize = 30;
 
         draw = true;
         summoned = false;
@@ -135,11 +135,11 @@ public class AI : MonoBehaviour
         
         staticEnemyDeck = deck;
 
-        if(deckSize < 30)
+        if(deckSize < 20)
         {
             cardInDeck1.SetActive(false);
         }
-        if (deckSize < 20)
+        if (deckSize < 10)
         {
             cardInDeck1.SetActive(false);
         }
@@ -311,10 +311,8 @@ public class AI : MonoBehaviour
                     Attack(i);
                     Heal(i);
                     Shield(i);
-                    
-                    
-
-                    
+                    DrawCard(i);
+                    AddMaxDF(i);
                 }
                 
             }
@@ -542,6 +540,19 @@ public class AI : MonoBehaviour
         {
             EnemyHealth.shield += cardsInZone[i].shieldXpower;
         }
+    }
+
+    private void DrawCard(int i)
+    {
+        if (cardsInZone[i].drawXcards > 0 && deckSize != 0)
+        {
+            StartCoroutine(Draw(cardsInZone[i].drawXcards));
+        }
+    }
+
+    private void AddMaxDF(int i)
+    {
+        TurnSystem.maxEnemyDF += i;
     }
 
 }

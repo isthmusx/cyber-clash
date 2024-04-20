@@ -3335,6 +3335,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   thisId: 0
   id: 0
   cardName: 
@@ -4945,6 +4946,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4956,6 +4958,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4967,6 +4970,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4978,6 +4982,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -4989,6 +4994,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5000,6 +5006,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5011,6 +5018,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5022,6 +5030,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5033,6 +5042,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5044,6 +5054,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5055,6 +5066,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5066,6 +5078,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5077,6 +5090,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5088,6 +5102,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5099,6 +5114,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5110,6 +5126,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5121,6 +5138,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5132,6 +5150,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5143,6 +5162,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5154,6 +5174,127 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
   container:
   - id: 0
     cardName: 
@@ -5166,6 +5307,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   cardsInHand:
   - id: 0
     cardName: 
@@ -5178,6 +5320,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5189,6 +5332,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5200,6 +5344,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5211,6 +5356,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5222,6 +5368,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5233,6 +5380,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5244,6 +5392,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5255,6 +5404,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5266,6 +5416,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5277,6 +5428,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5288,6 +5440,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5299,6 +5452,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5310,6 +5464,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5321,6 +5476,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5332,6 +5488,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5343,6 +5500,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5354,6 +5512,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5365,6 +5524,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5376,6 +5536,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5387,6 +5548,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5398,6 +5560,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5409,6 +5572,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5420,6 +5584,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5431,6 +5596,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5442,6 +5608,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5453,6 +5620,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5464,6 +5632,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5475,6 +5644,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5486,6 +5656,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5497,6 +5668,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5508,6 +5680,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5519,6 +5692,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5530,6 +5704,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5541,6 +5716,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5552,6 +5728,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5563,6 +5740,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5574,6 +5752,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5585,6 +5764,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5596,6 +5776,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5607,6 +5788,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5618,6 +5800,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5629,6 +5812,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5640,6 +5824,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5651,6 +5836,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5662,6 +5848,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5673,6 +5860,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5684,6 +5872,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5695,6 +5884,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5706,6 +5896,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5717,6 +5908,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   cardsInZone:
   - id: 0
     cardName: 
@@ -5729,6 +5921,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5740,6 +5933,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5751,6 +5945,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5762,6 +5957,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5773,6 +5969,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5784,6 +5981,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5795,6 +5993,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5806,6 +6005,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5817,6 +6017,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5828,6 +6029,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5839,6 +6041,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5850,6 +6053,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5861,6 +6065,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5872,6 +6077,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5883,6 +6089,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5894,6 +6101,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5905,6 +6113,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5916,6 +6125,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5927,6 +6137,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5938,6 +6149,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5949,6 +6161,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5960,6 +6173,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5971,6 +6185,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5982,6 +6197,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -5993,6 +6209,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6004,6 +6221,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6015,6 +6233,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6026,6 +6245,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6037,6 +6257,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6048,6 +6269,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6059,6 +6281,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6070,6 +6293,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6081,6 +6305,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6092,6 +6317,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6103,6 +6329,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6114,6 +6341,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6125,6 +6353,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6136,6 +6365,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6147,6 +6377,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6158,6 +6389,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6169,6 +6401,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6180,6 +6413,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6191,6 +6425,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6202,6 +6437,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6213,6 +6449,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6224,6 +6461,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6235,6 +6473,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6246,6 +6485,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6257,6 +6497,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -6268,6 +6509,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   Hand: {fileID: 0}
   Zone: {fileID: 0}
   Graveyard: {fileID: 0}
@@ -7006,6 +7248,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7017,6 +7260,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7028,6 +7272,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7039,6 +7284,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7050,6 +7296,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7061,6 +7308,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7072,6 +7320,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7083,6 +7332,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7094,6 +7344,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7105,6 +7356,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7116,6 +7368,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7127,6 +7380,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7138,6 +7392,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7149,6 +7404,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7160,6 +7416,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7171,6 +7428,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7182,6 +7440,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7193,6 +7452,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7204,6 +7464,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7215,6 +7476,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7226,6 +7488,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7237,6 +7500,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7248,6 +7512,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7259,6 +7524,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7270,6 +7536,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7281,6 +7548,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7292,6 +7560,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7303,6 +7572,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7314,6 +7584,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7325,6 +7596,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7336,6 +7608,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7347,6 +7620,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7358,6 +7632,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7369,6 +7644,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7380,6 +7656,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7391,6 +7668,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7402,6 +7680,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7413,6 +7692,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7424,6 +7704,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7435,6 +7716,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7446,6 +7728,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7457,6 +7740,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7468,6 +7752,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7479,6 +7764,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7490,6 +7776,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7501,6 +7788,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7512,6 +7800,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7523,6 +7812,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7534,6 +7824,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7545,6 +7836,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7556,6 +7848,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7567,6 +7860,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7578,6 +7872,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7589,6 +7884,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7600,6 +7896,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7611,6 +7908,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7622,6 +7920,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7633,6 +7932,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7644,6 +7944,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7655,6 +7956,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7666,6 +7968,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7677,6 +7980,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7688,6 +7992,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7699,6 +8004,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7710,6 +8016,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7721,6 +8028,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7732,6 +8040,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7743,6 +8052,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7754,6 +8064,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7765,6 +8076,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7776,6 +8088,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7787,6 +8100,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7798,6 +8112,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7809,6 +8124,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7820,6 +8136,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7831,6 +8148,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7842,6 +8160,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7853,6 +8172,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7864,6 +8184,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7875,6 +8196,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7886,6 +8208,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7897,6 +8220,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7908,6 +8232,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7919,6 +8244,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7930,6 +8256,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7941,6 +8268,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7952,6 +8280,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7963,6 +8292,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7974,6 +8304,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7985,6 +8316,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -7996,6 +8328,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -8007,6 +8340,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -8018,6 +8352,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -8029,6 +8364,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -8040,6 +8376,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -8051,6 +8388,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -8062,6 +8400,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -8073,6 +8412,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -8084,6 +8424,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -8095,6 +8436,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   howManyCards: 0
   cardBack: {fileID: 205865364}
   graveWindow: {fileID: 1373290763}
@@ -9957,7 +10299,7 @@ GameObject:
   - component: {fileID: 1702175285}
   - component: {fileID: 1702175286}
   m_Layer: 5
-  m_Name: Deck Panel
+  m_Name: Player Deck
   m_TagString: Deck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10074,6 +10416,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10085,6 +10428,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10096,6 +10440,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10107,6 +10452,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10118,6 +10464,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10129,6 +10476,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10140,6 +10488,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10151,6 +10500,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10162,6 +10512,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10173,6 +10524,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10184,6 +10536,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10195,6 +10548,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10206,6 +10560,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10217,6 +10572,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10228,6 +10584,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10239,6 +10596,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10250,6 +10608,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10261,6 +10620,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10272,6 +10632,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   - id: 0
     cardName: 
     cardFaction: 
@@ -10283,6 +10644,127 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
+  - id: 0
+    cardName: 
+    cardFaction: 
+    cardType: 
+    cardCost: 0
+    cardPower: 0
+    cardDescription: 
+    cardImage: {fileID: 0}
+    returnXcards: 0
+    healXpower: 0
+    shieldXpower: 0
+    drawXcards: 0
   container:
   - id: 0
     cardName: 
@@ -10295,6 +10777,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   x: 0
   cardInDeck1: {fileID: 1509865383}
   cardInDeck2: {fileID: 454483134}
@@ -11497,6 +11980,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   thisId: 0
   id: 0
   cardName: 
@@ -13407,6 +13891,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   thisId: 0
   id: 0
   cardName: 
@@ -14094,6 +14579,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   thisId: 0
   id: 0
   cardName: 

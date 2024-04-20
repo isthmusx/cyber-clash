@@ -333,6 +333,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   thisId: 0
   id: 0
   cardName: 
@@ -347,7 +348,7 @@ MonoBehaviour:
   costText: {fileID: 3004260423305638109}
   descriptionText: {fileID: 3004260423957869993}
   thisSprite: {fileID: 0}
-  thatImage: {fileID: 3004260424745306681}
+  thatImage: {fileID: 3004260424981795648}
   typeOutline: {fileID: 3004260424528601634}
   typeCost: {fileID: 3004260424017708639}
   cardFrame: {fileID: 0}
@@ -376,8 +377,10 @@ MonoBehaviour:
   canHeal: 0
   shieldXpower: 0
   canShield: 0
+  drawXcards: 0
   EnemyZone: {fileID: 0}
   AICardToHand: {fileID: 0}
+  playerDeck: {fileID: 0}
 --- !u!114 &9150636471604583500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -638,7 +641,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Card Description Goes Here Card Description Goes Here
+  m_text: Update software, for next 3 rounds gain 60 shield per round.\nGain 40 shield
+    per round in the next 3 rounds
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
   m_sharedMaterial: {fileID: -4952945661901169907, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
@@ -1273,94 +1277,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &3004260424745306684
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3004260424745306687}
-  - component: {fileID: 3004260424745306680}
-  - component: {fileID: 3004260424745306681}
-  - component: {fileID: 3004260424745306686}
-  m_Layer: 5
-  m_Name: Card Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &3004260424745306687
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3004260424745306684}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3004260424981795654}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0}
-  m_SizeDelta: {x: 170, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &3004260424745306680
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3004260424745306684}
-  m_CullTransparentMesh: 1
---- !u!114 &3004260424745306681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3004260424745306684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ac58b71c3bb7c4849bf345369f98773a, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!210 &3004260424745306686
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3004260424745306684}
-  m_Enabled: 1
-  m_SortingLayerID: -837119121
-  m_SortingLayer: 1
-  m_SortingOrder: 1
-  m_SortAtRoot: 0
 --- !u!1 &3004260424875144269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,11 +1577,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3004260424528601635}
-  - {fileID: 3004260424981795654}
   - {fileID: 3004260424017708637}
   - {fileID: 3004260424875144268}
   - {fileID: 3004260425087303300}
   - {fileID: 2438501980481731606}
+  - {fileID: 3004260424981795654}
   m_Father: {fileID: 3004260423656859340}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1753,14 +1669,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3004260424745306687}
+  m_Children: []
   m_Father: {fileID: 3004260424919840890}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.040009, y: -75.4}
-  m_SizeDelta: {x: 190, y: 120}
+  m_AnchoredPosition: {x: 0, y: -64.505}
+  m_SizeDelta: {x: 172.47, y: 110.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3004260424981795651
 CanvasRenderer:
@@ -1783,7 +1698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

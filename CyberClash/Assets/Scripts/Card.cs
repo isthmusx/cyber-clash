@@ -22,6 +22,8 @@ public class Card
     public int healXpower;
 
     public int shieldXpower;
+
+    public int drawXcards;
     
 
     public Card()
@@ -29,7 +31,7 @@ public class Card
 
     }
 
-    public Card(int Id, string CardName, string CardFaction, string CardType, int CardCost, int CardPower, string CardDescription, Sprite CardImage, int ReturnXcards, int HealXpower, int ShieldXpower)
+    public Card(int Id, string CardName, string CardFaction, string CardType, int CardCost, int CardPower, string CardDescription, Sprite CardImage, int ReturnXcards, int HealXpower, int ShieldXpower, int DrawXcards)
     {
         id = Id;
         cardName = CardName;
@@ -42,6 +44,7 @@ public class Card
         returnXcards = ReturnXcards;
         healXpower = HealXpower;
         shieldXpower = ShieldXpower;
+        drawXcards = DrawXcards;
     }
 
 }

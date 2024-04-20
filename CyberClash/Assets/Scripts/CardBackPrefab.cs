@@ -17,7 +17,7 @@ public class CardBackPrefab : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Deck = GameObject.Find("Deck Panel");
+        Deck = GameObject.Find("Player Deck");
         It.transform.SetParent(Deck.transform);
         It.transform.localScale = new Vector3(0.4f, 0.44f, 0.4f);
         It.transform.position = new Vector3(transform.position.x, transform.position.y, -48);

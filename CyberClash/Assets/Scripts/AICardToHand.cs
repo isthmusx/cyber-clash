@@ -37,7 +37,6 @@ public class AICardToHand : MonoBehaviour
     public Image cardFrame;
 
     public static int DrawX;
-    public int drawXcards;
     public int addXmaxDF;
 
     public int returnXcards;
@@ -47,6 +46,8 @@ public class AICardToHand : MonoBehaviour
     
     public int shieldXpower;
     public bool canShield;
+
+    public int drawXcards;
 
     public GameObject Hand;
 
@@ -121,6 +122,8 @@ public class AICardToHand : MonoBehaviour
         healXpower = thisCard[0].healXpower;
         
         shieldXpower = thisCard[0].shieldXpower;
+
+        drawXcards = thisCard[0].drawXcards;
 
         nameText.text = "" + cardName;
         factionText.text = "" + cardFaction;
