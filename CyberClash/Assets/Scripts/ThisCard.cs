@@ -82,6 +82,11 @@ public class ThisCard : MonoBehaviour
 
     public PlayerDeck playerDeck;
     
+    public AudioSource attackSFX;
+    public AudioSource shieldSFX;
+    public AudioSource healSFX;
+    public AudioSource dropSFX;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -110,6 +115,13 @@ public class ThisCard : MonoBehaviour
         EnemyZone = GameObject.Find("Enemy Zone");
         Graveyard = GameObject.Find("Player Graveyard");
         playerDeck = FindObjectOfType<PlayerDeck>();
+        
+        attackSFX = GameObject.Find("AttackSFX").GetComponent<AudioSource>();
+        healSFX = GameObject.Find("HealSFX").GetComponent<AudioSource>();
+        shieldSFX = GameObject.Find("ShieldSFX").GetComponent<AudioSource>();
+        dropSFX = GameObject.Find("DropSFX").GetComponent<AudioSource>();
+
+
     }
 
     // Update is called once per frame
@@ -272,6 +284,7 @@ public class ThisCard : MonoBehaviour
     {
         TurnSystem.currentDF -= cardCost;
         summoned = true;
+        dropSFX.Play();
     }
 
     public void Attack()
@@ -318,6 +331,19 @@ public class ThisCard : MonoBehaviour
                     if (PlayerDeck.deckSize !=0 && summoned == true)
                     {
                         StartCoroutine(playerDeck.Draw(drawXcards));
+                    }
+
+                    if (cardPower > shieldXpower && cardPower > healXpower)
+                    {
+                        attackSFX.Play();
+                    }
+                    else if (shieldXpower > cardPower && shieldXpower > healXpower)
+                    {
+                        shieldSFX.Play();
+                    }
+                    else if (healXpower > cardPower && healXpower > shieldXpower)
+                    {
+                        healSFX.Play();
                     }
                     
                     Destroy();

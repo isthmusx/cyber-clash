@@ -61,6 +61,11 @@ public class AI : MonoBehaviour
 
     public GameObject graveyard;
 
+    public AudioSource drawSFX;
+    public AudioSource dropSFX;
+    public AudioSource attackSFX;
+    public AudioSource healSFX;
+    public AudioSource shieldSFX;
     void Awake()
     {
         //Shuffle();
@@ -488,6 +493,7 @@ public class AI : MonoBehaviour
                         child.transform.SetParent(Zone.transform);
                         TurnSystem.currentEnemyDF -= CardDatabase.cardList[summonThisId].cardCost;
                         summoned = true;
+                        dropSFX.Play();
                     }
 
                 }
@@ -518,6 +524,18 @@ public class AI : MonoBehaviour
         else
         {
             PlayerHealth.staticHP -= cardsInZone[i].cardPower;
+        }
+        if (cardsInZone[i].cardPower > cardsInZone[i].shieldXpower && cardsInZone[i].cardPower > cardsInZone[i].healXpower)
+        {
+            attackSFX.Play();
+        }
+        else if (cardsInZone[i].shieldXpower > cardsInZone[i].cardPower && cardsInZone[i].shieldXpower > cardsInZone[i].healXpower)
+        {
+            shieldSFX.Play();
+        }
+        else if (cardsInZone[i].healXpower > cardsInZone[i].cardPower && cardsInZone[i].healXpower > cardsInZone[i].shieldXpower)
+        {
+            healSFX.Play();
         }
         
         Transform cardTransform = Zone.transform.GetChild(i);

@@ -5,11 +5,11 @@ using System.Threading;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class EndGame : MonoBehaviour
 {
-
     public TMP_Text victoryText;
     public TMP_Text victorySubText;
     public GameObject mainTextObject;
@@ -22,10 +22,16 @@ public class EndGame : MonoBehaviour
     public TMP_Text coinText;
     
     public static bool isWin;
+    public GameObject surrenderWindow;
 
     public GameObject coinsWon;
     public bool gotCoins;
     public bool gotExp;
+    
+    public AudioSource audioSource;
+    public AudioClip winMusic;
+    public AudioClip loseMusic;
+    public AudioClip surrenderMusic;
 
     //public MainMenu menu;
 
@@ -38,9 +44,10 @@ public class EndGame : MonoBehaviour
         continueBTN.SetActive(false);
         rewardsText.SetActive(false);
         rewards.SetActive(false);
-        
+
         gotCoins = false;
         gotExp = false;
+
     }
 
     void Update()
@@ -79,6 +86,7 @@ public class EndGame : MonoBehaviour
                 gotExp = true;
                 
             }
+            audioSource.PlayOneShot(winMusic);
 
         }
         
@@ -114,8 +122,48 @@ public class EndGame : MonoBehaviour
                 EXPController.WonEXP();
                 gotExp = true;
             }
+            audioSource.PlayOneShot(loseMusic);
 
         }
+        
+    }
+
+    public void Surrender()
+    {
+        StartCoroutine(EndGameNow());
+    }
+    IEnumerator EndGameNow()
+    {
+        audioSource.PlayOneShot(surrenderMusic);
+        mainTextObject.SetActive(true);
+        subTextObject.SetActive(true);
+        background.SetActive(true);
+        turnText.SetActive(false);
+        continueBTN.SetActive(true);
+        rewardsText.SetActive(true);
+        rewards.SetActive(true);
+        victoryText.text = "<color=#F21B3F>Defeat</color>";
+        if (MainMenu.faction == "Threat")
+        {
+            victorySubText.text = "You have failed to breach the system.";
+        }
+        else if (MainMenu.faction == "Security")
+        {
+            victorySubText.text = "You have failed to defend the system.";
+        }
+
+        if (gotCoins == false)
+        {
+            coinsWon.GetComponent<Shop>().coins += 200;
+            coinText.text = "200";
+            gotCoins = true;
+        }
+        
+            
+        surrenderWindow.SetActive(false);
+
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("Main Menu");
     }
     
 

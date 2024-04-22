@@ -381,6 +381,9 @@ MonoBehaviour:
   EnemyZone: {fileID: 0}
   AICardToHand: {fileID: 0}
   playerDeck: {fileID: 0}
+  audioSource: {fileID: 0}
+  shieldSFX: {fileID: 8300000, guid: f8e3a71211ea087459e64d03d395d6aa, type: 3}
+  healSFX: {fileID: 8300000, guid: 1e8c698f77603a7438ae75e19e09e7cd, type: 3}
 --- !u!114 &9150636471604583500
 MonoBehaviour:
   m_ObjectHideFlags: 0

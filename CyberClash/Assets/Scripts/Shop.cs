@@ -15,9 +15,11 @@ public class Shop : MonoBehaviour
 
     public bool playAI;
     
+    
     // Start is called before the first frame update
     void Start()
     {
+        
         coins = 100;
 
         coins = PlayerPrefs.GetInt("coins", 100);
@@ -36,7 +38,8 @@ public class Shop : MonoBehaviour
             PlayerPrefs.SetInt("coins", coins);
         }
     }
-
+    
+   
     public void BuyPack()
     {
         if (coins >= 500)

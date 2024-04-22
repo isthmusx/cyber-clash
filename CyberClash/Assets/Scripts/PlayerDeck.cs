@@ -31,9 +31,11 @@ public class PlayerDeck : MonoBehaviour
 
     public EndGame EndGame;
 
-    public GameObject surrenderWindow;
+    public static GameObject surrenderWindow;
     public GameObject battleZone;
     public GameObject zoneBlocker;
+    
+    public AudioSource drawSFX;
 
     void Awake()
     {
@@ -100,6 +102,8 @@ public class PlayerDeck : MonoBehaviour
         Shuffle();
 
         StartCoroutine(StartGame());
+        
+        drawSFX = GameObject.Find("DrawSFX").GetComponent<AudioSource>();
 
     }
 
@@ -172,7 +176,7 @@ public class PlayerDeck : MonoBehaviour
         {
             yield return new WaitForSeconds(1);
             Instantiate(CardToHand, transform.position, transform.rotation);
-
+            drawSFX.Play();
         }
     }
 
@@ -197,6 +201,7 @@ public class PlayerDeck : MonoBehaviour
         {
             yield return new WaitForSeconds(1);
             Instantiate(CardToHand, transform.position, transform.rotation);
+            drawSFX.Play();
         }
     }
 
@@ -209,42 +214,6 @@ public class PlayerDeck : MonoBehaviour
         surrenderWindow.SetActive(false);
     }
 
-    public void Surrender()
-    {
-        StartCoroutine(EndGameNow());
-    }
-
-    IEnumerator EndGameNow()
-    {
-        EndGame.mainTextObject.SetActive(true);
-        EndGame.subTextObject.SetActive(true);
-        EndGame.background.SetActive(true);
-        EndGame.turnText.SetActive(false);
-        EndGame.continueBTN.SetActive(true);
-        EndGame.rewardsText.SetActive(true);
-        EndGame.rewards.SetActive(true);
-        EndGame.victoryText.text = "<color=#F21B3F>Defeat</color>";
-        if (MainMenu.faction == "Threat")
-        {
-            EndGame.victorySubText.text = "You have failed to breach the system.";
-        }
-        else if (MainMenu.faction == "Security")
-        {
-            EndGame.victorySubText.text = "You have failed to defend the system.";
-        }
-
-        if (EndGame.gotCoins == false)
-        {
-            EndGame.coinsWon.GetComponent<Shop>().coins += 200;
-            EndGame.coinText.text = "200";
-            EndGame.gotCoins = true;
-        }
-        
-            
-        surrenderWindow.SetActive(false);
-
-        yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene("Main Menu");
-    }
+    
 
 }

@@ -378,7 +378,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 3658913326581857290, guid: ba2cd8495a29fca4aa8c59a2b036f111, type: 2}
   m_audioClip: {fileID: 8300000, guid: 81e9390470f9e2e4bbcdff683645567b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6653,7 +6653,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Version: 1.1.04202024 - Alpha build'
+  m_text: 'Version: 1.1.04222024 - Alpha build'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
   m_sharedMaterial: {fileID: 7131499472571203957, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
