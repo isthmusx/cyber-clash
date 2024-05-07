@@ -3,6 +3,7 @@ using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UsernameManager : MonoBehaviour
 {
@@ -12,6 +13,27 @@ public class UsernameManager : MonoBehaviour
     public TMP_Text userText;
     public TMP_Text modalText;
     public GameObject modalPanel;
+
+    private GameObject musicObject;
+
+    private void Awake()
+    {
+        if (SceneManager.GetActiveScene().name == "Main Menu")
+        {
+            // Find the GameObject with the AudioSource component
+            musicObject = GameObject.Find("Music");
+            if (musicObject != null)
+            {
+                AudioSource musicSource = musicObject.GetComponent<AudioSource>();
+
+                // If AudioSource component exists and is not already playing, start playing
+                if (musicSource != null && !musicSource.isPlaying)
+                {
+                    musicSource.Play();
+                }
+            }
+        }
+    }
 
     private void Start()
     {
@@ -29,6 +51,7 @@ public class UsernameManager : MonoBehaviour
             mainMenuPanel.SetActive(false);
 
         }
+        
     }
 
     public void Update()

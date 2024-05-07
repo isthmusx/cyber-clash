@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    
     public void PlayAdvMode()
     {
         SceneManager.LoadSceneAsync(1);
@@ -149,6 +151,8 @@ public class MainMenu : MonoBehaviour
 
     }
 
+
+    
     public static void UnlockNewlevel()
     {
         if(SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
@@ -157,6 +161,8 @@ public class MainMenu : MonoBehaviour
             PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
             PlayerPrefs.Save();
         }
+
+
     }
 
     public void SecurityPack()

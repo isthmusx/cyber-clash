@@ -10821,7 +10821,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 3658913326581857290, guid: ba2cd8495a29fca4aa8c59a2b036f111, type: 2}
   m_audioClip: {fileID: 8300000, guid: 000e95f4e2d31434ebb05139b8585b6d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -13501,7 +13501,7 @@ MonoBehaviour:
   rewardsText: {fileID: 1824611722}
   rewards: {fileID: 1724524314}
   coinText: {fileID: 199474352}
-  surrenderWindow: {fileID: 0}
+  surrenderWindow: {fileID: 1932323009}
   coinsWon: {fileID: 2463890}
   gotCoins: 0
   gotExp: 0

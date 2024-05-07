@@ -47,6 +47,20 @@ public class EndGame : MonoBehaviour
 
         gotCoins = false;
         gotExp = false;
+        
+        GameObject musicObject = GameObject.Find("Music"); // Change "MusicObject" to the name of the GameObject containing the AudioSource
+
+        if (musicObject != null)
+        {
+            // Get the AudioSource component
+            AudioSource musicSource = musicObject.GetComponent<AudioSource>();
+
+            // Stop the music if the AudioSource component exists and is playing
+            if (musicSource != null && musicSource.isPlaying)
+            {
+                musicSource.Stop();
+            }
+        }
 
     }
 

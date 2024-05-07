@@ -29,17 +29,17 @@ public class EXPController : MonoBehaviour
     {
         experienceText.text = currentExp + " / " + targetExp;
 
-        if (level >= 1)
+        if (level >= 20)
         {
-            tier = " (Noob)";
+            tier = " (Expert)";
         } 
         else if (level >= 10)
         {
             tier = " (Skilled)";
         }
-        else if (level >= 20)
+        else if (level >= 1)
         {
-            tier = " (Expert)";
+            tier = " (Newbie)";
         }
 
         
@@ -83,6 +83,15 @@ public class EXPController : MonoBehaviour
             currentExp += 200; 
             PlayerPrefs.SetFloat("currentExp", currentExp);
         }
+    }
+    public static void RewardXP()
+    {
+        currentExp += 1500; 
+        PlayerPrefs.SetFloat("currentExp", currentExp);
+    }
+    public static void RewardXPLose()
+    {
+        PlayerPrefs.SetFloat("currentExp", currentExp);
     }
     
 }

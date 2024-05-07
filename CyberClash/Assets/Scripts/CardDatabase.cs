@@ -8,7 +8,7 @@ public class CardDatabase : MonoBehaviour
 
     void Awake()
     {
-        cardList.Add(new Card(0, "Phishing Reversal", "Security", "Offense", 1, 80, "Bait the enemy into revealing their identity. Deal 80 damage", Resources.Load<Sprite>("CardImages/RepairKitIMG"), 1, 0, 0,1));
+        cardList.Add(new Card(0, "Phishing Reversal", "Security", "Offense", 1, 800, "Bait the enemy into revealing their identity. Deal 80 damage", Resources.Load<Sprite>("CardImages/RepairKitIMG"), 1, 0, 0,1));
         cardList.Add(new Card(1, "Ad Blocker", "Security", "Offense", 1, 70, "Remove ads from any sites.\nDeal 70 damage", Resources.Load <Sprite> ("CardImages/RepairKitIMG"), 1,0 , 0,1));
         cardList.Add(new Card(2, "Safety Net", "Security", "Offense", 1, 70, "Use secured Wi-Fi connection.\nDeal 70 damage", Resources.Load<Sprite>("CardImages/RepairKitIMG"), 1, 0, 0,1));
         cardList.Add(new Card(3, "Veiled Attack", "Security", "Offense", 1, 70, "Bypass enemy's detection system.\nDeal 70 damage", Resources.Load<Sprite>("CardImages/DemonIMG"), 1, 0, 0,1));
