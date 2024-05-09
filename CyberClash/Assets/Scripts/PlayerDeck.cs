@@ -32,7 +32,7 @@ public class PlayerDeck : MonoBehaviour
     public EndGame EndGame;
 
     public static GameObject surrenderWindow;
-    public GameObject battleZone;
+    public static GameObject battleZone;
     public GameObject zoneBlocker;
     
     public AudioSource drawSFX;
@@ -147,14 +147,7 @@ public class PlayerDeck : MonoBehaviour
             TurnSystem.startTurn = false;
         }
         
-        if (battleZone.transform.childCount <= 5)
-        {
-            zoneBlocker.SetActive(false);
-        }
-        else
-        {
-            zoneBlocker.SetActive(true);
-        }
+       
 
     }
 

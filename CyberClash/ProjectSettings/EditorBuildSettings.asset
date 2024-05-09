@@ -104,9 +104,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Story Lose.unity
     guid: a495cc3fb37cd94498fc5a9616f9bcbc
-  - enabled: 1
-    path: Assets/Scenes/Story 1-Complete.unity
-    guid: f4ee0137e36668843b925a471f9e3a18
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 907db5133a118694db04ffe42c51e82e, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: e9420599dc74fb94f9af1a98431ad200, type: 2}

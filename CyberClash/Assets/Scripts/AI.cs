@@ -424,7 +424,9 @@ public class AI : MonoBehaviour
         }
 
         // Execute the best move (summon the chosen card)
+        
         yield return StartCoroutine(SimulateSummon(bestMove));
+        
     }
 
     int EvaluateSummon(Card card)
@@ -461,7 +463,7 @@ public class AI : MonoBehaviour
     {
         summonThisId = 0;
 
-        if (Hand.transform.childCount <= 0 && TurnSystem.turnCount != 1)
+        if (Hand.transform.childCount <= 0 && Zone.transform.childCount <= 0 && TurnSystem.turnCount != 1)
         {
             EnemyHealth.staticHP = 0;
         }
@@ -484,7 +486,7 @@ public class AI : MonoBehaviour
                 yield return new WaitForSeconds(6f); 
             }
             
-            if (Zone.transform.childCount <= 5)
+            if (Zone.transform.childCount < 5)
             {
                 foreach (Transform child in Hand.transform)
                 {
@@ -497,6 +499,10 @@ public class AI : MonoBehaviour
                     }
 
                 }
+            }
+            else
+            {
+                Debug.Log("Cannot summon. Zone is full.");
             }
         }
 

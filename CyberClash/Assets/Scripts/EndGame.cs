@@ -166,14 +166,6 @@ public class EndGame : MonoBehaviour
             victorySubText.text = "You have failed to defend the system.";
         }
 
-        if (gotCoins == false)
-        {
-            coinsWon.GetComponent<Shop>().coins += 200;
-            coinText.text = "200";
-            gotCoins = true;
-        }
-        
-            
         surrenderWindow.SetActive(false);
 
         yield return new WaitForSeconds(5f);

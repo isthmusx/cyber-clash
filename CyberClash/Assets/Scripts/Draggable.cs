@@ -9,6 +9,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public Transform parentToReturnTo = null;
     public Transform placeholderParent = null;
+    private static Draggable dragging;
 
     GameObject placeholder = null;
     CardPreview cardPreview;
@@ -20,7 +21,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-
+        dragging = this;
         //Debug.Log("OnBeginDrag");
         if (!cardPreview.IsEnlarged())
         {
@@ -92,6 +93,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        dragging = null;
         // Check if the parent to return to is not null
         if (parentToReturnTo != null)
         {
@@ -121,10 +123,15 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
             Debug.LogError("Error while destroying placeholder: " + e.Message);
         }
     }
+    public static Draggable GetDraggingObject()
+    {
+        return dragging;
+    }
+    public void ReturnToParent()
+    {
+        transform.SetParent(parentToReturnTo);
+        transform.localPosition = Vector3.zero; // Reset local position
+    }
 
-
-
-    
-    
 
 }

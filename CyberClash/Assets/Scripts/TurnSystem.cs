@@ -44,6 +44,8 @@ public class TurnSystem : MonoBehaviour
     public static int roundCount;
     public static int turnCount;
     public TMP_Text roundText;
+    bool isButtonEnabled = true;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -58,7 +60,6 @@ public class TurnSystem : MonoBehaviour
 
         roundCount = 1;
         
-
     }
 
 
@@ -128,6 +129,14 @@ public class TurnSystem : MonoBehaviour
 
     public void EndYourTurn()
     {
+        if (!isButtonEnabled)
+            return; //
+        
+        if (Draggable.GetDraggingObject() != null)
+        {
+            Draggable.GetDraggingObject().ReturnToParent();
+        }
+
         isYourTurn = false;
         seconds = 20;
         yourOpponentTurn += 1;
@@ -144,10 +153,13 @@ public class TurnSystem : MonoBehaviour
 
         StartCoroutine(EnemyTimer());
         
-        
+        DisableButtonForDelay();
     }
     public void EndYourOpponentTurn()
     {
+        if (!isButtonEnabled)
+            return; //
+        
         isYourTurn = true;
         seconds = 20;
         yourTurn += 1;
@@ -163,6 +175,7 @@ public class TurnSystem : MonoBehaviour
         turnCount++;
 
         StartCoroutine(Timer());
+        
         
     }
 
@@ -208,7 +221,7 @@ public class TurnSystem : MonoBehaviour
     {
         if (isYourTurn == true && seconds > 0)
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(1f);
             
             seconds --;
             StartCoroutine(Timer());
@@ -219,7 +232,7 @@ public class TurnSystem : MonoBehaviour
     {
         if (isYourTurn == false && seconds > 0)
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(1f);
 
             seconds--;
             StartCoroutine(EnemyTimer());
@@ -231,5 +244,18 @@ public class TurnSystem : MonoBehaviour
         yield return new WaitForSeconds(6f);
         protectStart = false;
     }
+    
+    void DisableButtonForDelay()
+    {
+        isButtonEnabled = false;
+        StartCoroutine(EnableButtonAfterDelay());
+    }
+
+    IEnumerator EnableButtonAfterDelay()
+    {
+        yield return new WaitForSeconds(1f); // Adjust delay as needed
+        isButtonEnabled = true;
+    }
+
 
 }

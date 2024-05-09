@@ -593,6 +593,7 @@ MonoBehaviour:
   fillPlayerMaxDF: 0
   endTurnBTN: {fileID: 952739392}
   roundText: {fileID: 1832243815}
+  button: {fileID: 952739392}
 --- !u!1 &145719532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,7 +1146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00019264, y: -83.9}
+  m_AnchoredPosition: {x: 0, y: -83.9}
   m_SizeDelta: {x: 549, y: 189}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &205082140
@@ -1198,6 +1199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1266bb88508bda149a7f50cd9e1d0372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxChildCount: 5
 --- !u!114 &205082143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1979,8 +1981,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.09998922, y: -88.43118}
-  m_SizeDelta: {x: 549, y: 180.6176}
+  m_AnchoredPosition: {x: -0.09998922, y: -79.86999}
+  m_SizeDelta: {x: 549, y: 197.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &359352916
 MonoBehaviour:
@@ -4786,7 +4788,6 @@ GameObject:
   - component: {fileID: 952739394}
   - component: {fileID: 952739393}
   - component: {fileID: 952739392}
-  - component: {fileID: 952739395}
   m_Layer: 5
   m_Name: End Turn
   m_TagString: Untagged
@@ -4919,18 +4920,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952739390}
   m_CullTransparentMesh: 1
---- !u!114 &952739395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952739390}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8545d582ffcf04e45bf7355930149d8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &954324423
 GameObject:
   m_ObjectHideFlags: 0
@@ -10180,6 +10169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1266bb88508bda149a7f50cd9e1d0372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxChildCount: 5
 --- !u!114 &1549460009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10497,6 +10487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1266bb88508bda149a7f50cd9e1d0372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxChildCount: 5
 --- !u!114 &1611815521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11486,7 +11477,6 @@ MonoBehaviour:
   Clones: []
   Hand: {fileID: 1611815515}
   EndGame: {fileID: 1889389520}
-  battleZone: {fileID: 0}
   zoneBlocker: {fileID: 359352914}
   drawSFX: {fileID: 0}
 --- !u!114 &1706369770 stripped
@@ -14555,7 +14545,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 77.2}
-  m_SizeDelta: {x: 549, y: 180}
+  m_SizeDelta: {x: 549, y: 189}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1982070087
 MonoBehaviour:
@@ -14570,7 +14560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
+    m_Left: -25
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
