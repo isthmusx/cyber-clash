@@ -381,9 +381,10 @@ MonoBehaviour:
   EnemyZone: {fileID: 0}
   AICardToHand: {fileID: 0}
   playerDeck: {fileID: 0}
-  audioSource: {fileID: 0}
+  attackSFX: {fileID: 0}
   shieldSFX: {fileID: 8300000, guid: f8e3a71211ea087459e64d03d395d6aa, type: 3}
   healSFX: {fileID: 8300000, guid: 1e8c698f77603a7438ae75e19e09e7cd, type: 3}
+  dropSFX: {fileID: 0}
 --- !u!114 &9150636471604583500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,7 +614,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 109.2}
+  m_AnchoredPosition: {x: 0, y: -8.3}
   m_SizeDelta: {x: 1612.4954, y: 740.3203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3004260423957869992
@@ -1677,7 +1678,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -64.505}
+  m_AnchoredPosition: {x: 0, y: 13.6}
   m_SizeDelta: {x: 172.47, y: 110.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3004260424981795651

@@ -170,6 +170,7 @@ public class TurnSystem : MonoBehaviour
         }
         currentDF = maxDF;
 
+
         startTurn = true;
 
         turnCount++;

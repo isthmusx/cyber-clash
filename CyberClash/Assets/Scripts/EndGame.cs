@@ -28,15 +28,18 @@ public class EndGame : MonoBehaviour
     public bool gotCoins;
     public bool gotExp;
     
-    public AudioSource audioSource;
-    public AudioClip winMusic;
-    public AudioClip loseMusic;
-    public AudioClip surrenderMusic;
+    public AudioSource winMusic;
+    public AudioSource loseMusic;
+    public AudioSource surrenderMusic;
+    
+    private bool isWinMusicPlaying = false;
+    private bool isLoseMusicPlaying = false;
 
     //public MainMenu menu;
 
     void Start()
     {
+        Time.timeScale = 1;
         mainTextObject.SetActive(false);
         subTextObject.SetActive(false);
         background.SetActive(false);
@@ -48,14 +51,12 @@ public class EndGame : MonoBehaviour
         gotCoins = false;
         gotExp = false;
         
-        GameObject musicObject = GameObject.Find("Music"); // Change "MusicObject" to the name of the GameObject containing the AudioSource
+        GameObject musicObject = GameObject.Find("Music"); 
 
         if (musicObject != null)
         {
-            // Get the AudioSource component
             AudioSource musicSource = musicObject.GetComponent<AudioSource>();
 
-            // Stop the music if the AudioSource component exists and is playing
             if (musicSource != null && musicSource.isPlaying)
             {
                 musicSource.Stop();
@@ -66,89 +67,110 @@ public class EndGame : MonoBehaviour
 
     void Update()
     {
-        
         if (EnemyHealth.staticHP <= 0)
         {
-            isWin = true;
-            mainTextObject.SetActive(true);
-            subTextObject.SetActive(true);
-            background.SetActive(true);
-            turnText.SetActive(false);
-            continueBTN.SetActive(true);
-            rewardsText.SetActive(true);
-            rewards.SetActive(true);
-            victoryText.text = "<color=#08BDBD>Victory</color>";
-            
-            if (MainMenu.faction == "Threat")
-            {
-                victorySubText.text = "You have successfully breached the system.";
-            }
-            else if (MainMenu.faction == "Security")
-            {
-                victorySubText.text = "You have successfully defended the system.";
-            }
-
-            if (gotCoins == false)
-            {
-                coinsWon.GetComponent<Shop>().coins += 1000;
-                coinText.text = "1000";
-                gotCoins = true;
-            }
-            if (gotExp == false)
-            {
-                EXPController.WonEXP();
-                gotExp = true;
-                
-            }
-            audioSource.PlayOneShot(winMusic);
-
+            StartCoroutine(Win());
         }
-        
+
         if (PlayerHealth.staticHP <= 0)
         {
-            isWin = false;
-            mainTextObject.SetActive(true);
-            subTextObject.SetActive(true);
-            background.SetActive(true);
-            turnText.SetActive(false);
-            continueBTN.SetActive(true);
-            rewardsText.SetActive(true);
-            rewards.SetActive(true);
-            victoryText.text = "<color=#F21B3F>Defeat</color>";
-            if (MainMenu.faction == "Threat")
-            {
-                victorySubText.text = "You have failed to breach the system.";
-            }
-            else if (MainMenu.faction == "Security")
-            {
-                victorySubText.text = "You have failed to defend the system.";
-            }
-
-            if (gotCoins == false)
-            {
-                coinsWon.GetComponent<Shop>().coins += 200;
-                coinText.text = "200";
-                gotCoins = true;
-            }
-            
-            if (gotExp == false)
-            {
-                EXPController.WonEXP();
-                gotExp = true;
-            }
-            audioSource.PlayOneShot(loseMusic);
-
+            StartCoroutine(Lose());
         }
         
     }
 
+    
     public void Surrender()
     {
         StartCoroutine(EndGameNow());
     }
+    
     IEnumerator EndGameNow()
     {
-        audioSource.PlayOneShot(surrenderMusic);
+        Time.timeScale = 0;
+        surrenderMusic.Play();
+        
+        mainTextObject.SetActive(true);
+        subTextObject.SetActive(true);
+        background.SetActive(true);
+        turnText.SetActive(false);
+        continueBTN.SetActive(true);
+        rewardsText.SetActive(true);
+        rewards.SetActive(true);
+        victoryText.text = "<color=#F21B3F>Defeat</color>";
+        if (MainMenu.faction == "Threat")
+        {
+            victorySubText.text = "You have failed to breach the system.";
+        }
+        else if (MainMenu.faction == "Security")
+        {
+            victorySubText.text = "You have failed to defend the system.";
+        }
+        coinText.text = "0";
+        surrenderWindow.SetActive(false);
+
+        yield return new WaitForSeconds(5f);
+    }
+
+    public void Back()
+    {
+        SceneManager.LoadScene("Main Menu");
+        Time.timeScale = 1;
+    }
+
+    private IEnumerator Win()
+    {
+        if (!isWinMusicPlaying)
+        {
+            isWinMusicPlaying = true;
+            winMusic.Play();
+        }
+        
+        Time.timeScale = 0;
+        isWin = true;
+        mainTextObject.SetActive(true);
+        subTextObject.SetActive(true);
+        background.SetActive(true);
+        turnText.SetActive(false);
+        continueBTN.SetActive(true);
+        rewardsText.SetActive(true);
+        rewards.SetActive(true);
+        victoryText.text = "<color=#08BDBD>Victory</color>";
+            
+        if (MainMenu.faction == "Threat")
+        {
+            victorySubText.text = "You have successfully breached the system.";
+        }
+        else if (MainMenu.faction == "Security")
+        {
+            victorySubText.text = "You have successfully defended the system.";
+        }
+
+        if (gotCoins == false)
+        {
+            coinsWon.GetComponent<Shop>().coins += 1000;
+            coinText.text = "1000";
+            gotCoins = true;
+        }
+        if (gotExp == false)
+        {
+            EXPController.WonEXP();
+            gotExp = true;
+                
+        }
+        yield return new WaitForSeconds(5f);
+    }
+
+    private IEnumerator Lose()
+    {
+        if (!isWinMusicPlaying)
+        {
+            isWinMusicPlaying = true;
+            loseMusic.Play();
+        }
+        
+        Time.timeScale = 0;
+        isWin = false;
         mainTextObject.SetActive(true);
         subTextObject.SetActive(true);
         background.SetActive(true);
@@ -166,11 +188,19 @@ public class EndGame : MonoBehaviour
             victorySubText.text = "You have failed to defend the system.";
         }
 
-        surrenderWindow.SetActive(false);
-
+        if (gotCoins == false)
+        {
+            coinsWon.GetComponent<Shop>().coins += 200;
+            coinText.text = "200";
+            gotCoins = true;
+        }
+            
+        if (gotExp == false)
+        {
+            EXPController.WonEXP();
+            gotExp = true;
+        }
         yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene("Main Menu");
     }
-    
 
 }
