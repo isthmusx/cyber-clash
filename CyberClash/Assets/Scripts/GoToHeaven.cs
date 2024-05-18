@@ -15,7 +15,7 @@ public class GoToHeaven : MonoBehaviour
         x = 250;
         background = GameObject.Find("Background");
         this.transform.SetParent(background.transform);
-        this.transform.localScale = new Vector3(0.3f, 0.3f, 1);
+        this.transform.localScale = new Vector3(0.5f, 0.5f, 1);
         StartCoroutine(Die());
     }
 

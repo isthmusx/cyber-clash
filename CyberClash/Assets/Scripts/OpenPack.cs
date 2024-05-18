@@ -19,15 +19,18 @@ public class OpenPack : MonoBehaviour
     public GameObject c3;
     public GameObject c4;
     public GameObject c5;
+    
 
     public GameObject back;
+    public GameObject panel;
+    public GameObject text;
     
     // Start is called before the first frame update
     void Start()
     {
         max = 100;
         updated = 100;
-        
+
         StartCoroutine(Wait());
     }
 
@@ -58,7 +61,10 @@ public class OpenPack : MonoBehaviour
         Instantiate(prefab,pack.transform.position, Quaternion.identity);
         yield return new WaitForSeconds(2.5f);
         
+
         Destroy(pack);
+        panel.SetActive(true);
+        text.SetActive(true);
         c1.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         c2.SetActive(true);

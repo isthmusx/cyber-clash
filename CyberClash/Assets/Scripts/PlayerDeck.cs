@@ -41,6 +41,7 @@ public class PlayerDeck : MonoBehaviour
     {
         //Shuffle();
     }
+    
 
     void Start()
     {
@@ -56,6 +57,8 @@ public class PlayerDeck : MonoBehaviour
         //    deck[i] = CardDatabase.cardList[x];
 
         //}
+
+
 
 
         if (MainMenu.faction == "Security")
@@ -86,6 +89,15 @@ public class PlayerDeck : MonoBehaviour
                 }
             }
         }
+        else if (MainMenu.faction == "SecurityTutorial")
+        {
+            for (int i = 0; i < 30; i++)
+            { 
+                x = Random.Range(0, 49);
+                deck[i] = CardDatabase.cardList[x];
+            }
+        }
+        
             
             
             

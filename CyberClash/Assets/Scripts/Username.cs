@@ -10,6 +10,7 @@ public class UsernameManager : MonoBehaviour
     public TMP_InputField nameInputField;
     public GameObject nameInputPanel;
     public GameObject mainMenuPanel;
+    public GameObject tutorialPanel;
     public TMP_Text userText;
     public TMP_Text modalText;
     public GameObject modalPanel;
@@ -82,7 +83,7 @@ public class UsernameManager : MonoBehaviour
                 PlayerPrefs.Save();
 
                 nameInputPanel.SetActive(false);
-                mainMenuPanel.SetActive(true);
+                tutorialPanel.SetActive(true);
             }
         }
     }

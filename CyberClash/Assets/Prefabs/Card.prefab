@@ -1585,6 +1585,7 @@ MonoBehaviour:
     returnXcards: 0
     healXpower: 0
     shieldXpower: 0
+    drawXcards: 0
   thisId: 0
   id: 0
   cardName: 
@@ -1628,8 +1629,14 @@ MonoBehaviour:
   canHeal: 0
   shieldXpower: 0
   canShield: 0
+  drawXcards: 0
   EnemyZone: {fileID: 0}
   AICardToHand: {fileID: 0}
+  playerDeck: {fileID: 0}
+  attackSFX: {fileID: 0}
+  shieldSFX: {fileID: 0}
+  healSFX: {fileID: 0}
+  dropSFX: {fileID: 0}
 --- !u!114 &8176930027188692813
 MonoBehaviour:
   m_ObjectHideFlags: 0
