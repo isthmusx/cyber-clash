@@ -120,6 +120,7 @@ public class EndGame : MonoBehaviour
 
     private IEnumerator Win()
     {
+        yield return new WaitForSeconds(5f);
         if (!isWinMusicPlaying)
         {
             isWinMusicPlaying = true;
@@ -163,6 +164,7 @@ public class EndGame : MonoBehaviour
 
     private IEnumerator Lose()
     {
+        yield return new WaitForSeconds(5f);
         if (!isWinMusicPlaying)
         {
             isWinMusicPlaying = true;

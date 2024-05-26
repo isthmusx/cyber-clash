@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -14,9 +15,14 @@ public class Shop : MonoBehaviour
     public int coins;
 
     public bool playAI;
-    
-    
-    // Start is called before the first frame update
+
+    public GameObject shopUI;
+    public GameObject inventoryUI;
+
+    void Awake()
+    {
+    }
+
     void Start()
     {
         
@@ -24,9 +30,23 @@ public class Shop : MonoBehaviour
 
         coins = PlayerPrefs.GetInt("coins", 100);
 
+        if (MainMenu.shopInventory == "Inventory")
+        {
+            inventoryUI.SetActive(true);
+            shopUI.SetActive(false);
+        }
+        else if (MainMenu.shopInventory == "Shop")
+        {
+            inventoryUI.SetActive(false);
+            shopUI.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("error");
+        }
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (playAI == false)
@@ -96,4 +116,7 @@ public class Shop : MonoBehaviour
         }
         
     }
+
+    
+    
 }

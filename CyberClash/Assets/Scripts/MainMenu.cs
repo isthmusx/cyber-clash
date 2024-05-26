@@ -106,6 +106,17 @@ public class MainMenu : MonoBehaviour
         deckSelected = "Threat";
     }
 
+    public static string shopInventory;
+
+    public static void ShopSelected()
+    {
+        shopInventory = "Shop";
+    }
+    public static void InventorySelected()
+    {
+        shopInventory = "Inventory";
+    }
+
     public static void GameBack()
     {
         if(mode == "versus")

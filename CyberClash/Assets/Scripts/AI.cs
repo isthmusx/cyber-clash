@@ -317,7 +317,7 @@ public class AI : MonoBehaviour
                     Heal(i);
                     Shield(i);
                     DrawCard(i);
-                    AddMaxDF(i);
+                    //AddMaxDF(i);
                 }
                 
             }

@@ -144,8 +144,11 @@ public class TurnSystem : MonoBehaviour
         if (maxEnemyDF < 7)
         {
             maxEnemyDF += 1 ;
+            
         }
         currentEnemyDF = maxEnemyDF;
+        
+        
 
         AI.draw = false;
 
