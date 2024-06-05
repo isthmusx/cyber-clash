@@ -8,7 +8,7 @@ public class CardDatabase : MonoBehaviour
 
     void Awake()
     {
-        cardList.Add(new Card(0, "Phishing Reversal", "Security", "Offense", 1, 800, "Bait the enemy into revealing their identity. Deal 80 damage", Resources.Load<Sprite>("CardImages/Card 0"), 1, 0, 0,1));
+        cardList.Add(new Card(0, "Phishing Reversal", "Security", "Offense", 1, 80, "Bait the enemy into revealing their identity. Deal 80 damage", Resources.Load<Sprite>("CardImages/Card 0"), 1, 0, 0,1));
         cardList.Add(new Card(1, "Ad Blocker", "Security", "Offense", 1, 70, "Remove ads from any sites.\nDeal 70 damage", Resources.Load <Sprite> ("CardImages/Card 1"), 1,0 , 0,1));
         cardList.Add(new Card(2, "Safety Net", "Security", "Offense", 1, 70, "Use secured Wi-Fi connection.\nDeal 70 damage", Resources.Load<Sprite>("CardImages/Card 2"), 1, 0, 0,1));
         cardList.Add(new Card(3, "Veiled Attack", "Security", "Offense", 1, 70, "Bypass enemy's detection system.\nDeal 70 damage", Resources.Load<Sprite>("CardImages/Card 3"), 1, 0, 0,1));
@@ -43,20 +43,20 @@ public class CardDatabase : MonoBehaviour
         cardList.Add(new Card(32, "Firewall", "Security", "Defense", 3, 40, "Activate Firewall to defend against attacker.\nGain 60 shield and deal 40 damage", Resources.Load<Sprite>("CardImages/Card 32"), 0, 0, 60,0));
         cardList.Add(new Card(33, "Auto Update On", "Security", "Defense", 3, 0, "Turn on auto update on operating system to have the latest update and improve security. Gain 90 shield", Resources.Load<Sprite>("CardImages/Card 33"), 0, 0, 90,0));
         cardList.Add(new Card(34, "File Vanguard", "Security", "Defense", 3, 0, "Check if any files are infected by a malware.\nGain 80 shield", Resources.Load<Sprite>("CardImages/Card 34"), 0, 0, 80,0));
-        cardList.Add(new Card(35, "Return to sender[TEST]", "Security", "Defense", 4, 0, "Any damage thrown to you in this round send it back to attacker, return 40% of it", Resources.Load<Sprite>("CardImages/Card 35"), 0, 0, 40,0));
+        cardList.Add(new Card(35, "Return to sender[TEST]", "Security", "Defense", 4, 40, "Any damage thrown to you in this round send it back to attacker, return 40% of it", Resources.Load<Sprite>("CardImages/Card 35"), 0, 0, 40,0));
         cardList.Add(new Card(36, "Cloud Storage", "Security", "Defense", 4, 100, "Use a cloud storage and save important files in it.\nGain 100 shield", Resources.Load<Sprite>("CardImages/Card 36"), 0, 0, 100,0));
         cardList.Add(new Card(37, "Clear Cookies", "Security", "Defense", 4, 0, "Clear web cookies to boost the performance of computer.\nGain 70 shield and recover 30 health points", Resources.Load<Sprite>("CardImages/Card 37"), 0, 30, 70,0));
         cardList.Add(new Card(38, "Update Software", "Security", "Defense", 5, 0, "Update software, for next 3 rounds gain 60 shield per round.\nGain 40 shield per round in the next 3 rounds", Resources.Load<Sprite>("CardImages/Card 38"), 0, 0, 40,0));
         cardList.Add(new Card(39, "2FA", "Security", "Defense", 5, 0, "Use two types of authentication factor.\nGain 170 shield", Resources.Load<Sprite>("CardImages/Card 39"), 0, 0, 170,0));
         cardList.Add(new Card(40, "Temporary Files", "Security", "Utility", 1, 0, "Clean temporary files to free up improve computer performance.\nRecover 40 health points", Resources.Load<Sprite>("CardImages/Card 40"), 0, 40, 0,0));
-        cardList.Add(new Card(41, "Safe Booting[TEST]", "Security", "Utility", 1, 0, "Have a bootkit remover to prevent having a bootkit.\nGain 2 extra energy next round", Resources.Load <Sprite> ("CardImages/Card 41"), 0,0, 0,0));
+        cardList.Add(new Card(41, "Safe Booting[TEST]", "Security", "Utility", 1, 50, "Have a bootkit remover to prevent having a bootkit.\nGain 2 extra energy next round", Resources.Load <Sprite> ("CardImages/Card 41"), 0,0, 0,0));
         cardList.Add(new Card(42, "HTTPS", "Security", "Utility", 2, 0, "Utilize HTTPS for a private and encrypted communication.\nRecover 60 health points", Resources.Load<Sprite>("CardImages/Card 42"), 0, 60, 0,0));
-        cardList.Add(new Card(43, "Cyber Amplifier[TEST]", "Security", "Utility", 2, 0, "In this round every damage card used will deal 20% more damage each card", Resources.Load<Sprite>("CardImages/Card 43"), 0, 0, 0,0));
+        cardList.Add(new Card(43, "Cyber Amplifier[TEST]", "Security", "Utility", 2, 50, "In this round every damage card used will deal 20% more damage each card", Resources.Load<Sprite>("CardImages/Card 43"), 0, 0, 0,0));
         cardList.Add(new Card(44, "VampWall", "Security", "Utility", 3, 50, "If there is a missing health point recover 80 hp using Vampwall and deal 50 damage to enemy", Resources.Load<Sprite>("CardImages/Card 44"), 0, 80, 0,0));
         cardList.Add(new Card(45, "Spyware", "Security", "Utility", 3, 0, "Send spyware to enemy to gain information on enemy.\nDraw extra 2 card next round", Resources.Load<Sprite>("CardImages/Card 45"), 2, 0, 0,0));
         cardList.Add(new Card(46, "Trap Intrusion Alert", "Security", "Utility", 4, 50, "Detect if the enemy attack, deal 50 damage and recover 70 health points", Resources.Load<Sprite>("CardImages/Card 46"), 0, 70, 0,0));
-        cardList.Add(new Card(47, "Byte Boost[TEST]", "Security", "Utility", 4, 0, "Give extra 15% damage for every damage card that will be use in the next 3 rounds", Resources.Load<Sprite>("CardImages/Card 47"), 0, 0, 0,0));
-        cardList.Add(new Card(48, "Red Alert[TEST]", "Security", "Utility", 5, 0, "Any damage receive this round recover and return 50% of the damage back to attacker", Resources.Load<Sprite>("CardImages/Card 48"), 0, 0, 0,0));
+        cardList.Add(new Card(47, "Byte Boost[TEST]", "Security", "Utility", 4, 50, "Give extra 15% damage for every damage card that will be use in the next 3 rounds", Resources.Load<Sprite>("CardImages/Card 47"), 0, 0, 0,0));
+        cardList.Add(new Card(48, "Red Alert[TEST]", "Security", "Utility", 5, 50, "Any damage receive this round recover and return 50% of the damage back to attacker", Resources.Load<Sprite>("CardImages/Card 48"), 0, 0, 0,0));
         cardList.Add(new Card(49, "Rearm Computer", "Security", "Utility", 5, 0, "Reset the network.\nRecover 120 health points", Resources.Load<Sprite>("CardImages/Card 49"), 0, 120, 0,0));
         cardList.Add(new Card(50, "Steal Information", "Threat", "Offense", 1, 80, "Steal personal information of the defender.\nDeal 80 Damage", Resources.Load<Sprite>("CardImages/Card 50"), 0, 0, 0,0));
         cardList.Add(new Card(51, "Fake Files", "Threat", "Offense", 1, 90, "Create fake file consuming space from memory.\nDeal 90 Damage", Resources.Load <Sprite> ("CardImages/Card 51"), 0,0, 0,0));
@@ -68,7 +68,7 @@ public class CardDatabase : MonoBehaviour
         cardList.Add(new Card(57, "Scareware", "Threat", "Offense", 2, 110, "Trick the defender that the computer is infected by a virus.\nDeal 110 Damage", Resources.Load<Sprite>("CardImages/Card 57"), 1, 0, 0,0));
         cardList.Add(new Card(58, "Crysis", "Threat", "Offense", 2, 110, "Send a fake video game installer to defender.\nDeal 110 Damage", Resources.Load<Sprite>("CardImages/Card 58"), 0, 0, 0,0));
         cardList.Add(new Card(59, "Spoofed Mail", "Threat", "Offense", 2, 100, "Send email to the defender that contains a malware.\nDeal 100 Damage", Resources.Load<Sprite>("CardImages/Card 59"), 0, 0, 0,0));
-        cardList.Add(new Card(60, "Exploit System[TEST]", "Threat", "Offense", 3, 0, "Weaken the defense of the system.\nDeal 10% more damage on the next 3 rounds", Resources.Load<Sprite>("CardImages/Card 60"), 0, 0, 0,0));
+        cardList.Add(new Card(60, "Exploit System[TEST]", "Threat", "Offense", 3, 50, "Weaken the defense of the system.\nDeal 10% more damage on the next 3 rounds", Resources.Load<Sprite>("CardImages/Card 60"), 0, 0, 0,0));
         cardList.Add(new Card(61, "Network Crash[TEST]", "Threat", "Offense", 3, 50, "Slow down the computer.\nFor 4 rounds each round the enemy will receive 50 damage", Resources.Load<Sprite>("CardImages/Card 61"), 0, 0, 0,0));
         cardList.Add(new Card(62, "DOS", "Threat", "Offense", 3, 140, "Denial of service by overloading network.\nDeal 140 Damage", Resources.Load<Sprite>("CardImages/Card 62"), 0, 0, 0,0));
         cardList.Add(new Card(63, "Bricking", "Threat", "Offense", 3, 110, "Make the computer's hardware unusable.\nDeal 130 Damage", Resources.Load<Sprite>("CardImages/Card 63"), 0, 0, 0,0));
@@ -104,8 +104,8 @@ public class CardDatabase : MonoBehaviour
         cardList.Add(new Card(93, "Network Purification", "Threat", "Utility", 2, 0, "Removing any tracks from network.\nRecover 50 health points and gain 10 shield", Resources.Load<Sprite>("CardImages/Card 93"), 0, 50, 10,0));
         cardList.Add(new Card(94, "Cyber Surveillance", "Threat", "Utility", 3, 80, "Monitor the enemy movement.\nDraw 1 extra card next round and deal 80 damage this round", Resources.Load<Sprite>("CardImages/Card 94"), 1, 0, 0,0));
         cardList.Add(new Card(95, "Clear Cache", "Threat", "Utility", 3, 0, "Boost browsing experience and improve security.\nRecover 60 health points and Gain 20 shield", Resources.Load<Sprite>("CardImages/Card 95"), 0, 60, 20,0));
-        cardList.Add(new Card(96, "Dropper[TEST]", "Threat", "Utility", 4, 0, "Harmless but brings other kind of malware with it.\nGain 20% more damage on the next 2 rounds", Resources.Load<Sprite>("CardImages/Card 96"), 0, 0, 0,0));
-        cardList.Add(new Card(97, "Computer Overclock[TEST]", "Threat", "Utility", 4, 0, "Run computer's processor at a higher rate.\nDo extra 15% damage for next round per card", Resources.Load<Sprite>("CardImages/Card 97"), 0, 0, 0,0));
+        cardList.Add(new Card(96, "Dropper[TEST]", "Threat", "Utility", 4, 50, "Harmless but brings other kind of malware with it.\nGain 20% more damage on the next 2 rounds", Resources.Load<Sprite>("CardImages/Card 96"), 0, 0, 0,0));
+        cardList.Add(new Card(97, "Computer Overclock[TEST]", "Threat", "Utility", 4, 50, "Run computer's processor at a higher rate.\nDo extra 15% damage for next round per card", Resources.Load<Sprite>("CardImages/Card 97"), 0, 0, 0,0));
         cardList.Add(new Card(98, "Security Disabler", "Threat", "Utility", 5, 120, "Disable the system making it vulnerable.\nIgnore shield, deal 120 damage and draw 1 extra card next round", Resources.Load<Sprite>("CardImages/Card 98"), 0, 0, 0,0));
         cardList.Add(new Card(99, "Repair Kit", "Threat", "Utility", 5, 0, "Remove any debuff.\nRecover 100 health points", Resources.Load<Sprite>("CardImages/Card 99"), 0, 100, 0,0));
         

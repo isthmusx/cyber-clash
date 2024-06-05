@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Blackout
+    name: Vanderbilt
     sentences:
     - "You may have stopped me this time, but there will always be others like me.\r"
 --- !u!114 &195191336
@@ -1648,6 +1648,8 @@ MonoBehaviour:
   coinText: {fileID: 0}
   coins: 0
   playAI: 1
+  shopUI: {fileID: 0}
+  inventoryUI: {fileID: 0}
 --- !u!224 &897022492
 RectTransform:
   m_ObjectHideFlags: 0

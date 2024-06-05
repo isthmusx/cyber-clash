@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Ravage
+    name: Isthmus
     sentences:
     - "You may have won this battle, Cipher, but the war is far from over.\r"
 --- !u!114 &195191336
@@ -881,7 +881,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1614379489}
+      - m_Target: {fileID: 195191334}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -2165,6 +2165,8 @@ MonoBehaviour:
   coinText: {fileID: 0}
   coins: 0
   playAI: 1
+  shopUI: {fileID: 0}
+  inventoryUI: {fileID: 0}
 --- !u!224 &974782157
 RectTransform:
   m_ObjectHideFlags: 0

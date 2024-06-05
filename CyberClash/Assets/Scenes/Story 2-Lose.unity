@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Ravage
+    name: Isthmus
     sentences:
     - 'Your efforts are futile, Cipher. '
     - "This virus is unstoppable.\r"
@@ -1593,7 +1593,7 @@ MonoBehaviour:
   dialogue:
     name: Cipher
     sentences:
-    - "(Struggling) We can still contain the damage you've caused!\r"
+    - "We can still contain the damage you've caused!\r"
 --- !u!114 &607777918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4376,9 +4376,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Ravage
+    name: Isthmus
     sentences:
-    - '(Triumphant) You''re no match for my digital prowess. '
+    - 'You''re no match for my digital prowess. '
     - This is just the beginning of your downfall.
 --- !u!114 &2111347083
 MonoBehaviour:

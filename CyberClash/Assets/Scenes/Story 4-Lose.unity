@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Blackout
+    name: Vanderbilt
     sentences:
     - 'You thought you could outsmart me, Cipher? Think again.
 
@@ -889,7 +889,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 607777915}
+      - m_Target: {fileID: 195191334}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1691,7 +1691,7 @@ MonoBehaviour:
   dialogue:
     name: Cipher
     sentences:
-    - "We can still stop you, Blackout!\r"
+    - "We can still stop you, Vanderbilt!\r"
 --- !u!114 &607777918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1900,8 +1900,8 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - As Cipher fights back, Blackout's ransomware proves too powerful, leading to
-      a temporary defeat.
+    - As Cipher fights back, Vanderbilt's ransomware proves too powerful, leading
+      to a temporary defeat.
 --- !u!114 &831999425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2149,7 +2149,7 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - "Cipher and Alex work tirelessly to analyze Blackout's tactics and develop
+    - "Cipher and Alex work tirelessly to analyze Vanderbilt's tactics and develop
       a stronger defense.\r\r"
 --- !u!114 &947656017
 MonoBehaviour:
@@ -2557,7 +2557,8 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - After regrouping, Cipher and Alex devise a new plan to combat Blackout's ransomware.
+    - After regrouping, Cipher and Alex devise a new plan to combat Vanderbilt's
+      ransomware.
 --- !u!114 &1067991184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2754,7 +2755,7 @@ MonoBehaviour:
   dialogue:
     name: Cipher
     sentences:
-    - "Agreed, Alex. We can't afford to let Blackout win.\r\r"
+    - "Agreed, Alex. We can't afford to let Vanderbilt win.\r\r"
 --- !u!114 &1154828068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4059,7 +4060,7 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - With renewed determination, Cipher and Alex set out to track down Blackout
+    - With renewed determination, Cipher and Alex set out to track down Vanderbilt
       and put an end to their ransomware operations.
 --- !u!114 &2052942323
 MonoBehaviour:
@@ -4200,7 +4201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Blackout
+    name: Vanderbilt
     sentences:
     - 'Your efforts are futile.
 

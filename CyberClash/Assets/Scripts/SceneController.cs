@@ -18,7 +18,7 @@ public class SceneController : MonoBehaviour
     {
         transitionAnim.SetTrigger("Start");
         StartCoroutine(Wait());
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadSceneAsync(sceneName);
     }
     
     IEnumerator Wait()

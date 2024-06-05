@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Phantom
+    name: Calypso
     sentences:
     - "You may have defeated me this time, but I'll return stronger than ever.\r"
 --- !u!114 &195191336
@@ -3959,6 +3959,8 @@ MonoBehaviour:
   coinText: {fileID: 0}
   coins: 0
   playAI: 1
+  shopUI: {fileID: 0}
+  inventoryUI: {fileID: 0}
 --- !u!224 &2041489423
 RectTransform:
   m_ObjectHideFlags: 0

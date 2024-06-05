@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Phantom
+    name: Calypso
     sentences:
     - "Your security is no match for my stealthy tactics, Cipher. \r\n"
     - "I'll harvest your data with ease.\r"
@@ -944,7 +944,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 607777915}
+      - m_Target: {fileID: 195191334}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6

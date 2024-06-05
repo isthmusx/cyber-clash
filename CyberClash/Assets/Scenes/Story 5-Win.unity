@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Orbita
+    name: Blade
     sentences:
     - "You may have stopped me this time, Cipher, but there are others like me out
       there.\r\r\n"
@@ -893,7 +893,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 195191334}
+      - m_Target: {fileID: 1071463250}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -2178,7 +2178,7 @@ MonoBehaviour:
   dialogue:
     name: Cipher
     sentences:
-    - 'It''s over, Orbita.
+    - 'It''s over, Blade.
 
 '
     - Your phishing days are done.
@@ -3035,7 +3035,7 @@ MonoBehaviour:
     name: Narrator
     sentences:
     - Cipher emerges victorious
-    - having successfully traced Orbita's phishing infrastructure and shut it down.
+    - having successfully traced Blade's phishing infrastructure and shut it down.
 --- !u!114 &1614379492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3767,7 +3767,7 @@ MonoBehaviour:
     name: Narrator
     sentences:
     - Alex and Cipher continue their mission to safeguard against phishing
-    - armed with their victory and the knowledge gained from the encounter with Orbita.
+    - armed with their victory and the knowledge gained from the encounter with Blade.
 --- !u!114 &2052942323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3984,6 +3984,8 @@ MonoBehaviour:
   coinText: {fileID: 0}
   coins: 0
   playAI: 1
+  shopUI: {fileID: 0}
+  inventoryUI: {fileID: 0}
 --- !u!224 &2113003732
 RectTransform:
   m_ObjectHideFlags: 0

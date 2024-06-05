@@ -1764,7 +1764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Orbita
+    name: Blade
     sentences:
     - 'You can''t stop me, Cipher. '
     - My phishing empire is too vast.
@@ -3555,7 +3555,7 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - Cipher and Orbita engage in a high-stakes battle of wits and cyber skills.
+    - Cipher and Blade engage in a high-stakes battle of wits and cyber skills.
 --- !u!114 &1352148120
 MonoBehaviour:
   m_ObjectHideFlags: 0

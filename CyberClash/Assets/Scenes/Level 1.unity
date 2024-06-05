@@ -1385,7 +1385,7 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - Cipher and Malstrider face off in a high-stakes battle of wits and cyber skills.
+    - Cipher and Huhih face off in a high-stakes battle of wits and cyber skills.
 --- !u!114 &361099138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3213,7 +3213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Malstrider
+    name: Huhih
     sentences:
     - Impressive, you found me.
     - But it's too late to stop what I've set in motion.

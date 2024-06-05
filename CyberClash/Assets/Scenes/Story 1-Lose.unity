@@ -330,9 +330,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Malstrider
+    name: Huhih
     sentences:
-    - (Smirking) You underestimated me, Cipher.
+    - You underestimated me, Cipher.
     - This worm is unstoppable.
 --- !u!114 &195191336
 MonoBehaviour:
@@ -1032,7 +1032,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 607777915}
+      - m_Target: {fileID: 195191334}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1585,7 +1585,7 @@ MonoBehaviour:
   dialogue:
     name: Cipher
     sentences:
-    - (Struggling) We can still stop you, Malstrider!
+    - We can still stop you, Huhih!
 --- !u!114 &607777918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1944,7 +1944,7 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - Malstrider's cyberattack overwhelms Cipher, leading to a temporary defeat.
+    - Huhih's cyberattack overwhelms Cipher, leading to a temporary defeat.
 --- !u!114 &831999425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2292,7 +2292,7 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - As Malstrider escapes, Cipher and Alex regroup and devise a new plan.
+    - As Huhih escapes, Cipher and Alex regroup and devise a new plan.
 --- !u!114 &1067991184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2466,7 +2466,7 @@ MonoBehaviour:
     name: Cipher
     sentences:
     - 'You''re right, Alex. '
-    - We can't let Malstrider succeed.
+    - We can't let Huhih succeed.
 --- !u!114 &1154828068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3235,7 +3235,7 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - Malstrider gains the upper hand, exploiting a vulnerability in Cipher's defenses.
+    - Huhih gains the upper hand, exploiting a vulnerability in Cipher's defenses.
 --- !u!114 &1614379492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3611,8 +3611,8 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - With a revised plan in place, Cipher and Alex set out to track down Malstrider
-      once more.
+    - With a revised plan in place, Cipher and Alex set out to track down Huhih once
+      more.
 --- !u!114 &1672294081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4014,8 +4014,8 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - Cipher and Alex work tirelessly to analyze Malstrider's tactics and develop
-      a stronger defense.
+    - Cipher and Alex work tirelessly to analyze Huhih's tactics and develop a stronger
+      defense.
 --- !u!114 &2021111110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4231,8 +4231,8 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - With a revised plan in place, Cipher and Alex set out to track down Malstrider
-      once more
+    - With a revised plan in place, Cipher and Alex set out to track down Huhih once
+      more
 --- !u!114 &2052942323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4372,9 +4372,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Malstrider
+    name: Huhih
     sentences:
-    - (Triumphant) You're no match for my skills.
+    - You're no match for my skills.
     - This is just the beginning.
 --- !u!114 &2111347083
 MonoBehaviour:

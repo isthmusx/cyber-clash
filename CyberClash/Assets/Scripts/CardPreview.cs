@@ -43,9 +43,9 @@ public class CardPreview : MonoBehaviour
         isAnimating = true;
         isEnlarged = true;
 
-        Vector3 centerPosition = canvas.transform.position;
-        centerPosition.y += verticalOffset;
-
+        // Calculate the center position of the screen in world coordinates
+        Vector3 centerPosition = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2f, Screen.height / 2f, 0f));
+        centerPosition.z = transform.position.z; // Maintain the original z position
 
         Renderer renderer = GetComponent<Renderer>();
         if (renderer != null)
@@ -63,6 +63,8 @@ public class CardPreview : MonoBehaviour
 
         isAnimating = false;
     }
+
+
 
     IEnumerator ShrinkCard()
     {

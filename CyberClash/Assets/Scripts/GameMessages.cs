@@ -135,12 +135,7 @@ public class GameMessages : MonoBehaviour
             if (PlayerHPIsZero())
             {
                 battleEnded = true;
-                StartCoroutine(EndBattle(PlayerHPIsZero()));
-            }
-            else if(EnemyHPIsZero())
-            {
-                battleEnded = true;
-                StartCoroutine(EndBattle(EnemyHPIsZero()));
+                StartCoroutine(EndBattle(true));
             }
         }
     }
@@ -186,7 +181,7 @@ public class GameMessages : MonoBehaviour
             playerChat.SetActive(true);
             playerText.text = GetVictoryMessage();
             PlayMessageSound();
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(2f);
             playerChat.SetActive(false);
         }
         else
@@ -194,10 +189,11 @@ public class GameMessages : MonoBehaviour
             enemyChat.SetActive(true);
             enemyText.text = GetVictoryMessage();
             PlayMessageSound();
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(2f);
             enemyChat.SetActive(false);
         }
     }
+
 
     bool PlayerHPIsHalf()
     {

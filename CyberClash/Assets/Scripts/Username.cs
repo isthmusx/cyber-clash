@@ -14,6 +14,7 @@ public class UsernameManager : MonoBehaviour
     public TMP_Text userText;
     public TMP_Text modalText;
     public GameObject modalPanel;
+    public GameObject modalPanel2;
 
     private GameObject musicObject;
 
@@ -82,8 +83,8 @@ public class UsernameManager : MonoBehaviour
                 PlayerPrefs.SetString("PlayerName", playerName);
                 PlayerPrefs.Save();
 
-                nameInputPanel.SetActive(false);
-                tutorialPanel.SetActive(true);
+                modalPanel2.SetActive(true);
+                
             }
         }
     }

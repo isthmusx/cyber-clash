@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Orbita
+    name: Blade
     sentences:
     - 'You were no match for me, Cipher.
 
@@ -1125,7 +1125,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1614379489}
+      - m_Target: {fileID: 195191334}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1505,7 +1505,7 @@ MonoBehaviour:
   dialogue:
     name: Cipher
     sentences:
-    - "We'll find you, Orbita. And we'll stop you.\r\r"
+    - "We'll find you, Blade. And we'll stop you.\r\r"
 --- !u!114 &607777918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1715,7 +1715,7 @@ MonoBehaviour:
     name: Narrator
     sentences:
     - After regrouping, Cipher and Alex reassess their strategy and prepare for the
-      next encounter with Orbita.
+      next encounter with Blade.
 --- !u!114 &831999425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2261,7 +2261,7 @@ MonoBehaviour:
   dialogue:
     name: Cipher
     sentences:
-    - "Agreed, Alex. We can't let Orbita continue to deceive people like this.\r"
+    - "Agreed, Alex. We can't let Blade continue to deceive people like this.\r"
 --- !u!114 &1067991184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2913,7 +2913,7 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - Despite Cipher's efforts, Orbita gains the upper hand, exploiting a vulnerability
+    - Despite Cipher's efforts, Blade gains the upper hand, exploiting a vulnerability
       and evading capture.
 --- !u!114 &1614379492
 MonoBehaviour:
@@ -3365,7 +3365,7 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - With renewed determination, Cipher and Alex set out to track down Orbita and
+    - With renewed determination, Cipher and Alex set out to track down Blade and
       put an end to their malicious phishing activities.
 --- !u!114 &2052942323
 MonoBehaviour:
@@ -3508,7 +3508,7 @@ MonoBehaviour:
   dialogue:
     name: Alex
     sentences:
-    - 'Cipher, we need to strengthen our defenses and find a way to outsmart Orbita.
+    - 'Cipher, we need to strengthen our defenses and find a way to outsmart Blade.
 
 '
 --- !u!114 &2111347083

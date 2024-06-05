@@ -5222,7 +5222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Ravage
+    name: Isthmus
     sentences:
     - "You may have found me, Cipher, but you can't stop the chaos I've unleashed.\r"
 --- !u!114 &1655946062

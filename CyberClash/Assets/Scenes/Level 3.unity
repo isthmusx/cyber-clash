@@ -1438,7 +1438,7 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - Spyware and Cipher engage in a tense digital battle.
+    - Calypso and Cipher engage in a tense digital battle.
 --- !u!114 &503613617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4270,7 +4270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Phantom
+    name: Calypso
     sentences:
     - "You can't hide from me, Cipher. \r\n"
     - I'll infiltrate every corner of your system.

@@ -1727,7 +1727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Blackout
+    name: Vanderbilt
     sentences:
     - "You're too late, Cipher.\r"
     - "My ransomware is already wreaking havoc.\r"
@@ -2736,7 +2736,7 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - "A tense showdown ensues as Cipher races against time to stop Blackout.\r\r"
+    - "A tense showdown ensues as Cipher races against time to stop Vanderbilt.\r\r"
 --- !u!114 &868146002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4588,7 +4588,7 @@ MonoBehaviour:
   dialogue:
     name: Narrator
     sentences:
-    - Cipher and Blackout face off in a high-stakes battle of wits and cyber skills.
+    - Cipher and Vanderbilt face off in a high-stakes battle of wits and cyber skills.
 --- !u!114 &1611726033
 MonoBehaviour:
   m_ObjectHideFlags: 0
