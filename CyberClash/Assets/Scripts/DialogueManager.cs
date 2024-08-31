@@ -47,7 +47,7 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
-        typingSpeed = 0.05f;
+        typingSpeed = 0.1f;
         isTalking = true;
 
         string sentence = sentences.Dequeue();

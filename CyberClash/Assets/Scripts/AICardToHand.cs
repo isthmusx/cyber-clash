@@ -72,10 +72,13 @@ public class AICardToHand : MonoBehaviour
     public bool isSummoned;
     public GameObject battleZone;
     
+    public CardPreviewPopup previewPopup;
 
 
     void Start()
     {
+        previewPopup = FindObjectOfType<CardPreviewPopup>();
+
         thisCard[0] = CardDatabase.cardList[thisId];
         Hand = GameObject.Find("Enemy Hand");
 
@@ -258,5 +261,12 @@ public class AICardToHand : MonoBehaviour
         //thisCardCanBeDestroyed = true;
     }
 
-
+    public void OnCardClick()
+    {
+        if (previewPopup != null)
+        {
+            // Show card details in the preview popup
+            previewPopup.ShowCardAI(this);
+        }
+    }
 }

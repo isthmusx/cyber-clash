@@ -124,6 +124,8 @@ public class TurnSystem : MonoBehaviour
             EndYourOpponentTurn();
             AI.AIEndPhase = false;
         }
+        
+        
 
     }
 

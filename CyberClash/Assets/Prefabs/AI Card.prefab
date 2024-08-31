@@ -1035,8 +1035,8 @@ GameObject:
   - component: {fileID: -8642320169592487651}
   - component: {fileID: 8176930027188692813}
   - component: {fileID: -2428419945030215640}
-  - component: {fileID: -3565428478086177285}
   - component: {fileID: 5878327983023199022}
+  - component: {fileID: 2526554494535039572}
   m_Layer: 0
   m_Name: AI Card
   m_TagString: Clone
@@ -1142,6 +1142,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   cardsInHand:
   - id: 0
     cardName: 
@@ -1155,6 +1156,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1167,6 +1169,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1179,6 +1182,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1191,6 +1195,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1203,6 +1208,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1215,6 +1221,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1227,6 +1234,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1239,6 +1247,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1251,6 +1260,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1263,6 +1273,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1275,6 +1286,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1287,6 +1299,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1299,6 +1312,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1311,6 +1325,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1323,6 +1338,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1335,6 +1351,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1347,6 +1364,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1359,6 +1377,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1371,6 +1390,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1383,6 +1403,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1395,6 +1416,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1407,6 +1429,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1419,6 +1442,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1431,6 +1455,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1443,6 +1468,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1455,6 +1481,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1467,6 +1494,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1479,6 +1507,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1491,6 +1520,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1503,6 +1533,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1515,6 +1546,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1527,6 +1559,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1539,6 +1572,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1551,6 +1585,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1563,6 +1598,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1575,6 +1611,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1587,6 +1624,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1599,6 +1637,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1611,6 +1650,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -1623,6 +1663,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   thisId: 0
   id: 0
   cardName: 
@@ -1662,6 +1703,7 @@ MonoBehaviour:
   summoningSickness: 0
   isSummoned: 0
   battleZone: {fileID: 0}
+  previewPopup: {fileID: 0}
 --- !u!114 &8176930027188692813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1720,19 +1762,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &-3565428478086177285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2753558762276249036}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b066a16cb06613143920833e9321966f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  verticalOffset: 50
 --- !u!114 &5878327983023199022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1776,7 +1805,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2753558762276249039}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -8642320169592487651}
+        m_TargetAssemblyTypeName: AICardToHand, Assembly-CSharp
+        m_MethodName: OnCardClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2526554494535039572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2753558762276249036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aa73bfde2694084dbb457b1bc9c1ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quizPanel: {fileID: 0}
 --- !u!1 &2763116619705425749
 GameObject:
   m_ObjectHideFlags: 0

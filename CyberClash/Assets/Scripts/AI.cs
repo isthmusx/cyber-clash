@@ -66,6 +66,8 @@ public class AI : MonoBehaviour
     public AudioSource attackSFX;
     public AudioSource healSFX;
     public AudioSource shieldSFX;
+
+    public InGameQuiz InGameQuiz;
     void Awake()
     {
         //Shuffle();
@@ -73,6 +75,7 @@ public class AI : MonoBehaviour
 
     void Start()
     {
+        InGameQuiz = GetComponent<InGameQuiz>();
         graveyard = GameObject.Find("Enemy Graveyard");
         StartCoroutine(WaitFiveSeconds());
         
@@ -123,6 +126,24 @@ public class AI : MonoBehaviour
                 else
                 {
                     x = Random.Range(50, 100);
+                    deck[i] = CardDatabase.cardList[x];
+                    //deck[i] = CardDatabase.cardList[3];
+                }
+            }
+        }
+        if (whichEnemy == 3)
+        {
+            for (int i = 0; i < deckSize; i++)
+            {
+                if (i < deckSize)
+                {
+                    x = Random.Range(105, 109);
+                    deck[i] = CardDatabase.cardList[x];
+                    //deck[i] = CardDatabase.cardList[2];
+                }
+                else
+                {
+                    x = Random.Range(105, 109);
                     deck[i] = CardDatabase.cardList[x];
                     //deck[i] = CardDatabase.cardList[3];
                 }
@@ -577,6 +598,13 @@ public class AI : MonoBehaviour
     private void AddMaxDF(int i)
     {
         TurnSystem.maxEnemyDF += i;
+    }
+    private void OpenQuiz(int i)
+    {
+        if (cardsInZone[i].cardKeyword == "Replicate")
+        {
+            InGameQuiz.ShowPanel();
+        }
     }
 
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -12,20 +13,21 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     private static Draggable dragging;
 
     GameObject placeholder = null;
-    CardPreview cardPreview;
-    
+    //CardPreview cardPreview;
+
+    private ThisCard _thisCard;
     void Start()
     {
-        cardPreview = GetComponent<CardPreview>();
+        //cardPreview = GetComponent<CardPreview>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
         dragging = this;
         //Debug.Log("OnBeginDrag");
-        if (!cardPreview.IsEnlarged())
+        if (true /*!cardPreview.IsEnlarged()*/)
         {
-
+            
             if (this != null && this.transform != null && this.transform.parent != null)
             {
                 placeholder = new GameObject();
@@ -61,7 +63,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public void OnDrag(PointerEventData eventData)
     {
         //Debug.Log("OnDrag");
-        if (!cardPreview.IsEnlarged())
+        if (true /*!cardPreview.IsEnlarged()*/)
         {
             this.transform.position = eventData.position;
 

@@ -97,6 +97,46 @@ public class PlayerDeck : MonoBehaviour
                 deck[i] = CardDatabase.cardList[x];
             }
         }
+        else if (MainMenu.faction == "Story1Deck")
+        {
+            for (int i = 0; i < 30; i++)
+            { 
+                x = Random.Range(100, 104);
+                deck[i] = CardDatabase.cardList[x];
+            }
+        }
+        else if (MainMenu.faction == "Story2Deck")
+        {
+            for (int i = 0; i < 30; i++)
+            { 
+                x = Random.Range(100, 104);
+                deck[i] = CardDatabase.cardList[x];
+            }
+        }
+        else if (MainMenu.faction == "Story3Deck")
+        {
+            for (int i = 0; i < 30; i++)
+            { 
+                x = Random.Range(100, 104);
+                deck[i] = CardDatabase.cardList[x];
+            }
+        }
+        else if (MainMenu.faction == "Story4Deck")
+        {
+            for (int i = 0; i < 30; i++)
+            { 
+                x = Random.Range(100, 104);
+                deck[i] = CardDatabase.cardList[x];
+            }
+        }
+        else if (MainMenu.faction == "Story5Deck")
+        {
+            for (int i = 0; i < 30; i++)
+            { 
+                x = Random.Range(100, 104);
+                deck[i] = CardDatabase.cardList[x];
+            }
+        }
         
             
             

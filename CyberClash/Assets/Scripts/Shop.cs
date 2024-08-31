@@ -117,6 +117,11 @@ public class Shop : MonoBehaviour
         
     }
 
+    public void AddCoins()
+    {
+        coins += 1000;
+        PlayerPrefs.SetInt("coins", coins);
+    }
     
     
 }

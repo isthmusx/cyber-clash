@@ -8,7 +8,7 @@ using System;
 
 public class ThisCard : MonoBehaviour
 {
-
+    
     public List<Card> thisCard = new List<Card>();
     public int thisId;
 
@@ -19,12 +19,14 @@ public class ThisCard : MonoBehaviour
     public int cardCost;
     public int cardPower;
     public string cardDescription;
+    public string cardKeyword;
 
     public TMP_Text nameText;
     public TMP_Text factionText;
     public TMP_Text typeText;
     public TMP_Text costText;
     public TMP_Text descriptionText;
+    public TMP_Text keywordText;
 
     public Sprite thisSprite;
     public Image thatImage;
@@ -86,11 +88,20 @@ public class ThisCard : MonoBehaviour
     public AudioSource shieldSFX;
     public AudioSource healSFX;
     public AudioSource dropSFX;
-    
+
+    public KeywordComponent keywordComponent;
+    public CardPreviewPopup previewPopup;
 
     // Start is called before the first frame update
     void Start()
     {
+        previewPopup = FindObjectOfType<CardPreviewPopup>();
+
+        if (previewPopup == null)
+        {
+            Debug.LogError("CardPreviewPopup not found in the scene.");
+        }
+        keywordComponent = GetComponent<KeywordComponent>();
         CardBackScript = GetComponent<CardBack>();
         thisCard.Add(CardDatabase.cardList[thisId]);
         //thisCard[0] = CardDatabase.cardList[thisId];
@@ -120,8 +131,6 @@ public class ThisCard : MonoBehaviour
         healSFX = GameObject.Find("HealSFX").GetComponent<AudioSource>();
         shieldSFX = GameObject.Find("ShieldSFX").GetComponent<AudioSource>();
         dropSFX = GameObject.Find("DropSFX").GetComponent<AudioSource>();
-
-
     }
 
     // Update is called once per frame
@@ -140,6 +149,7 @@ public class ThisCard : MonoBehaviour
         cardCost = thisCard[0].cardCost;
         cardPower = thisCard[0].cardPower;
         cardDescription = thisCard[0].cardDescription;
+        cardKeyword = thisCard[0].cardKeyword;
         thisSprite = thisCard[0].cardImage;
 
         returnXcards = thisCard[0].returnXcards;
@@ -155,6 +165,7 @@ public class ThisCard : MonoBehaviour
         typeText.text = "" + cardType;
         costText.text = "" + cardCost;
         descriptionText.text = "" + cardDescription;
+        keywordText.text = "" + cardKeyword;
         thatImage.sprite = thisSprite;
 
         typeOutline.preserveAspect = true;
@@ -202,9 +213,10 @@ public class ThisCard : MonoBehaviour
             canBeSummon = false;
         }
 
-        if (canBeSummon == true && CardPreview.isEnlarged == false)
+        if (canBeSummon == true)
         {
             gameObject.GetComponent<Draggable>().enabled = true;
+            StartAttack();
         }
         else
         {
@@ -275,7 +287,8 @@ public class ThisCard : MonoBehaviour
         {
             uCanReturn = false;
         }
-
+        
+        //KEYWORDS
         
 
     }
@@ -285,36 +298,58 @@ public class ThisCard : MonoBehaviour
         TurnSystem.currentDF -= cardCost;
         summoned = true;
         dropSFX.Play();
+
+    }
+    
+    public void PlayCard()
+    {
+        if (keywordComponent != null && cardKeyword != "None")
+        {
+            keywordComponent.OnCardPlayed(cardKeyword);
+        }
+
     }
 
     public void Attack()
     {
         if (canAttack == true && summoned == true)
         {
+            int damageToDeal = cardPower;
+
+            // Apply keyword effects
+            if (keywordComponent != null)
+            {
+                damageToDeal = keywordComponent.ApplyDamage(cardPower);
+            }
+            
             if (Target != null)
             {
                 if (Target == Enemy)
                 {
+                    PlayCard();
+                    Debug.Log(damageToDeal);
                     if (EnemyHealth.shield > 0)
                     {
-                        if (EnemyHealth.shield >= cardPower)
+                        if (EnemyHealth.shield >= damageToDeal)
                         {
-                            EnemyHealth.shield -= cardPower;
+                            EnemyHealth.shield -= damageToDeal;
                         }
                         else
                         {
-                            float excessDamage = cardPower - EnemyHealth.shield;
+                            float excessDamage = damageToDeal - EnemyHealth.shield;
                             EnemyHealth.shield = 0;
                             EnemyHealth.staticHP -= excessDamage;
                         }
                     }
                     else
                     {
-                        EnemyHealth.staticHP -= cardPower;
+                        EnemyHealth.staticHP -= damageToDeal;
                     }
                     
                     targeting = false;
                     cantAttack = true;
+
+                    Arrow._Hide = true;
                     
                     if (canHeal == true && summoned == true)
                     {
@@ -359,6 +394,8 @@ public class ThisCard : MonoBehaviour
                         /* child.GetComponent<AICardToHand>().hurted = cardPower;
                         hurted = child.GetComponent<AICardToHand>().cardPower; */
                         cantAttack = true;
+                        
+                        Arrow._Hide = true;
                     }
                 }
             }
@@ -376,6 +413,11 @@ public class ThisCard : MonoBehaviour
     public void StartAttack()
     {
         staticTargeting = true;
+        if (canAttack == true)
+        {
+            Arrow._Show = true;
+            Arrow.startPoint = transform.position;
+        }
     }
     public void StopAttack()
     {
@@ -452,6 +494,14 @@ public class ThisCard : MonoBehaviour
     public void Shield()
     {
         PlayerHealth.shield += shieldXpower;
+    }
+    public void OnCardClick()
+    {
+        if (previewPopup != null)
+        {
+            // Show card details in the preview popup
+            previewPopup.ShowCard(this);
+        }
     }
 
 }

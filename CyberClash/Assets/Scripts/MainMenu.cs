@@ -72,6 +72,31 @@ public class MainMenu : MonoBehaviour
         AI.whichEnemy = 1;
         faction = "SecurityTutorial";
     }
+    public static void Story1Deck()
+    {
+        AI.whichEnemy = 3;
+        faction = "Story1Deck";
+    }
+    public static void Story2Deck()
+    {
+        AI.whichEnemy = 3;
+        faction = "Story2Deck";
+    }
+    public static void Story3Deck()
+    {
+        AI.whichEnemy = 3;
+        faction = "Story3Deck";
+    }
+    public static void Story4Deck()
+    {
+        AI.whichEnemy = 3;
+        faction = "Story4Deck";
+    }
+    public static void Story5Deck()
+    {
+        AI.whichEnemy = 3;
+        faction = "Story5Deck";
+    }
 
     public static void VersusMode()
     {

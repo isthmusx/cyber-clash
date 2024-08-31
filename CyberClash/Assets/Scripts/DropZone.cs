@@ -5,11 +5,11 @@ using UnityEngine.EventSystems;
 
 public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    CardPreview cardPreview; // Reference to the CardPreview component
+    //CardPreview cardPreview; // Reference to the CardPreview component
     public int maxChildCount = 5;
     void Start()
     {
-        cardPreview = GetComponent<CardPreview>(); // Get the CardPreview component attached to the same GameObject
+        //cardPreview = GetComponent<CardPreview>(); // Get the CardPreview component attached to the same GameObject
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -20,7 +20,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         }
 
         // Check if the card is not enlarged before allowing dropping
-        if (cardPreview != null && !cardPreview.IsEnlarged())
+        if (true /*cardPreview != null && !cardPreview.IsEnlarged()*/)
         {
             Draggable d = eventData.pointerDrag.GetComponent<Draggable>();
             if (d != null)
@@ -38,7 +38,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         }
 
         // Check if the card is not enlarged before allowing dropping
-        if (cardPreview != null && !cardPreview.IsEnlarged())
+        if (true /*cardPreview != null && !cardPreview.IsEnlarged()*/)
         {
             Draggable d = eventData.pointerDrag.GetComponent<Draggable>();
             if (d != null && d.placeholderParent == this.transform)
@@ -58,7 +58,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         Debug.Log(eventData.pointerDrag.name + " was dropped on " + gameObject.name);
 
         // Check if the card is not enlarged before allowing dropping
-        if (cardPreview != null && !cardPreview.IsEnlarged())
+        if (true /*cardPreview != null && !cardPreview.IsEnlarged()*/)
         {
             Draggable d = eventData.pointerDrag.GetComponent<Draggable>();
             if (d != null)
@@ -68,6 +68,5 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         }
     }
 
-    // Method to enable/disable DropZone script
 
 }

@@ -282,8 +282,8 @@ RectTransform:
   - {fileID: 1626385569}
   - {fileID: 1982070086}
   - {fileID: 205082139}
-  - {fileID: 359352915}
   - {fileID: 1144176759}
+  - {fileID: 359352915}
   - {fileID: 852454286}
   - {fileID: 237280984}
   - {fileID: 1611815516}
@@ -299,6 +299,9 @@ RectTransform:
   - {fileID: 1373290764}
   - {fileID: 341043292}
   - {fileID: 1932323010}
+  - {fileID: 2140879231}
+  - {fileID: 2023664757}
+  - {fileID: 1156373242}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -520,6 +523,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46459111}
   m_CullTransparentMesh: 1
+--- !u!114 &94359350 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3004260424528601634, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+  m_PrefabInstance: {fileID: 1131622764}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &96200354
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,7 +858,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &145719535
@@ -855,6 +869,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145719532}
   m_CullTransparentMesh: 1
+--- !u!114 &168701864 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3004260424875144271, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+  m_PrefabInstance: {fileID: 1131622764}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &172659279 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3004260424017708639, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
@@ -1119,7 +1144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &199474351
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1136,8 +1161,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125, y: 0}
-  m_SizeDelta: {x: 214.0407, y: 24}
+  m_AnchoredPosition: {x: 55.463135, y: 0}
+  m_SizeDelta: {x: 74.9669, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &199474352
 MonoBehaviour:
@@ -1159,7 +1184,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 000000
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
   m_sharedMaterial: {fileID: 7131499472571203957, guid: f5267630aa8fe144baaa2a4075da7acf, type: 2}
@@ -1249,7 +1274,6 @@ GameObject:
   - component: {fileID: 205082140}
   - component: {fileID: 205082142}
   - component: {fileID: 205082143}
-  - component: {fileID: 205082144}
   m_Layer: 5
   m_Name: Player Zone
   m_TagString: Untagged
@@ -1353,19 +1377,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &205082144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 205082138}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b066a16cb06613143920833e9321966f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  verticalOffset: 0
 --- !u!1 &205865364 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2753558762276249036, guid: 65a23aba9a4dd2045856522526473a3a, type: 3}
@@ -4058,6 +4069,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   thisId: 0
   id: 0
   cardName: 
@@ -4404,6 +4416,83 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2753558762276249037, guid: ceee33ef672cc0b4e83578104aceefdd, type: 3}
   m_PrefabInstance: {fileID: 2008783508}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &696829063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 696829064}
+  - component: {fileID: 696829066}
+  - component: {fileID: 696829065}
+  m_Layer: 5
+  m_Name: Popup Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &696829064
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696829063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1003742820}
+  - {fileID: 1899760854}
+  m_Father: {fileID: 2023664757}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &696829065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696829063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &696829066
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696829063}
+  m_CullTransparentMesh: 1
 --- !u!114 &702106293 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3004260423957869993, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
@@ -4566,6 +4655,140 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &755394819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 755394822}
+  - component: {fileID: 755394821}
+  - component: {fileID: 755394820}
+  m_Layer: 5
+  m_Name: Trivia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &755394820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755394819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Trivia:'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
+  m_sharedMaterial: {fileID: -4952945661901169907, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 15
+  m_fontSizeBase: 15
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &755394821
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755394819}
+  m_CullTransparentMesh: 1
+--- !u!224 &755394822
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755394819}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1889389519}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -172}
+  m_SizeDelta: {x: 1018.5284, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &774318750
 GameObject:
   m_ObjectHideFlags: 0
@@ -6351,6 +6574,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6363,6 +6587,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6375,6 +6600,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6387,6 +6613,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6399,6 +6626,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6411,6 +6639,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6423,6 +6652,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6435,6 +6665,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6447,6 +6678,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6459,6 +6691,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6471,6 +6704,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6483,6 +6717,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6495,6 +6730,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6507,6 +6743,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6519,6 +6756,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6531,6 +6769,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6543,6 +6782,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6555,6 +6795,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6567,6 +6808,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6579,6 +6821,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6591,6 +6834,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6603,6 +6847,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6615,6 +6860,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6627,6 +6873,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6639,6 +6886,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6651,6 +6899,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6663,6 +6912,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6675,6 +6925,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6687,6 +6938,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6699,6 +6951,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   container:
   - id: 0
     cardName: 
@@ -6712,6 +6965,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   cardsInHand:
   - id: 0
     cardName: 
@@ -6725,6 +6979,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6737,6 +6992,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6749,6 +7005,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6761,6 +7018,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6773,6 +7031,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6785,6 +7044,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6797,6 +7057,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6809,6 +7070,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6821,6 +7083,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6833,6 +7096,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6845,6 +7109,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6857,6 +7122,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6869,6 +7135,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6881,6 +7148,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6893,6 +7161,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6905,6 +7174,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6917,6 +7187,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6929,6 +7200,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6941,6 +7213,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6953,6 +7226,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6965,6 +7239,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6977,6 +7252,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -6989,6 +7265,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7001,6 +7278,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7013,6 +7291,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7025,6 +7304,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7037,6 +7317,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7049,6 +7330,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7061,6 +7343,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7073,6 +7356,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7085,6 +7369,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7097,6 +7382,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7109,6 +7395,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7121,6 +7408,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7133,6 +7421,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7145,6 +7434,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7157,6 +7447,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7169,6 +7460,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7181,6 +7473,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7193,6 +7486,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7205,6 +7499,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7217,6 +7512,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7229,6 +7525,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7241,6 +7538,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7253,6 +7551,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7265,6 +7564,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7277,6 +7577,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7289,6 +7590,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7301,6 +7603,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7313,6 +7616,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   cardsInZone:
   - id: 0
     cardName: 
@@ -7326,6 +7630,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7338,6 +7643,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7350,6 +7656,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7362,6 +7669,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7374,6 +7682,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7386,6 +7695,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7398,6 +7708,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7410,6 +7721,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7422,6 +7734,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7434,6 +7747,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7446,6 +7760,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7458,6 +7773,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7470,6 +7786,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7482,6 +7799,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7494,6 +7812,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7506,6 +7825,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7518,6 +7838,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7530,6 +7851,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7542,6 +7864,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7554,6 +7877,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7566,6 +7890,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7578,6 +7903,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7590,6 +7916,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7602,6 +7929,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7614,6 +7942,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7626,6 +7955,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7638,6 +7968,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7650,6 +7981,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7662,6 +7994,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7674,6 +8007,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7686,6 +8020,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7698,6 +8033,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7710,6 +8046,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7722,6 +8059,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7734,6 +8072,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7746,6 +8085,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7758,6 +8098,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7770,6 +8111,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7782,6 +8124,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7794,6 +8137,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7806,6 +8150,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7818,6 +8163,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7830,6 +8176,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7842,6 +8189,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7854,6 +8202,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7866,6 +8215,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7878,6 +8228,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7890,6 +8241,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7902,6 +8254,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -7914,6 +8267,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   Hand: {fileID: 0}
   Zone: {fileID: 0}
   Graveyard: {fileID: 0}
@@ -7943,6 +8297,12 @@ MonoBehaviour:
   attackSFX: {fileID: 1054441450}
   healSFX: {fileID: 1816809401}
   shieldSFX: {fileID: 899190098}
+  InGameQuiz: {fileID: 0}
+--- !u!224 &1003742820 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+  m_PrefabInstance: {fileID: 1131622764}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1008855908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8542,6 +8902,147 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ceee33ef672cc0b4e83578104aceefdd, type: 3}
+--- !u!1001 &1131622764
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 696829064}
+    m_Modifications:
+    - target: {fileID: -7200010637595700685, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3028179976305904599, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859340, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859341, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_Name
+      value: CardPreview
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859341, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004260423656859341, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664722396483833167, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268770794389114664, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8976237509909671814, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9150636471604583500, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
 --- !u!1 &1144176758
 GameObject:
   m_ObjectHideFlags: 0
@@ -8793,6 +9294,11 @@ RectTransform:
   m_AnchoredPosition: {x: -798.99927, y: -177.00003}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &1156373242 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+  m_PrefabInstance: {fileID: 8523961809227509982}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1165304897
 GameObject:
   m_ObjectHideFlags: 0
@@ -9006,6 +9512,28 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2753558762276249037, guid: ceee33ef672cc0b4e83578104aceefdd, type: 3}
   m_PrefabInstance: {fileID: 704943420}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1204094745 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3004260423305638109, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+  m_PrefabInstance: {fileID: 1131622764}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1216891423 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3004260424981795648, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+  m_PrefabInstance: {fileID: 1131622764}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1255449303 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3004260423957869993, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
@@ -9360,6 +9888,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9372,6 +9901,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9384,6 +9914,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9396,6 +9927,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9408,6 +9940,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9420,6 +9953,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9432,6 +9966,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9444,6 +9979,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9456,6 +9992,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9468,6 +10005,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9480,6 +10018,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9492,6 +10031,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9504,6 +10044,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9516,6 +10057,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9528,6 +10070,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9540,6 +10083,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9552,6 +10096,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9564,6 +10109,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9576,6 +10122,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9588,6 +10135,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9600,6 +10148,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9612,6 +10161,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9624,6 +10174,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9636,6 +10187,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9648,6 +10200,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9660,6 +10213,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9672,6 +10226,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9684,6 +10239,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9696,6 +10252,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9708,6 +10265,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9720,6 +10278,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9732,6 +10291,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9744,6 +10304,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9756,6 +10317,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9768,6 +10330,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9780,6 +10343,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9792,6 +10356,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9804,6 +10369,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9816,6 +10382,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9828,6 +10395,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9840,6 +10408,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9852,6 +10421,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9864,6 +10434,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9876,6 +10447,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9888,6 +10460,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9900,6 +10473,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9912,6 +10486,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9924,6 +10499,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9936,6 +10512,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9948,6 +10525,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9960,6 +10538,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9972,6 +10551,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9984,6 +10564,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -9996,6 +10577,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10008,6 +10590,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10020,6 +10603,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10032,6 +10616,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10044,6 +10629,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10056,6 +10642,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10068,6 +10655,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10080,6 +10668,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10092,6 +10681,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10104,6 +10694,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10116,6 +10707,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10128,6 +10720,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10140,6 +10733,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10152,6 +10746,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10164,6 +10759,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10176,6 +10772,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10188,6 +10785,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10200,6 +10798,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10212,6 +10811,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10224,6 +10824,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10236,6 +10837,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10248,6 +10850,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10260,6 +10863,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10272,6 +10876,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10284,6 +10889,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10296,6 +10902,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10308,6 +10915,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10320,6 +10928,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10332,6 +10941,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10344,6 +10954,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10356,6 +10967,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10368,6 +10980,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10380,6 +10993,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10392,6 +11006,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10404,6 +11019,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10416,6 +11032,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10428,6 +11045,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10440,6 +11058,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10452,6 +11071,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10464,6 +11084,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10476,6 +11097,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10488,6 +11110,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10500,6 +11123,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10512,6 +11136,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10524,6 +11149,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10536,6 +11162,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -10548,6 +11175,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   howManyCards: 0
   cardBack: {fileID: 205865364}
   graveWindow: {fileID: 1373290763}
@@ -11336,6 +11964,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400064179}
   m_CullTransparentMesh: 1
+--- !u!114 &1418764631 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3004260424017708639, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+  m_PrefabInstance: {fileID: 1131622764}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1429500467
 GameObject:
   m_ObjectHideFlags: 0
@@ -12178,6 +12817,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549460006}
   m_CullTransparentMesh: 1
+--- !u!114 &1587111961 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 570875286179401906, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+  m_PrefabInstance: {fileID: 1131622764}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1597896957
 GameObject:
   m_ObjectHideFlags: 0
@@ -12410,7 +13060,6 @@ GameObject:
   - component: {fileID: 1611815518}
   - component: {fileID: 1611815517}
   - component: {fileID: 1611815520}
-  - component: {fileID: 1611815521}
   m_Layer: 5
   m_Name: Hand
   m_TagString: Untagged
@@ -12514,19 +13163,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxChildCount: 5
---- !u!114 &1611815521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1611815515}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b066a16cb06613143920833e9321966f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  verticalOffset: 0
 --- !u!1 &1615926983
 GameObject:
   m_ObjectHideFlags: 0
@@ -13259,6 +13895,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13271,6 +13908,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13283,6 +13921,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13295,6 +13934,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13307,6 +13947,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13319,6 +13960,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13331,6 +13973,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13343,6 +13986,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13355,6 +13999,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13367,6 +14012,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13379,6 +14025,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13391,6 +14038,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13403,6 +14051,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13415,6 +14064,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13427,6 +14077,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13439,6 +14090,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13451,6 +14103,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13463,6 +14116,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13475,6 +14129,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13487,6 +14142,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13499,6 +14155,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13511,6 +14168,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13523,6 +14181,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13535,6 +14194,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13547,6 +14207,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13559,6 +14220,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13571,6 +14233,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13583,6 +14246,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13595,6 +14259,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   - id: 0
     cardName: 
     cardFaction: 
@@ -13607,6 +14272,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   container:
   - id: 0
     cardName: 
@@ -13620,6 +14286,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   x: 0
   cardInDeck1: {fileID: 1509865383}
   cardInDeck2: {fileID: 454483134}
@@ -13824,7 +14491,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: -10}
+  m_AnchoredPosition: {x: -10.1, y: -37.000004}
   m_SizeDelta: {x: 24, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1724524316
@@ -13847,7 +14514,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e868bf69c19697847a0784ec2cb4e00e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1ec7e819e4ee867478c2277aa221270c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -14631,8 +15298,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: -10}
-  m_SizeDelta: {x: 165.7788, y: 27.0727}
+  m_AnchoredPosition: {x: 0, y: -2}
+  m_SizeDelta: {x: 65.2551, y: 27.0727}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1824611724
 MonoBehaviour:
@@ -14940,6 +15607,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849411168}
   m_CullTransparentMesh: 1
+--- !u!114 &1850615088 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3004260423957869993, guid: 0e27879a6ac30a14199e14e396408a1f, type: 3}
+  m_PrefabInstance: {fileID: 1131622764}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1871468520
 GameObject:
   m_ObjectHideFlags: 0
@@ -15090,6 +15768,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   thisId: 0
   id: 0
   cardName: 
@@ -15348,8 +16027,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -109.4}
-  m_SizeDelta: {x: 202, y: 130}
+  m_AnchoredPosition: {x: 0, y: -118}
+  m_SizeDelta: {x: 149.92, y: 96.4801}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1881733536
 MonoBehaviour:
@@ -15439,7 +16118,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8036a5b312fac5a4e98ae664f660495c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 95920665201524e46a3fe76aff3841c1, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -15628,6 +16307,7 @@ RectTransform:
   - {fileID: 145719533}
   - {fileID: 1881733535}
   - {fileID: 1724524315}
+  - {fileID: 755394822}
   m_Father: {fileID: 8415815}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -15657,6 +16337,9 @@ MonoBehaviour:
   rewardsText: {fileID: 1824611722}
   rewards: {fileID: 1724524314}
   coinText: {fileID: 199474352}
+  coinTextGO: {fileID: 199474350}
+  trivia: {fileID: 755394819}
+  triviaText: {fileID: 755394820}
   surrenderWindow: {fileID: 1932323009}
   coinsWon: {fileID: 2463890}
   gotCoins: 0
@@ -15985,6 +16668,138 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892010645}
+  m_CullTransparentMesh: 1
+--- !u!1 &1899760853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1899760854}
+  - component: {fileID: 1899760857}
+  - component: {fileID: 1899760856}
+  - component: {fileID: 1899760855}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1899760854
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899760853}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 696829064}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.00099182, y: 0.00032806}
+  m_SizeDelta: {x: 1019.8, y: 470.68}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1899760855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899760853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1899760856}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2023664761}
+        m_TargetAssemblyTypeName: CardPreviewPopup, Assembly-CSharp
+        m_MethodName: HideCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1899760856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899760853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1899760857
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899760853}
   m_CullTransparentMesh: 1
 --- !u!114 &1913034967 stripped
 MonoBehaviour:
@@ -17034,6 +17849,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   thisId: 0
   id: 0
   cardName: 
@@ -17462,6 +18278,103 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ceee33ef672cc0b4e83578104aceefdd, type: 3}
+--- !u!1 &2023664756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023664757}
+  - component: {fileID: 2023664760}
+  - component: {fileID: 2023664759}
+  - component: {fileID: 2023664761}
+  m_Layer: 5
+  m_Name: Card Preview Popup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2023664757
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023664756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 696829064}
+  m_Father: {fileID: 8415815}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2023664759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023664756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2023664760
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023664756}
+  m_CullTransparentMesh: 1
+--- !u!114 &2023664761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023664756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2922a771c454e4ea797e1a6d577b38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardPreviewPanel: {fileID: 696829063}
+  cardImage: {fileID: 1216891423}
+  cardNameText: {fileID: 168701864}
+  cardCostText: {fileID: 1204094745}
+  cardDescriptionText: {fileID: 1850615088}
+  cardKeywordText: {fileID: 1587111961}
+  typeCost: {fileID: 1418764631}
+  typeOutline: {fileID: 94359350}
 --- !u!1 &2052048477 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5358776973407934990, guid: 314b82c933419d341b3c2e470eb226a4, type: 3}
@@ -17722,6 +18635,7 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    cardKeyword: 
   thisId: 0
   id: 0
   cardName: 
@@ -18440,6 +19354,158 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2753558762276249037, guid: 65a23aba9a4dd2045856522526473a3a, type: 3}
   m_PrefabInstance: {fileID: 799513624}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2140879230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2140879231}
+  - component: {fileID: 2140879232}
+  m_Layer: 5
+  m_Name: Arrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2140879231
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140879230}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8415815}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2140879232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140879230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed58dac669eb304a9f4acadb80ea2ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: []
+  point: {fileID: 8192261467994985043, guid: a244b275d879b5b44917fa4aeac5de9d, type: 3}
+  arrow: {fileID: 4373089466410541016, guid: 5648d1ee850bd834b86b4cd431fa256c, type: 3}
+  numberOfPoints: 10
+  distance: 50
+  direction: {x: 0, y: 0}
+  force: 0
+--- !u!1001 &8523961809227509982
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8415815}
+    m_Modifications:
+    - target: {fileID: 4262933865636394122, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_Name
+      value: Quiz1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 590.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 312.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000015258789
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298457261503569602, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cca6f9599c14e6149af7f387104b11a8, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
