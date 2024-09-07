@@ -1036,7 +1036,6 @@ GameObject:
   - component: {fileID: 8176930027188692813}
   - component: {fileID: -2428419945030215640}
   - component: {fileID: 5878327983023199022}
-  - component: {fileID: 2526554494535039572}
   m_Layer: 0
   m_Name: AI Card
   m_TagString: Clone
@@ -1818,19 +1817,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2526554494535039572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2753558762276249036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2aa73bfde2694084dbb457b1bc9c1ea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quizPanel: {fileID: 0}
 --- !u!1 &2763116619705425749
 GameObject:
   m_ObjectHideFlags: 0

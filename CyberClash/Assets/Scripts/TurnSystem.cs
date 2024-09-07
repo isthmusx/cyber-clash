@@ -188,8 +188,8 @@ public class TurnSystem : MonoBehaviour
     public void StartGame()
     {
         random = Random.Range(0, 2);
-        Debug.Log(random);
-        if (random == 0)
+
+        if (!PlayerPrefs.HasKey("TutorialDone") || PlayerPrefs.GetInt("TutorialDone") == 0)
         {
             isYourTurn = true;
             yourTurn = 1;
@@ -204,23 +204,44 @@ public class TurnSystem : MonoBehaviour
             startTurn = false;
 
             turnCount = 1;
-
         }
-
-        if (random == 1)
+        else
         {
-            isYourTurn = false;
-            yourTurn = 0;
-            yourOpponentTurn = 1;
+            if (random == 0)
+            {
+                isYourTurn = true;
+                yourTurn = 1;
+                yourOpponentTurn = 0;
 
-            maxDF = 0;
-            currentDF = 0;
+                maxDF = 1;
+                currentDF = 1;
 
-            maxEnemyDF = 1;
-            currentEnemyDF = 1;
+                maxEnemyDF = 0;
+                currentEnemyDF = 0;
 
-            turnCount = 1;
+                startTurn = false;
+
+                turnCount = 1;
+
+            }
+
+            if (random == 1)
+            {
+                isYourTurn = false;
+                yourTurn = 0;
+                yourOpponentTurn = 1;
+
+                maxDF = 0;
+                currentDF = 0;
+
+                maxEnemyDF = 1;
+                currentEnemyDF = 1;
+
+                turnCount = 1;
+            }
         }
+        
+        
     }
 
     IEnumerator Timer()

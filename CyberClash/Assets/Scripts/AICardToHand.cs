@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class AICardToHand : MonoBehaviour
 {
-    
     public List<Card> thisCard = new List<Card>();
 
     public static List<Card> cardsInHandStatic = new List<Card>();
@@ -233,7 +232,7 @@ public class AICardToHand : MonoBehaviour
                 EnemyHealth.shield += shieldXpower;
                 isSummoned = true;
             }*/
-
+           
             isSummoned = true;
 
             //for add mana card
@@ -244,7 +243,10 @@ public class AICardToHand : MonoBehaviour
             }*/
         }
 
+        
+
     }
+
 
     public void BeingTarget()
     {

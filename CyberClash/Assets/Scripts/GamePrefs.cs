@@ -23,7 +23,7 @@ public class GamePrefs : MonoBehaviour
     {
         LoadIcons();
         
-        if (MainMenu.faction == "Security")
+        if (MainMenu.faction == "Security" || MainMenu.faction == "Story1Deck" ||  MainMenu.faction == "Story2Deck" || MainMenu.faction == "Story3Deck" ||  MainMenu.faction == "Story4Deck" ||  MainMenu.faction == "Story5Deck")
         {
             playerIconBgSprite = Resources.Load<Sprite>("GamePrefs/IconBGSecurity");
             enemyIconBgSprite = Resources.Load<Sprite>("GamePrefs/IconBGThreat");

@@ -22,6 +22,7 @@ public class DialogueManager : MonoBehaviour
     void Awake()
     {
         sentences = new Queue<string>();
+        Time.timeScale = 1;
     }
 
     public void StartDialogue(Dialogue dialogue)

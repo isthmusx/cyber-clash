@@ -13,6 +13,13 @@ public class PlayerHealth : MonoBehaviour
     public Image Shield;
     public TMP_Text HPText;
 
+    // Reference to the QuizPanelSpawner
+    public QuizPanelSpawner quizPanelSpawner;
+
+    // Flags to track if a quiz has been triggered
+    private bool triggered75 = false;
+    private bool triggered50 = false;
+    private bool triggered25 = false;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +39,7 @@ public class PlayerHealth : MonoBehaviour
         {
             staticHP = maxHP;
         }
-    
+
         // Calculate totalHP including shield
         float totalHP = staticHP + shield;
 
@@ -45,11 +52,29 @@ public class PlayerHealth : MonoBehaviour
         {
             maxHP = defaultMaxHP;
         }
-    
+
         // Update UI elements
         Health.fillAmount = staticHP / maxHP;
         Shield.fillAmount = (staticHP + shield) / maxHP;
         HPText.text = staticHP + "/" + maxHP + " HP";
-    }
 
+        // Check for health thresholds and trigger quizzes
+        float healthPercentage = staticHP / maxHP;
+
+        if (healthPercentage <= 0.75f && !triggered75)
+        {
+            quizPanelSpawner.SpawnQuizPanel();
+            triggered75 = true;
+        }
+        else if (healthPercentage <= 0.50f && !triggered50)
+        {
+            quizPanelSpawner.SpawnQuizPanel();
+            triggered50 = true;
+        }
+        else if (healthPercentage <= 0.25f && !triggered25)
+        {
+            quizPanelSpawner.SpawnQuizPanel();
+            triggered25 = true;
+        }
+    }
 }

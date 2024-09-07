@@ -18,12 +18,21 @@ public class GameMessages : MonoBehaviour
     
     void Start()
     {
-        StartCoroutine(StartChat());
+        if (!PlayerPrefs.HasKey("TutorialDone") || PlayerPrefs.GetInt("TutorialDone") == 0)
+        {
+            
+        }
+        else
+        {
+            StartCoroutine(StartChat());
+        }
+        
     }
 
     // Update is called once per frame
     IEnumerator StartChat()
     {
+        yield return new WaitForSeconds(1f); 
         enemyChat.SetActive(true);
         enemyText.text = GetEnemyMessage();
         PlayMessageSound();

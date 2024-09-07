@@ -67,7 +67,6 @@ public class AI : MonoBehaviour
     public AudioSource healSFX;
     public AudioSource shieldSFX;
 
-    public InGameQuiz InGameQuiz;
     void Awake()
     {
         //Shuffle();
@@ -75,7 +74,6 @@ public class AI : MonoBehaviour
 
     void Start()
     {
-        InGameQuiz = GetComponent<InGameQuiz>();
         graveyard = GameObject.Find("Enemy Graveyard");
         StartCoroutine(WaitFiveSeconds());
         
@@ -599,13 +597,9 @@ public class AI : MonoBehaviour
     {
         TurnSystem.maxEnemyDF += i;
     }
-    private void OpenQuiz(int i)
-    {
-        if (cardsInZone[i].cardKeyword == "Replicate")
-        {
-            InGameQuiz.ShowPanel();
-        }
-    }
+
+    
+    
 
 }
     
