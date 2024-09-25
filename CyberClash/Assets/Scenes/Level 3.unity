@@ -175,9 +175,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Narrator
+    name: Professor
     sentences:
-    - "A fierce battle ensues, testing Cipher's skills in cybersecurity.\r"
+    - There isn't a truly reliable way to check if computer has a Trojan virus, so
+      i'll teach you how to prevent it instead.
+    - But first, let's remove the trojan virus. Are you ready to fight it?
+    - Yes professor! I'm ready!
 --- !u!114 &34162940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,30 +272,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 448970225}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 146362387}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &34162941
 MonoBehaviour:
@@ -389,7 +368,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5e5d5fb9e83caf54c83520fafcbad827, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e628508b544b684395c862df25537f7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -459,10 +438,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Alex
+    name: Professor
     sentences:
-    - "Let's deploy our firewall and conduct a thorough scan to root out any hidden
-      spyware.\r\r"
+    - It may not seems like it, but it is infected by a highly deceptive malware
+      called trojan.
 --- !u!114 &150973119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -885,12 +864,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Cipher
+    name: You
     sentences:
-    - "To avoid falling victim, always download software from trusted sources and
-      regularly update your security software.\r"
-    - "Our defenses are strong, but the spyware is relentless.\r\r"
-    - We must act fast.
+    - "It doesn\u2019t seem like it's infected or anything by a malware professor.\r"
 --- !u!114 &299230628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -982,30 +958,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 437538708}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1378404878}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &299230629
 MonoBehaviour:
@@ -1202,7 +1154,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a4070a787c9a9a54fa28a34a11d156ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3e90ff7599fa1774f8c3b3282a3575c6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1322,7 +1274,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ca3bcd0bd32ddb146b59c9dc43c11499, type: 3}
+  m_Sprite: {fileID: 21300000, guid: debdf37f6386e17409e8dbbe0156b465, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1436,9 +1388,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Narrator
+    name: Professor
     sentences:
-    - Calypso and Cipher engage in a tense digital battle.
+    - A Trojan acts like a bona fide application or file to trick a user.
+    - It seeks to deceive users into loading and executing the malware on their device.
+    - Once installed, a Trojan can perform the action for which it was designed.
 --- !u!114 &503613617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1531,7 +1485,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1378404878}
+      - m_Target: {fileID: 437538708}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1543,7 +1497,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 448970225}
+      - m_Target: {fileID: 1378404878}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -2701,7 +2655,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3735d14b15051a54d8d7f4c0c1c7843b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 59087b9c68648874092c5328c6cf0243, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2846,12 +2800,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Alex
+    name: Professor
     sentences:
-    - 'Spyware is a sneaky type of malware that secretly gathers sensitive information
-      from your device.
-
-'
+    - Yes, as you can see this device happens to be infected by a type of malware.
 --- !u!114 &1442050411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3034,11 +2985,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Cipher
+    name: Professor
     sentences:
-    - 'This virus disguises itself as harmless files, making it challenging to identify.
-
-'
+    - Such as, enables hackers to steal user's financial details.
 --- !u!114 &1442995226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3130,6 +3079,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1378404878}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 448970225}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1442995227
 MonoBehaviour:
@@ -3413,7 +3386,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ec5cc97b55aed3d48b740d4ceeda9cdb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 639ee524c446398458ebf45596d3832f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3617,10 +3590,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Cipher
+    name: You
     sentences:
-    - "Not if I can help it. \r\n"
-    - I'll block your access and purge you from our network.
+    - How can you tell that this computer has trojan horse professor?
 --- !u!114 &1594436753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3712,6 +3684,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 146362387}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1378404878}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1594436754
 MonoBehaviour:
@@ -4227,9 +4223,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Cipher
+    name: You
     sentences:
-    - "Uh-oh, it seems we're under attack by a new spyware infiltration.\r"
+    - "What's this? is this another device that is infected by a malware?\r"
 --- !u!1 &2040268287
 GameObject:
   m_ObjectHideFlags: 0
@@ -4282,10 +4278,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Calypso
+    name: Professor
     sentences:
-    - "You can't hide from me, Cipher. \r\n"
-    - I'll infiltrate every corner of your system.
+    - And enables a hacker remote access to a computer.
 --- !u!114 &2040268290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4377,6 +4372,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 448970225}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 146362387}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &2040268291
 MonoBehaviour:

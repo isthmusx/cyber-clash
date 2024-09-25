@@ -107,6 +107,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InventoryNew.unity
     guid: 11b8a264e9328d944814f6e7a27976fc
+  - enabled: 1
+    path: Assets/StoryQuiz/Story2Quiz1.unity
+    guid: 3630a43c9df21b3499c16ceb313bf38c
+  - enabled: 1
+    path: Assets/StoryQuiz/Story2Quiz2.unity
+    guid: 9aa6b7ed22220c54d8b42510321bc1d9
+  - enabled: 1
+    path: Assets/StoryQuiz/Story3Quiz1.unity
+    guid: e9e3c3c7bb959ea4e8690534f5b6728f
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: ca75d600379d013459e1def9b488d3a6, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 907db5133a118694db04ffe42c51e82e, type: 2}

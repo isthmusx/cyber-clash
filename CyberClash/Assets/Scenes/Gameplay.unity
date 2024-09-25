@@ -4801,6 +4801,7 @@ MonoBehaviour:
   tutorialPanel: {fileID: 750810587}
   panel4: {fileID: 221301074}
   panel5: {fileID: 1364698144}
+  surrenderBTN: {fileID: 920754949}
   timePause: 0
 --- !u!1 &357180710
 GameObject:

@@ -3,13 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StoryRewards : MonoBehaviour
 {
     public GameObject coinsWon;
     public TMP_Text coins;
-    public TMP_Text xp;
     public TMP_Text unlock;
+    public GameObject unlockIcon;
+
+    public Image gearIcon1;
+    public Image gearIcon3;
+    public Sprite sprite1;
+    public Sprite sprite3;
 
     private const string Story1Key = "Story1Done";
     private const string Story2Key = "Story2Done";
@@ -55,16 +61,29 @@ public class StoryRewards : MonoBehaviour
         {
             EXPController.RewardXP();
             coinsWon.GetComponent<Shop>().coins += 1000;
-            coins.text = "+ 1000";
-            xp.text = "+ 1500";
+            coins.text = "+ 1000 Coins";
             unlock.text = "New Story Unlocked";
+            StarManager.Instance.AwardStar("Story1");
+            StarManager.Instance.AwardStar("Story1");
+            StarManager.Instance.AwardStar("Story1");
+            sprite1 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            sprite3 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            gearIcon1.sprite = sprite1;
+            gearIcon3.sprite = sprite3;
         }
         else
         {
             EXPController.RewardXPLose();
-            coins.text = "+ 0";
-            xp.text = "+ 0";
+            coins.text = "+ 0 Coins";
             unlock.text = "";
+            unlockIcon.SetActive(false);
+            StarManager.Instance.AwardStar("Story1");
+            StarManager.Instance.AwardStar("Story1");
+            StarManager.Instance.AwardStar("Story1");
+            sprite1 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            sprite3 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            gearIcon1.sprite = sprite1;
+            gearIcon3.sprite = sprite3;
         }
     }
     public void Reward2()
@@ -73,17 +92,60 @@ public class StoryRewards : MonoBehaviour
         {
             EXPController.RewardXP();
             coinsWon.GetComponent<Shop>().coins += 1000;
-            coins.text = "+ 1000";
-            xp.text = "+ 1500";
+            coins.text = "+ 1000 Coins";
             unlock.text = "New Story Unlocked";
+            StarManager.Instance.AwardStar("Story2");
+            if (ScoreManager.Instance.GetScore("Story2Quiz1") == 4)
+            {
+                StarManager.Instance.AwardStar("Story2");
+                sprite1 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
+
+            if (ScoreManager.Instance.GetScore("Story2Quiz2") == 4)
+            {
+                StarManager.Instance.AwardStar("Story2");
+                sprite3 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
+
+            gearIcon1.sprite = sprite1;
+            gearIcon3.sprite = sprite3;
         }
         else
         {
             EXPController.RewardXPLose();
-            coins.text = "+ 0";
-            xp.text = "+ 0";
+            coins.text = "+ 0 Coins";
             unlock.text = "";
+            unlockIcon.SetActive(false);
+            StarManager.Instance.AwardStar("Story2");
+            if (ScoreManager.Instance.GetScore("Story2Quiz1") == 4)
+            {
+                StarManager.Instance.AwardStar("Story2");
+                sprite1 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite1 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
 
+            if (ScoreManager.Instance.GetScore("Story2Quiz2") == 4)
+            {
+                StarManager.Instance.AwardStar("Story2");
+                sprite3 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
+            gearIcon1.sprite = sprite1;
+            gearIcon3.sprite = sprite3;
         }
     }
     public void Reward3()
@@ -93,16 +155,44 @@ public class StoryRewards : MonoBehaviour
             EXPController.RewardXP();
             coinsWon.GetComponent<Shop>().coins += 1000;
             coins.text = "+ 1000";
-            xp.text = "+ 1500";
             unlock.text = "New Story Unlocked";
+            StarManager.Instance.AwardStar("Story3");
+            if (ScoreManager.Instance.GetScore("Story3Quiz1") == 4)
+            {
+                StarManager.Instance.AwardStar("Story3");
+                sprite1 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
+
+            if (ScoreManager.Instance.GetScore("Story3Quiz1") == 4)
+            {
+                StarManager.Instance.AwardStar("Story3");
+                sprite3 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
+
+            gearIcon1.sprite = sprite1;
+            gearIcon3.sprite = sprite3;
         }
         else
         {
             EXPController.RewardXPLose();
             coins.text = "+ 0";
-            xp.text = "+ 0";
             unlock.text = "";
-
+            unlockIcon.SetActive(false);
+            StarManager.Instance.AwardStar("Story3");
+            StarManager.Instance.AwardStar("Story3");
+            StarManager.Instance.AwardStar("Story3");
+            sprite1 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            sprite3 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            gearIcon1.sprite = sprite1;
+            gearIcon3.sprite = sprite3;
         }
     }
     public void Reward4()
@@ -112,16 +202,14 @@ public class StoryRewards : MonoBehaviour
             EXPController.RewardXP();
             coinsWon.GetComponent<Shop>().coins += 1000;
             coins.text = "+ 1000";
-            xp.text = "+ 1500";
             unlock.text = "New Story Unlocked";
         }
         else
         {
             EXPController.RewardXPLose();
             coins.text = "+ 0";
-            xp.text = "+ 0";
             unlock.text = "";
-
+            unlockIcon.SetActive(false);
         }
     }
     public void Reward5()
@@ -131,16 +219,14 @@ public class StoryRewards : MonoBehaviour
             EXPController.RewardXP();
             coinsWon.GetComponent<Shop>().coins += 1000;
             coins.text = "+ 1000";
-            xp.text = "+ 1500";
             unlock.text = "";
         }
         else
         {
             EXPController.RewardXPLose();
             coins.text = "+ 0";
-            xp.text = "+ 0";
             unlock.text = "";
-
+            unlockIcon.SetActive(false);
         }
     }
         
