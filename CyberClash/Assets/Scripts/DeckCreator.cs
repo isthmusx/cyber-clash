@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DeckCreator : MonoBehaviour
@@ -19,7 +20,9 @@ public class DeckCreator : MonoBehaviour
     public int[] quantity;
     public GameObject errorModal;
     public GameObject successModal;
-    
+    public TMP_Text cardCounter;
+    private int totalDroppedCards = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +33,7 @@ public class DeckCreator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        cardCounter.text = $"Current cards in deck ({totalDroppedCards}).";
     }
 
     public void CreateSecurityDeck()
@@ -197,7 +200,7 @@ public class DeckCreator : MonoBehaviour
             Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
             alreadyCreated[i] = true;
             quantity[i] = 1;
-
+            totalDroppedCards++;
         } 
         else if (cardWithThisId[i] > 0 && alreadyCreated[i] == true)
         {

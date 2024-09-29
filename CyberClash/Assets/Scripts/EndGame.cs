@@ -38,6 +38,9 @@ public class EndGame : MonoBehaviour
     private bool isWinMusicPlaying = false;
     private bool isLoseMusicPlaying = false;
     
+    private bool hasWon = false; 
+    private bool hasLost = false; 
+    
     //public MainMenu menu;
     
     private static string[] cybersecurityFacts = new string[]
@@ -97,13 +100,15 @@ public class EndGame : MonoBehaviour
 
     void Update()
     {
-        if (EnemyHealth.staticHP <= 0)
+        if (EnemyHealth.staticHP <= 0 && !hasWon)
         {
+            hasWon = true;
             StartCoroutine(Win());
         }
 
-        if (PlayerHealth.staticHP <= 0)
+        if (PlayerHealth.staticHP <= 0 && !hasLost)
         {
+            hasLost = true;
             StartCoroutine(Lose());
         }
         
@@ -154,7 +159,7 @@ public class EndGame : MonoBehaviour
 
     private IEnumerator Win()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(1f);
         if (!isWinMusicPlaying)
         {
             isWinMusicPlaying = true;
@@ -202,7 +207,7 @@ public class EndGame : MonoBehaviour
 
     private IEnumerator Lose()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         if (!isWinMusicPlaying)
         {
             isWinMusicPlaying = true;

@@ -97,6 +97,11 @@ public class MainMenu : MonoBehaviour
         AI.whichEnemy = 3;
         faction = "Story5Deck";
     }
+    public static void Story6Deck()
+    {
+        AI.whichEnemy = 3;
+        faction = "Story6Deck";
+    }
 
     public static void VersusMode()
     {
@@ -121,6 +126,10 @@ public class MainMenu : MonoBehaviour
     public static void Story5()
     {
         mode = "story5";
+    }
+    public static void Story6()
+    {
+        mode = "story6";
     }
     public static void SelectSecurity()
     {
@@ -187,6 +196,14 @@ public class MainMenu : MonoBehaviour
         else if (mode == "story5" && EndGame.isWin == false)
         {
             SceneManager.LoadSceneAsync(26);
+        }
+        else if (mode == "story6" && EndGame.isWin == true)
+        {
+            SceneManager.LoadSceneAsync(44);
+        }
+        else if (mode == "story6" && EndGame.isWin == false)
+        {
+            SceneManager.LoadSceneAsync(43);
         }
         
 

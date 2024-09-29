@@ -22,6 +22,7 @@ public class StoryRewards : MonoBehaviour
     private const string Story3Key = "Story3Done";
     private const string Story4Key = "Story4Done";
     private const string Story5Key = "Story5Done";
+    private const string Story6Key = "Story5Done";
 
     public static void MarkStoryDone(int storyNumber)
     {
@@ -48,6 +49,8 @@ public class StoryRewards : MonoBehaviour
                 return Story4Key;
             case 5:
                 return Story5Key;
+            case 6:
+                return Story6Key;
             default:
                 Debug.LogError("Invalid story number!");
                 return "";
@@ -199,17 +202,62 @@ public class StoryRewards : MonoBehaviour
     {
         if (!IsStoryDone(4))
         {
-            EXPController.RewardXP();
-            coinsWon.GetComponent<Shop>().coins += 1000;
-            coins.text = "+ 1000";
-            unlock.text = "New Story Unlocked";
+           EXPController.RewardXP();
+           coinsWon.GetComponent<Shop>().coins += 1000;
+           coins.text = "+ 1000";
+           unlock.text = "New Story Unlocked";
+           StarManager.Instance.AwardStar("Story4");
+           if (ScoreManager.Instance.GetScore("Story4Quiz1") == 4)
+           {
+               StarManager.Instance.AwardStar("Story4");
+               sprite1 = Resources.Load<Sprite>("Gear/GearLightIcon");
+           }
+           else
+           {
+               sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+           }
+           
+           if (ScoreManager.Instance.GetScore("Story4Quiz2") == 4)
+           {
+               StarManager.Instance.AwardStar("Story4");
+               sprite3 = Resources.Load<Sprite>("Gear/GearLightIcon");
+           }
+           else
+           { 
+               sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+           }
+           
+           gearIcon1.sprite = sprite1;
+           gearIcon3.sprite = sprite3;
         }
         else
         {
             EXPController.RewardXPLose();
-            coins.text = "+ 0";
+            coins.text = "+ 0 Coins";
             unlock.text = "";
             unlockIcon.SetActive(false);
+            StarManager.Instance.AwardStar("Story4");
+            if (ScoreManager.Instance.GetScore("Story4Quiz1") == 4)
+            {
+                StarManager.Instance.AwardStar("Story4");
+                sprite1 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite1 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
+
+            if (ScoreManager.Instance.GetScore("Story4Quiz2") == 4)
+            {
+                StarManager.Instance.AwardStar("Story4");
+                sprite3 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
+            gearIcon1.sprite = sprite1;
+            gearIcon3.sprite = sprite3;
         }
     }
     public void Reward5()
@@ -219,14 +267,121 @@ public class StoryRewards : MonoBehaviour
             EXPController.RewardXP();
             coinsWon.GetComponent<Shop>().coins += 1000;
             coins.text = "+ 1000";
-            unlock.text = "";
+            unlock.text = "New Story Unlocked";
+            StarManager.Instance.AwardStar("Story5");
+            if (ScoreManager.Instance.GetScore("Story5Quiz1") == 4)
+            {
+                StarManager.Instance.AwardStar("Story5");
+                sprite1 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
+
+            if (ScoreManager.Instance.GetScore("Story5Quiz2") == 4)
+            {
+                StarManager.Instance.AwardStar("Story5");
+                sprite3 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
+
+            gearIcon1.sprite = sprite1;
+            gearIcon3.sprite = sprite3;
         }
         else
         {
             EXPController.RewardXPLose();
-            coins.text = "+ 0";
+            coins.text = "+ 0 Coins";
             unlock.text = "";
             unlockIcon.SetActive(false);
+            StarManager.Instance.AwardStar("Story5");
+            if (ScoreManager.Instance.GetScore("Story5Quiz1") == 4)
+            {
+                StarManager.Instance.AwardStar("Story5");
+                sprite1 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite1 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
+
+            if (ScoreManager.Instance.GetScore("Story5Quiz2") == 4)
+            {
+                StarManager.Instance.AwardStar("Story5");
+                sprite3 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
+            gearIcon1.sprite = sprite1;
+            gearIcon3.sprite = sprite3;
+        }
+    }
+    public void Reward6()
+    {
+        if (!IsStoryDone(6))
+        {
+            EXPController.RewardXP();
+            coinsWon.GetComponent<Shop>().coins += 1000;
+            coins.text = "+ 1000";
+            unlock.text = "New Story Unlocked";
+            StarManager.Instance.AwardStar("Story6");
+            if (ScoreManager.Instance.GetScore("Story6Quiz1") == 4)
+            {
+                StarManager.Instance.AwardStar("Story6");
+                sprite1 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
+
+            if (ScoreManager.Instance.GetScore("Story6Quiz2") == 4)
+            {
+                StarManager.Instance.AwardStar("Story6");
+                sprite3 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
+
+            gearIcon1.sprite = sprite1;
+            gearIcon3.sprite = sprite3;
+        }
+        else
+        {
+            EXPController.RewardXPLose();
+            coins.text = "+ 0 Coins";
+            unlock.text = "";
+            unlockIcon.SetActive(false);
+            StarManager.Instance.AwardStar("Story6");
+            if (ScoreManager.Instance.GetScore("Story6Quiz1") == 4)
+            {
+                StarManager.Instance.AwardStar("Story6");
+                sprite1 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite1 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
+
+            if (ScoreManager.Instance.GetScore("Story6Quiz2") == 4)
+            {
+                StarManager.Instance.AwardStar("Story6");
+                sprite3 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            }
+            else
+            {
+                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+            }
+            gearIcon1.sprite = sprite1;
+            gearIcon3.sprite = sprite3;
         }
     }
         

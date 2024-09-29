@@ -221,6 +221,8 @@ public class AI : MonoBehaviour
         
         if (TurnSystem.isYourTurn == false)
         {
+            StartCoroutine(CardChecker());
+            
             for (int i = 0; i < 50; i++)
             {
                 if (cardsInHand[i].id != 0)
@@ -230,6 +232,25 @@ public class AI : MonoBehaviour
                         AICanSummon[i] = true;
                     }
                 }
+            }
+            
+            if (attackPhase == true && endPhase == false && Zone.transform.childCount > 0)
+            {
+                for (int i = 0; i < Zone.transform.childCount; i++)
+                {
+                    Transform cardTransform = Zone.transform.GetChild(i);
+                    if (cardTransform != null) // Ensure the card still exists
+                    {
+                        // Attack the card
+                        Debug.Log("Attacking with card: " + cardsInZone[i].cardName + ", Power: " + cardsInZone[i].cardPower);
+                        Attack(i);
+                        Heal(i);
+                        Shield(i);
+                        DrawCard(i);
+                    }
+                }
+
+                endPhase = true; // Set end phase after attacking
             }
         }
         else
@@ -419,6 +440,7 @@ public class AI : MonoBehaviour
         int bestValue = int.MinValue;
 
         
+        
         // Iterate over each card in the AI's hand
         foreach (Transform child in Hand.transform)
         {
@@ -497,9 +519,12 @@ public class AI : MonoBehaviour
                     index++;
                 }
             }
-            
-            summonThisId = card.id;
 
+            if (card != null)
+            {
+                summonThisId = card.id;
+            }
+            
             if (TurnSystem.turnCount == 1) 
             {
                 yield return new WaitForSeconds(6f); 
@@ -598,7 +623,15 @@ public class AI : MonoBehaviour
         TurnSystem.maxEnemyDF += i;
     }
 
-    
+    IEnumerator CardChecker()
+    {
+        if (howManyCards <= 0 && Zone.transform.childCount <= 0 && TurnSystem.turnCount != 1)
+        {
+            yield return new WaitForSeconds(3f);
+            EnemyHealth.staticHP = 0; // Set enemy health to 0 if both hand and zone are empty
+            Debug.Log("Enemy has lost, health set to 0!");
+        }
+    }
     
 
 }

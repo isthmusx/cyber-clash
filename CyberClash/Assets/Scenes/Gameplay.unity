@@ -3023,21 +3023,23 @@ MonoBehaviour:
   - {fileID: 30182166153472097}
   - {fileID: 2218894065219452816}
   quizQuestions:
-  - question: Sample answer 1
+  - question: This will help restore data if your computer is infected
     answers:
-    - A
-    - B
+    - Back up
+    - Software Update
+    correctAnswerIndex: 0
+  - question: Protecting your account with complex password is one way to prevent
+      hacking
+    answers:
+    - True
+    - False
+    correctAnswerIndex: 0
+  - question: 'Antivirus can''t detect malware like ransomware, and thus can''t prevent
+      it '
+    answers:
+    - True
+    - False
     correctAnswerIndex: 1
-  - question: Sample answer 2
-    answers:
-    - A
-    - B
-    correctAnswerIndex: 0
-  - question: Sample answer 3
-    answers:
-    - A
-    - B
-    correctAnswerIndex: 0
   feedbackPanel: {fileID: 1854171960}
   feedbackText: {fileID: 280395231}
   rewardButton1: {fileID: 1847133821}
