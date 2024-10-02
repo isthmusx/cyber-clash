@@ -222,6 +222,14 @@ public class MainMenu : MonoBehaviour
 
 
     }
+    public static void UnlockAlllevel()
+    {
+        PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
+            PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 6);
+            PlayerPrefs.Save();
+
+
+    }
 
     public void SecurityPack()
     {

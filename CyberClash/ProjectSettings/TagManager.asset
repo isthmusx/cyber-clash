@@ -9,6 +9,7 @@ TagManager:
   - First
   - Deck
   - Canvas
+  - CorrectAnswer
   layers:
   - Default
   - TransparentFX

@@ -31,7 +31,7 @@ public class ItemBuy : MonoBehaviour
 
             // Mark item as purchased
             InventoryManager.Instance.MarkItemAsPurchased(Item.nameItem);
-
+            PlayerPrefs.SetInt("coins", shop.coins);
             // Optionally destroy the item from the shop
             Destroy(gameObject);
         }

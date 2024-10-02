@@ -23,6 +23,8 @@ public class EndGame : MonoBehaviour
     public GameObject coinTextGO;
     public GameObject trivia;
     public TMP_Text triviaText;
+
+    public GameObject gameCanvas;
     
     public static bool isWin;
     public GameObject surrenderWindow;
@@ -125,6 +127,7 @@ public class EndGame : MonoBehaviour
         Time.timeScale = 0;
         surrenderMusic.Play();
         
+        gameCanvas.SetActive(false);
         mainTextObject.SetActive(true);
         subTextObject.SetActive(true);
         background.SetActive(true);
@@ -168,6 +171,7 @@ public class EndGame : MonoBehaviour
         
         Time.timeScale = 0;
         isWin = true;
+        gameCanvas.SetActive(false);
         mainTextObject.SetActive(true);
         subTextObject.SetActive(true);
         background.SetActive(true);
@@ -216,6 +220,7 @@ public class EndGame : MonoBehaviour
         
         Time.timeScale = 0;
         isWin = false;
+        gameCanvas.SetActive(false);
         mainTextObject.SetActive(true);
         subTextObject.SetActive(true);
         background.SetActive(true);
