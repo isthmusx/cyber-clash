@@ -6,7 +6,7 @@ public class AnswerChecker : MonoBehaviour
 {
     public AnswerSlot[] answerSlots;
     public PanelRandomizer panelRandomizer;
-    public GameObject panelToDisable;  // Reference to the current panel's GameObject
+    public GameObject panelToDisable; // Reference to the current panel's GameObject
     public Toggle[] answerToggles;
     private Button button;
 
@@ -14,26 +14,55 @@ public class AnswerChecker : MonoBehaviour
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(CheckAnswers);
-        
+
     }
 
     void CheckAnswers()
     {
         bool oneCorrect = false;
         bool allCorrect = true;
-        
+
+
+
         // Check all answer slots
         foreach (AnswerSlot slot in answerSlots)
         {
+            Debug.Log("Checking slot: " + slot.name);
             if (!slot.HasCorrectAnswer())
             {
                 allCorrect = false;
-                Debug.Log("Correct Answer Found!");
-                break; // Exit the loop as soon as one correct answer is found
+                string currentScene = SceneManager.GetActiveScene().name;
+                if (currentScene != "Story6Quiz1" && currentScene != "Story6Quiz2")
+                {
+                    Debug.Log("Incorrect Answer Found! Breaking the loop in scene: " + currentScene);
+                    break; // Exit the loop as soon as one incorrect answer is found if it's not Story6Quiz1 or Story6Quiz2
+                }
+                else
+                {
+                    Debug.Log("Incorrect Answer Found, but not breaking the loop for Story6Quiz1 or Story6Quiz2.");
+                }
             }
+            else
+            {
+                Debug.Log("Correct Answer Found in slot: " + slot.name); // Log when the correct answer is found
+
+                // Increase score for Story6Quiz1 or Story6Quiz2
+                string currentScene = SceneManager.GetActiveScene().name;
+                if (currentScene == "Story6Quiz1")
+                {
+                    ScoreManager.Instance.IncreaseScore("Story6Quiz1", 1);
+                    Debug.Log("Score increased for Story6Quiz1.");
+                }
+                else if (currentScene == "Story6Quiz2")
+                {
+                    ScoreManager.Instance.IncreaseScore("Story6Quiz2", 1);
+                    Debug.Log("Score increased for Story6Quiz2.");
+                }
+            }
+
         }
-        
-        
+
+
         if (allCorrect)
         {
             Debug.Log("All answers are correct!");
@@ -44,15 +73,25 @@ public class AnswerChecker : MonoBehaviour
             Debug.Log("Not all answers are correct.");
             oneCorrect = false; // Set oneCorrect to false if not all answers are correct
         }
-        
+
         foreach (Toggle toggle in answerToggles)
         {
-            if (toggle.isOn && toggle.CompareTag("CorrectAnswer"))  // Tag the correct toggle with "CorrectAnswer"
+            if (toggle.isOn && toggle.CompareTag("CorrectAnswer")) // Tag the correct toggle with "CorrectAnswer"
             {
                 oneCorrect = true;
                 Debug.Log("Correct Answer Found!");
                 break;
             }
+
+        }
+
+        if (SceneManager.GetActiveScene().name == "Story6Quiz1")
+        {
+            panelRandomizer.finalPanel.SetActive(true);
+        }
+        if (SceneManager.GetActiveScene().name == "Story6Quiz2")
+        {
+            panelRandomizer.finalPanel.SetActive(true);
         }
 
         // If at least one answer is correct, show the next panel

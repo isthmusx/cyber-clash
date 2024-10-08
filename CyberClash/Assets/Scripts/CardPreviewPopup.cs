@@ -17,6 +17,10 @@ public class CardPreviewPopup : MonoBehaviour
     public Image typeCost;
     public Image typeOutline;
 
+    public TMP_Text cardNameTextSide;
+    public TMP_Text cardDescriptionTextSide;
+    public TMP_Text cardInfoTextSide;
+
     private void Update()
     {
         
@@ -38,7 +42,11 @@ public class CardPreviewPopup : MonoBehaviour
         cardDescriptionText.text = thisCard.cardDescription;
         cardKeywordText.text = thisCard.cardKeyword;
         typeCost.preserveAspect = true;
-
+        
+        cardNameTextSide.text = thisCard.cardName;
+        cardDescriptionTextSide.text = thisCard.cardDescription;
+        cardInfoTextSide.text = thisCard.cardInfo;
+                
         cardPreviewPanel.SetActive(true);
         switch (thisCard.cardType)
         {

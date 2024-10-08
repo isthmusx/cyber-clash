@@ -26,14 +26,15 @@ public class Card
     public int drawXcards;
 
     public string cardKeyword;
-    
+
+    public string cardInfo;
 
     public Card()
     {
 
     }
 
-    public Card(int Id, string CardName, string CardFaction, string CardType, int CardCost, int CardPower, string CardDescription, Sprite CardImage, int ReturnXcards, int HealXpower, int ShieldXpower, int DrawXcards, string CardKeyword)
+    public Card(int Id, string CardName, string CardFaction, string CardType, int CardCost, int CardPower, string CardDescription, Sprite CardImage, int ReturnXcards, int HealXpower, int ShieldXpower, int DrawXcards, string CardKeyword, string CardInfo)
     {
         id = Id;
         cardName = CardName;
@@ -48,6 +49,7 @@ public class Card
         shieldXpower = ShieldXpower;
         drawXcards = DrawXcards;
         cardKeyword = CardKeyword;
+        cardInfo = CardInfo;
     }
 
 }

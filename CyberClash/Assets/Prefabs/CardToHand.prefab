@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4322729667339728326
 RectTransform:
   m_ObjectHideFlags: 0
@@ -469,6 +469,7 @@ MonoBehaviour:
     shieldXpower: 0
     drawXcards: 0
     cardKeyword: 
+    cardInfo: 
   thisId: 0
   id: 0
   cardName: 
@@ -478,6 +479,7 @@ MonoBehaviour:
   cardPower: 0
   cardDescription: 
   cardKeyword: 
+  cardInfo: 
   nameText: {fileID: 3004260424875144271}
   factionText: {fileID: 3004260424380870569}
   typeText: {fileID: 3004260424091757342}

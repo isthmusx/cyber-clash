@@ -115,7 +115,7 @@ public class ScoreManager : MonoBehaviour
     {
         // Add any necessary quiz names here to initialize scores
         // Example: List<string> quizNames = new List<string> { "Quiz1", "Quiz2", "Quiz3" };
-        List<string> quizNames = new List<string> { "Story2Quiz1", "Story2Quiz2"};
+        List<string> quizNames = new List<string> { "Story2Quiz1", "Story2Quiz2", "Story3Quiz1", "Story4Quiz1", "Story4Quiz2", "Story5Quiz1", "Story5Quiz2", "Story6Quiz1", "Story6Quiz2"};
         foreach (var quizName in quizNames)
         {
             quizScores[quizName] = LoadScore(quizName);

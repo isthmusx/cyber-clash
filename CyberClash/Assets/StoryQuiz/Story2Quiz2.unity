@@ -4668,7 +4668,7 @@ MonoBehaviour:
   answerSlots:
   - {fileID: 709422334}
   panelRandomizer: {fileID: 1732639659}
-  panelToDisable: {fileID: 0}
+  panelToDisable: {fileID: 659736971}
   answerToggles: []
 --- !u!114 &747789578
 MonoBehaviour:
@@ -12733,9 +12733,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 963194230}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: PlayAdvMode
+        m_MethodName: Back
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -20,7 +20,8 @@ public class ThisCard : MonoBehaviour
     public int cardPower;
     public string cardDescription;
     public string cardKeyword;
-
+    public string cardInfo;
+    
     public TMP_Text nameText;
     public TMP_Text factionText;
     public TMP_Text typeText;
@@ -150,6 +151,7 @@ public class ThisCard : MonoBehaviour
         cardPower = thisCard[0].cardPower;
         cardDescription = thisCard[0].cardDescription;
         cardKeyword = thisCard[0].cardKeyword;
+        cardInfo = thisCard[0].cardInfo;
         thisSprite = thisCard[0].cardImage;
 
         returnXcards = thisCard[0].returnXcards;
