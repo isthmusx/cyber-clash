@@ -25,6 +25,10 @@ public class Card
 
     public int drawXcards;
 
+    public int getXdatafrag;
+
+    public int trueDamageXpower;
+
     public string cardKeyword;
 
     public string cardInfo;
@@ -34,7 +38,7 @@ public class Card
 
     }
 
-    public Card(int Id, string CardName, string CardFaction, string CardType, int CardCost, int CardPower, string CardDescription, Sprite CardImage, int ReturnXcards, int HealXpower, int ShieldXpower, int DrawXcards, string CardKeyword, string CardInfo)
+    public Card(int Id, string CardName, string CardFaction, string CardType, int CardCost, int CardPower, string CardDescription, Sprite CardImage, int ReturnXcards, int HealXpower, int ShieldXpower, int DrawXcards, int GetXdatafrag, int TrueDamageXpower, string CardKeyword, string CardInfo)
     {
         id = Id;
         cardName = CardName;
@@ -48,6 +52,8 @@ public class Card
         healXpower = HealXpower;
         shieldXpower = ShieldXpower;
         drawXcards = DrawXcards;
+        getXdatafrag = GetXdatafrag;
+        trueDamageXpower = TrueDamageXpower;
         cardKeyword = CardKeyword;
         cardInfo = CardInfo;
     }

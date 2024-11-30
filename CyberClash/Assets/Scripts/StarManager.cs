@@ -22,7 +22,7 @@ public class StarManager : MonoBehaviour
 
     private Dictionary<string, int> storyStars = new Dictionary<string, int>();
     private const int maxStarsPerStory = 3;
-    private int totalStories = 6; // Adjust based on your game's number of stories
+    private int totalStories = 7; // Adjust based on your game's number of stories
 
     public Slider starProgressBar; // UI Slider for the progress bar
 

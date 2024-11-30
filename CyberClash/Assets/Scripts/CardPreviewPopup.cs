@@ -16,7 +16,7 @@ public class CardPreviewPopup : MonoBehaviour
     public TMP_Text cardKeywordText; // Reference to the Text component for the card's keyword
     public Image typeCost;
     public Image typeOutline;
-
+    public string cardType; 
     public TMP_Text cardNameTextSide;
     public TMP_Text cardDescriptionTextSide;
     public TMP_Text cardInfoTextSide;
@@ -103,6 +103,40 @@ public class CardPreviewPopup : MonoBehaviour
                 break;
         }
         
+        
+    }
+
+    public void ShowCardDeck(CardInCollection thisCard)
+    {
+        // Set the image and text components with card details
+        cardImage.sprite = thisCard.thisSprite;
+        cardNameText.text = thisCard.cardName;
+        cardCostText.text = thisCard.cardCost.ToString();
+        cardDescriptionText.text = thisCard.cardDescription;
+        //cardKeywordText.text = thisCard.cardKeyword;
+        typeCost.preserveAspect = true;
+        cardKeywordText.text = " ";
+        cardPreviewPanel.SetActive(true);
+        switch (thisCard.thisCard[0].cardType)
+        {
+            case "Offense":
+                typeOutline.sprite = Resources.Load<Sprite>("OffenseOutline");
+                typeCost.sprite = Resources.Load<Sprite>("CardDFOffense");
+                cardNameText.color = new Color32(247, 27, 63, 255);
+                break;
+            case "Defense":
+                typeOutline.sprite = Resources.Load<Sprite>("DefenseOutline");
+                typeCost.sprite = Resources.Load<Sprite>("CardDFDefense");
+                cardNameText.color = new Color32(8, 129, 129, 255);
+                break;
+            case "Utility":
+                typeOutline.sprite = Resources.Load<Sprite>("UtilityOutline");
+                typeCost.sprite = Resources.Load<Sprite>("CardDFUtility");
+                cardNameText.color = new Color32(255, 153, 20, 255);
+                break;
+            default:
+                break;
+        }
     }
 
     // This method can be called by the close button to hide the panel

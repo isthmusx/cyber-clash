@@ -468,6 +468,8 @@ MonoBehaviour:
     healXpower: 0
     shieldXpower: 0
     drawXcards: 0
+    getXdatafrag: 0
+    trueDamageXpower: 0
     cardKeyword: 
     cardInfo: 
   thisId: 0
@@ -517,6 +519,8 @@ MonoBehaviour:
   shieldXpower: 0
   canShield: 0
   drawXcards: 0
+  getXdatafrag: 0
+  trueDamageXpower: 0
   EnemyZone: {fileID: 0}
   AICardToHand: {fileID: 0}
   playerDeck: {fileID: 0}
@@ -524,6 +528,9 @@ MonoBehaviour:
   shieldSFX: {fileID: 8300000, guid: f8e3a71211ea087459e64d03d395d6aa, type: 3}
   healSFX: {fileID: 8300000, guid: 1e8c698f77603a7438ae75e19e09e7cd, type: 3}
   dropSFX: {fileID: 0}
+  trueDamageSFX: {fileID: 0}
+  gainDFSFX: {fileID: 0}
+  drawCardSFX: {fileID: 0}
   keywordComponent: {fileID: 3695152962446467302}
   previewPopup: {fileID: 0}
 --- !u!114 &9150636471604583500
@@ -797,8 +804,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Update software, for next 3 rounds gain 60 shield per round.\nGain 40 shield
-    per round in the next 3 rounds
+  m_text: Deal 100 Damage and Draw 1 Card
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
   m_sharedMaterial: {fileID: -4952945661901169907, guid: d3ce672e0a4c3594c9c4246900ed9745, type: 2}
@@ -825,12 +831,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
+  m_fontSize: 150
   m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 5
-  m_fontSizeMax: 100
+  m_fontSizeMax: 150
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512

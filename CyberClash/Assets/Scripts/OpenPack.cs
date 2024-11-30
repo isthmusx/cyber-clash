@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.UI;
 public class OpenPack : MonoBehaviour
 {
-
     public float updated;
     public float max;
 
@@ -13,70 +12,110 @@ public class OpenPack : MonoBehaviour
 
     public GameObject prefab;
     public GameObject pack;
-    
+
     public GameObject c1;
     public GameObject c2;
     public GameObject c3;
     public GameObject c4;
     public GameObject c5;
-    
+
+    private bool skipPressed = false;
 
     public GameObject back;
     public GameObject panel;
     public GameObject text;
-    
-    // Start is called before the first frame update
+
+    public GameObject skipButton; // Reference to the skip button
+
+    private Coroutine openingPackCoroutine; // Track the coroutine
+
     void Start()
     {
         max = 100;
         updated = 100;
 
-        StartCoroutine(Wait());
+        openingPackCoroutine = StartCoroutine(Wait());
     }
 
-    // Update is called once per frame
     void Update()
     {
-        bar.fillAmount = updated / max;
-
-        if (updated < 0)
+        // Only update the bar if not skipping
+        if (!skipPressed)
         {
-            updated = 0;
-        }
-        updated -= 50 * Time.deltaTime;
+            bar.fillAmount = updated / max;
 
+            if (updated < 0)
+            {
+                updated = 0;
+            }
+            updated -= 50 * Time.deltaTime;
+        }
     }
 
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(2f);
-        Instantiate(prefab,pack.transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(1f);
-        Instantiate(prefab,pack.transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(1f);
-        Instantiate(prefab,pack.transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(1f);
-        Instantiate(prefab,pack.transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(1f);
-        Instantiate(prefab,pack.transform.position, Quaternion.identity);
+
+        for (int i = 0; i < 5; i++)
+        {
+            if (skipPressed)
+            {
+                ShowAllCards(); // Skip to showing all cards
+                yield break; // Exit the coroutine
+            }
+
+            Instantiate(prefab, pack.transform.position, Quaternion.identity);
+            yield return new WaitForSeconds(1f);
+        }
+
         yield return new WaitForSeconds(2.5f);
-        
 
-        Destroy(pack);
+        // Now show the cards after pack opening
+        skipButton.SetActive(false);// Disable the skip button
+        ShowAllCards(); // Call the method to display all cards
+    }
+
+    void ShowAllCards()
+    {
+        if (pack != null) // Check if the pack exists
+        {
+            Destroy(pack);
+        }
         panel.SetActive(true);
-        text.SetActive(true);
-        c1.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
-        c2.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
-        c3.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
-        c4.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
-        c5.SetActive(true);
+        text.SetActive(false);
 
-        yield return new WaitForSeconds(2f);
+        // Show all cards with delays
+        c1.SetActive(true);
+        StartCoroutine(ShowCardWithDelay(c2, 0.5f));
+        StartCoroutine(ShowCardWithDelay(c3, 1.0f));
+        StartCoroutine(ShowCardWithDelay(c4, 1.5f));
+        StartCoroutine(ShowCardWithDelay(c5, 2.0f));
+
+        // Activate back button after a delay
+        StartCoroutine(ActivateBackButton(2.5f));
+    }
+
+    IEnumerator ShowCardWithDelay(GameObject card, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        card.SetActive(true);
+    }
+
+    IEnumerator ActivateBackButton(float delay)
+    {
+        yield return new WaitForSeconds(delay);
         back.SetActive(true);
     }
 
+    public void SkipAnimations()
+    {
+        skipPressed = true; // Set the skip flag
+
+        if (openingPackCoroutine != null) // Stop the coroutine if it's running
+        {
+            StopCoroutine(openingPackCoroutine);
+            skipButton.SetActive(false); // Disable the skip button
+            ShowAllCards(); // Immediately show all cards
+        }
+    }
 }

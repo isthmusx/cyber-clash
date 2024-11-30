@@ -67,6 +67,12 @@ public class AI : MonoBehaviour
     public AudioSource healSFX;
     public AudioSource shieldSFX;
 
+    public Animator EnemyAttackAnimator;
+    public Animator trueDamageAnimator;
+    public Animator gainDataFragAnimator;
+    public Animator drawCardAnimator;
+    public Animator EnemyShieldAnimator;
+    public Animator EnemyHealAnimator;
     void Awake()
     {
         //Shuffle();
@@ -74,6 +80,13 @@ public class AI : MonoBehaviour
 
     void Start()
     {
+        EnemyAttackAnimator = GameObject.FindWithTag("EnemyDamageAnimator")?.GetComponent<Animator>();
+        trueDamageAnimator = GameObject.FindWithTag("TrueDamageAnimator")?.GetComponent<Animator>();
+        EnemyHealAnimator = GameObject.FindWithTag("EnemyHealAnimator")?.GetComponent<Animator>();
+        EnemyShieldAnimator = GameObject.FindWithTag("EnemyShieldAnimator")?.GetComponent<Animator>();
+        gainDataFragAnimator = GameObject.FindWithTag("EnergyAnimator")?.GetComponent<Animator>();
+        drawCardAnimator = GameObject.FindWithTag("DrawAnimator")?.GetComponent<Animator>();
+        
         graveyard = GameObject.Find("Enemy Graveyard");
         StartCoroutine(WaitFiveSeconds());
         
@@ -578,14 +591,17 @@ public class AI : MonoBehaviour
         if (cardsInZone[i].cardPower > cardsInZone[i].shieldXpower && cardsInZone[i].cardPower > cardsInZone[i].healXpower)
         {
             attackSFX.Play();
+            EnemyAttackAnimator.SetTrigger("TriggerDamage");
         }
         else if (cardsInZone[i].shieldXpower > cardsInZone[i].cardPower && cardsInZone[i].shieldXpower > cardsInZone[i].healXpower)
         {
             shieldSFX.Play();
+            EnemyShieldAnimator.SetTrigger("TriggerHeal");
         }
         else if (cardsInZone[i].healXpower > cardsInZone[i].cardPower && cardsInZone[i].healXpower > cardsInZone[i].shieldXpower)
         {
             healSFX.Play();
+            EnemyHealAnimator.SetTrigger("TriggerHeal");
         }
         
         Transform cardTransform = Zone.transform.GetChild(i);
@@ -625,6 +641,7 @@ public class AI : MonoBehaviour
 
     IEnumerator CardChecker()
     {
+        yield return new WaitForSeconds(6f);
         if (howManyCards <= 0 && Zone.transform.childCount <= 0 && TurnSystem.turnCount != 1)
         {
             yield return new WaitForSeconds(3f);

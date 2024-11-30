@@ -11,6 +11,15 @@ TagManager:
   - Canvas
   - CorrectAnswer
   - AnswerSlot
+  - AttackAnimator
+  - TrueDamageAnimator
+  - HealAnimator
+  - ShieldAnimator
+  - EnergyAnimator
+  - DrawAnimator
+  - EnemyDamageAnimator
+  - EnemyShieldAnimator
+  - EnemyHealAnimator
   layers:
   - Default
   - TransparentFX

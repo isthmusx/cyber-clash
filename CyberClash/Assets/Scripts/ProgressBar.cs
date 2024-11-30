@@ -16,6 +16,8 @@ public class ProgressBar : MonoBehaviour
     public GameObject[] story4GearObjects;
     public GameObject[] story5GearObjects;
     public GameObject[] story6GearObjects;
+    public GameObject[] story7GearObjects;
+
     
     // Separate arrays for each chapter's gears (3 gears per chapter)
     public Image[] story1Gears; // For Story 1
@@ -24,6 +26,7 @@ public class ProgressBar : MonoBehaviour
     public Image[] story4Gears; // For Story 4
     public Image[] story5Gears; // For Story 5
     public Image[] story6Gears;
+    public Image[] story7Gears;
     
     public Sprite inactiveGearSprite;
     public Sprite activeGearSprite;
@@ -35,6 +38,7 @@ public class ProgressBar : MonoBehaviour
         story4Gears = GetImageComponents(story4GearObjects);
         story5Gears = GetImageComponents(story5GearObjects);
         story6Gears = GetImageComponents(story6GearObjects);
+        story7Gears = GetImageComponents(story7GearObjects);
         
         // Update the progress bar when the home screen is enabled
         if (StarManager.Instance != null)
@@ -51,6 +55,7 @@ public class ProgressBar : MonoBehaviour
             UpdateChapterGears("Story4", story4Gears);
             UpdateChapterGears("Story5", story5Gears);
             UpdateChapterGears("Story6", story6Gears);
+            UpdateChapterGears("Story7", story7Gears);
         }
     }
     private Image[] GetImageComponents(GameObject[] gearObjects)

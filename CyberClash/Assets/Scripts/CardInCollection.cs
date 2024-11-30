@@ -11,10 +11,7 @@ public class CardInCollection : MonoBehaviour
 
     public int id;
     public string cardName;
-    public string cardFaction;
-    public string cardType;
     public int cardCost;
-    public int cardPower;
     public string cardDescription;
 
     public TMP_Text nameText;
@@ -30,11 +27,13 @@ public class CardInCollection : MonoBehaviour
 
     public bool beGray;
     public GameObject cardBack;
+    public CardPreviewPopup previewPopup;
 
     // Start is called before the first frame update
     void Start()
     {
         thisCard[0] = CardDatabase.cardList[thisId];
+        previewPopup = FindObjectOfType<CardPreviewPopup>();
     }
 
     // Update is called once per frame
@@ -44,10 +43,7 @@ public class CardInCollection : MonoBehaviour
 
         id = thisCard[0].id;
         cardName = thisCard[0].cardName;
-        cardFaction = thisCard[0].cardFaction;
-        cardType = thisCard[0].cardType;
         cardCost = thisCard[0].cardCost;
-        cardPower = thisCard[0].cardPower;
         cardDescription = thisCard[0].cardDescription;
         thisSprite = thisCard[0].cardImage;
 
@@ -86,6 +82,14 @@ public class CardInCollection : MonoBehaviour
                     break;
             }
             cardBack.gameObject.SetActive(false);
+        }
+    }
+    public void OnCardClick()
+    {
+        if (previewPopup != null)
+        {
+            // Show card details in the preview popup
+            previewPopup.ShowCardDeck(this);
         }
     }
 }

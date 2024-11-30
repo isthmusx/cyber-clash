@@ -22,6 +22,7 @@ public class DeckCreator : MonoBehaviour
     public GameObject successModal;
     public TMP_Text cardCounter;
     private int totalDroppedCards = 0;
+    private List<int> draggedCards = new List<int>(); // Track dragged cards
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +39,7 @@ public class DeckCreator : MonoBehaviour
 
     public void CreateSecurityDeck()
     {
-
+        // Similar to what you already have
         for (int i = 0; i < numberOfCardsInDatabase; i++)
         {
             sum += cardWithThisId[i];
@@ -51,13 +52,14 @@ public class DeckCreator : MonoBehaviour
                 PlayerPrefs.SetInt("securityDeck" + i, cardWithThisId[i]);
             }
             successModal.SetActive(true);
+
+            draggedCards.Clear(); // Clear the list since the deck is successfully created
         }
         else
         {
             errorModal.SetActive(true);
         }
-            
-            
+
         sum = 0;
         numberOfDifferentCards = 0;
 
@@ -67,8 +69,8 @@ public class DeckCreator : MonoBehaviour
         }
 
         Debug.Log("Deck Created");
+    }
 
-        }
     
     public void CreateThreatDeck()
     {
@@ -85,6 +87,8 @@ public class DeckCreator : MonoBehaviour
                 PlayerPrefs.SetInt("threatDeck" + i, cardWithThisId[i]);
             }
             successModal.SetActive(true);
+            
+            draggedCards.Clear(); // Clear the list since the deck is successfully created
         }
         else
         {
@@ -172,20 +176,14 @@ public class DeckCreator : MonoBehaviour
         {
             cardWithThisId[dragged]++;
 
-            //if (cardWithThisId[dragged] > 4)
-            //{
-            //    cardWithThisId[dragged] = 4;
-            //}
-
-            if (cardWithThisId[dragged] < 0)
+            // Track dragged card if it's not already tracked
+            if (!draggedCards.Contains(dragged))
             {
-                cardWithThisId[dragged] = 0;
+                draggedCards.Add(dragged);
             }
 
             coll.GetComponent<Collection>().HowManyCards[dragged]--;
-
             CalculateDrop();
-
         }
     }
 
@@ -200,12 +198,13 @@ public class DeckCreator : MonoBehaviour
             Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
             alreadyCreated[i] = true;
             quantity[i] = 1;
-            totalDroppedCards++;
+            
         } 
         else if (cardWithThisId[i] > 0 && alreadyCreated[i] == true)
         {
             quantity[i]++;
         }
+        totalDroppedCards++;
     }
     public bool CanDragCards()
     {
@@ -216,5 +215,20 @@ public class DeckCreator : MonoBehaviour
         }
         return totalCards < 30;
     }
+    public void CancelDeckCreation()
+    {
+        // Restore dragged cards to the collection
+        foreach (int cardId in draggedCards)
+        {
+            coll.GetComponent<Collection>().HowManyCards[cardId] += cardWithThisId[cardId];
+            cardWithThisId[cardId] = 0;
+            quantity[cardId] = 0;
+            alreadyCreated[cardId] = false;
+        }
+
+        draggedCards.Clear(); // Clear the list since the deck creation was canceled
+        Debug.Log("Deck creation canceled, cards returned to collection.");
+    }
+
 
 }

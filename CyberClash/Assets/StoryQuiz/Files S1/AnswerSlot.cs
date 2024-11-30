@@ -22,13 +22,14 @@
         {
             if (eventData.pointerDrag != null)
             {
-                CurrentItem = null;
+                //CurrentItem = null;
             }
         }
 
         public bool HasCorrectAnswer()
         {
             bool hasCorrectAnswer = CurrentItem != null && CurrentItem == correctAnswer;
+            Debug.Log($"CurrentItem: {CurrentItem}, CorrectAnswer: {correctAnswer}, HasCorrectAnswer: {hasCorrectAnswer}");
             return hasCorrectAnswer;
         }
 

@@ -1588,6 +1588,7 @@ MonoBehaviour:
     shieldXpower: 0
     drawXcards: 0
     cardKeyword: 
+    cardInfo: 
   thisId: 0
   id: 0
   cardName: 
@@ -1597,6 +1598,7 @@ MonoBehaviour:
   cardPower: 0
   cardDescription: 
   cardKeyword: 
+  cardInfo: 
   nameText: {fileID: 2753558761309556558}
   factionText: {fileID: 2753558760815023272}
   typeText: {fileID: 2753558762176892959}
@@ -1641,6 +1643,8 @@ MonoBehaviour:
   shieldSFX: {fileID: 0}
   healSFX: {fileID: 0}
   dropSFX: {fileID: 0}
+  keywordComponent: {fileID: 0}
+  previewPopup: {fileID: 0}
 --- !u!114 &8176930027188692813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1985,7 +1989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5079522121665066751
 RectTransform:
   m_ObjectHideFlags: 0

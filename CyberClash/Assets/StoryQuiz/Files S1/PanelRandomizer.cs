@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PanelRandomizer : MonoBehaviour
@@ -7,6 +8,9 @@ public class PanelRandomizer : MonoBehaviour
     public GameObject finalPanel;
     public static GameObject correctModal;
     public static GameObject wrongModal;
+    
+    public TMP_Text correctTriviaText;
+    public TMP_Text wrongTriviaText;
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
@@ -52,6 +56,32 @@ public class PanelRandomizer : MonoBehaviour
 
         // Remove the activated panel from the list to avoid showing it again
         panels.RemoveAt(randomIndex);
+    }
+    
+    public void ShowCorrectPanelWithTrivia(string trivia)
+    {
+        if (correctTriviaText != null)
+        {
+            correctTriviaText.text = trivia;
+            correctModal.SetActive(true);
+        }
+        else
+        {
+            Debug.LogError("Correct trivia text reference is not set.");
+        }
+    }
+
+    public void ShowWrongPanelWithTrivia(string trivia)
+    {
+        if (wrongTriviaText != null)
+        {
+            wrongTriviaText.text = trivia;
+            wrongModal.SetActive(true);
+        }
+        else
+        {
+            Debug.LogError("Wrong trivia text reference is not set.");
+        }
     }
     
 }

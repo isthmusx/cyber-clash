@@ -28,7 +28,7 @@ public class ThisCard : MonoBehaviour
     public TMP_Text costText;
     public TMP_Text descriptionText;
     public TMP_Text keywordText;
-
+    
     public Sprite thisSprite;
     public Image thatImage;
     public Image typeOutline;
@@ -79,6 +79,10 @@ public class ThisCard : MonoBehaviour
     public bool canShield;
 
     public int drawXcards;
+
+    public int getXdatafrag;
+
+    public int trueDamageXpower;
     
     public GameObject EnemyZone;
     public GameObject AICardToHand;
@@ -89,9 +93,20 @@ public class ThisCard : MonoBehaviour
     public AudioSource shieldSFX;
     public AudioSource healSFX;
     public AudioSource dropSFX;
+    public AudioSource trueDamageSFX;
+    public AudioSource gainDFSFX;
+    public AudioSource drawCardSFX;
 
     public KeywordComponent keywordComponent;
     public CardPreviewPopup previewPopup;
+    
+    public Animator attackAnimator;
+    public Animator trueDamageAnimator;
+    public Animator gainDataFragAnimator;
+    public Animator drawCardAnimator;
+    public Animator shieldAnimator;
+    public Animator healAnimator;
+
 
     // Start is called before the first frame update
     void Start()
@@ -132,6 +147,17 @@ public class ThisCard : MonoBehaviour
         healSFX = GameObject.Find("HealSFX").GetComponent<AudioSource>();
         shieldSFX = GameObject.Find("ShieldSFX").GetComponent<AudioSource>();
         dropSFX = GameObject.Find("DropSFX").GetComponent<AudioSource>();
+        trueDamageSFX = GameObject.Find("TrueDamageSFX").GetComponent<AudioSource>();
+        gainDFSFX = GameObject.Find("GainDFSFX").GetComponent<AudioSource>();
+        drawCardSFX = GameObject.Find("DrawCardSFX").GetComponent<AudioSource>();
+        
+        attackAnimator = GameObject.FindWithTag("AttackAnimator")?.GetComponent<Animator>();
+        trueDamageAnimator = GameObject.FindWithTag("TrueDamageAnimator")?.GetComponent<Animator>();
+        healAnimator = GameObject.FindWithTag("HealAnimator")?.GetComponent<Animator>();
+        shieldAnimator = GameObject.FindWithTag("ShieldAnimator")?.GetComponent<Animator>();
+        gainDataFragAnimator = GameObject.FindWithTag("EnergyAnimator")?.GetComponent<Animator>();
+        drawCardAnimator = GameObject.FindWithTag("DrawAnimator")?.GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -161,6 +187,10 @@ public class ThisCard : MonoBehaviour
         shieldXpower = thisCard[0].shieldXpower;
         
         drawXcards = thisCard[0].drawXcards;
+
+        getXdatafrag = thisCard[0].getXdatafrag;
+
+        trueDamageXpower = thisCard[0].trueDamageXpower;
 
         nameText.text = "" + cardName;
         factionText.text = "" + cardFaction;
@@ -300,6 +330,15 @@ public class ThisCard : MonoBehaviour
         TurnSystem.currentDF -= cardCost;
         summoned = true;
         dropSFX.Play();
+        
+        if (PlayerDeck.deckSize !=0 && drawXcards > 0)
+        {
+            StartCoroutine(playerDeck.Draw(drawXcards));
+        }
+        if (TurnSystem.currentDF < TurnSystem.maxDF && getXdatafrag > 0)
+        {
+            TurnSystem.currentDF += getXdatafrag;
+        }
 
     }
     
@@ -347,6 +386,11 @@ public class ThisCard : MonoBehaviour
                     {
                         EnemyHealth.staticHP -= damageToDeal;
                     }
+
+                    if (trueDamageXpower > 0)
+                    {
+                        EnemyHealth.staticHP -= trueDamageXpower;
+                    }
                     
                     targeting = false;
                     cantAttack = true;
@@ -367,21 +411,40 @@ public class ThisCard : MonoBehaviour
 
                     if (PlayerDeck.deckSize !=0 && summoned == true)
                     {
-                        StartCoroutine(playerDeck.Draw(drawXcards));
+                        //StartCoroutine(playerDeck.Draw(drawXcards));
                     }
 
                     if (cardPower > shieldXpower && cardPower > healXpower)
                     {
                         attackSFX.Play();
+                        attackAnimator.SetTrigger("TriggerDamage");
+                    }
+                    else if (trueDamageXpower > 0)
+                    {
+                        trueDamageSFX.Play();
+                        trueDamageAnimator.SetTrigger("TriggerDamage");
+                    }
+                    else if (getXdatafrag > 0)
+                    {
+                        gainDFSFX.Play();
+                        gainDataFragAnimator.SetTrigger("TriggerHeal");
+                    }
+                    else if (drawXcards > 0)
+                    {
+                        drawCardAnimator.SetTrigger("TriggerHeal");
+                        drawCardSFX.Play();
                     }
                     else if (shieldXpower > cardPower && shieldXpower > healXpower)
                     {
                         shieldSFX.Play();
+                        shieldAnimator.SetTrigger("TriggerHeal");
                     }
                     else if (healXpower > cardPower && healXpower > shieldXpower)
                     {
                         healSFX.Play();
+                        healAnimator.SetTrigger("TriggerHeal");
                     }
+                    
                     
                     Destroy();
 
@@ -397,7 +460,7 @@ public class ThisCard : MonoBehaviour
                         hurted = child.GetComponent<AICardToHand>().cardPower; */
                         cantAttack = true;
                         
-                        Arrow._Hide = true;
+                        //Arrow._Hide = true;
                     }
                 }
             }

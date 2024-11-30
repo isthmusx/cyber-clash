@@ -98,6 +98,7 @@ public class EndGame : MonoBehaviour
             }
         }
 
+        isWin = false;
     }
 
     void Update()

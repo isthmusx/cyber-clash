@@ -28,6 +28,7 @@ public class PlayerDeck : MonoBehaviour
     public GameObject[] Clones;
 
     public GameObject Hand;
+    public GameObject Zone;
 
     public EndGame EndGame;
 
@@ -79,8 +80,10 @@ public class PlayerDeck : MonoBehaviour
         {
             for (int i = 50; i < 100; i++) 
             {
+                Debug.Log(PlayerPrefs.GetInt("threatDeck" + i, 0));
                 if (PlayerPrefs.GetInt("threatDeck" + i, 0) > 0) 
                 {
+                    
                     for (int j = 0; j < PlayerPrefs.GetInt("threatDeck" + i, 0); j++) 
                     {
                         deck[x] = CardDatabase.cardList[i]; 
@@ -109,7 +112,7 @@ public class PlayerDeck : MonoBehaviour
         {
             for (int i = 0; i < 30; i++)
             { 
-                x = Random.Range(100, 104);
+                x = Random.Range(0, 49);
                 deck[i] = CardDatabase.cardList[x];
             }
         }
@@ -117,7 +120,7 @@ public class PlayerDeck : MonoBehaviour
         {
             for (int i = 0; i < 30; i++)
             { 
-                x = Random.Range(100, 104);
+                x = Random.Range(0, 49);
                 deck[i] = CardDatabase.cardList[x];
             }
         }
@@ -125,7 +128,7 @@ public class PlayerDeck : MonoBehaviour
         {
             for (int i = 0; i < 30; i++)
             { 
-                x = Random.Range(100, 104);
+                x = Random.Range(0, 49);
                 deck[i] = CardDatabase.cardList[x];
             }
         }
@@ -133,7 +136,23 @@ public class PlayerDeck : MonoBehaviour
         {
             for (int i = 0; i < 30; i++)
             { 
-                x = Random.Range(100, 104);
+                x = Random.Range(0, 49);
+                deck[i] = CardDatabase.cardList[x];
+            }
+        }
+        else if (MainMenu.faction == "Story6Deck")
+        {
+            for (int i = 0; i < 30; i++)
+            { 
+                x = Random.Range(0, 49);
+                deck[i] = CardDatabase.cardList[x];
+            }
+        }
+        else if (MainMenu.faction == "Story7Deck")
+        {
+            for (int i = 0; i < 30; i++)
+            { 
+                x = Random.Range(0, 49);
                 deck[i] = CardDatabase.cardList[x];
             }
         }
@@ -198,11 +217,23 @@ public class PlayerDeck : MonoBehaviour
             
             TurnSystem.startTurn = false;
         }
-        
-       
+
+        if (TurnSystem.isYourTurn == true)
+        {
+            StartCoroutine(EndIfNoCards());
+        }
 
     }
 
+    IEnumerator EndIfNoCards()
+    {
+        if (Zone.transform.childCount > 0 && Hand.transform.childCount > 0 && deckSize == 0)
+        {
+            yield return new WaitForSeconds(2);
+            PlayerHealth.staticHP = 0;
+        }
+
+    }
     IEnumerator ShuffleNow()
     {
         yield return new WaitForSeconds(1);

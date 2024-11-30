@@ -28,7 +28,7 @@ public class Shop : MonoBehaviour
         
         coins = 100;
 
-        coins = PlayerPrefs.GetInt("coins", 100);
+        coins = PlayerPrefs.GetInt("coins", 1000);
 
         if (MainMenu.shopInventory == "Inventory")
         {

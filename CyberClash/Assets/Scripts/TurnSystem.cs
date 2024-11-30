@@ -15,7 +15,7 @@ public class TurnSystem : MonoBehaviour
     public int yourOpponentTurn;
     public TMP_Text turnText;
 
-    public int maxDF;
+    public static int maxDF;
     public static int currentDF;
     public TMP_Text DFText;
 
@@ -52,7 +52,7 @@ public class TurnSystem : MonoBehaviour
     {
         StartGame();
 
-        seconds = 20;
+        seconds = 120;
         timerStart = true;
 
         protectStart = true;
@@ -89,7 +89,7 @@ public class TurnSystem : MonoBehaviour
         }
 
 
-        DFText.text = currentDF + "/" + maxDF + " DF";
+        DFText.text = currentDF + "/" + maxDF + " Energy";
 
         if (isYourTurn == true && seconds >0 && timerStart == true)
         {
@@ -100,7 +100,7 @@ public class TurnSystem : MonoBehaviour
         {
             EndYourTurn();
             timerStart = true;
-            seconds = 20;
+            seconds = 120;
             
         }
         
@@ -115,9 +115,9 @@ public class TurnSystem : MonoBehaviour
         {
             EndYourOpponentTurn();
             timerStart = true;
-            seconds = 20;
+            seconds = 120;
         }
-        enemyDFText.text = currentEnemyDF + "/" + maxEnemyDF + " DF";
+        enemyDFText.text = currentEnemyDF + "/" + maxEnemyDF + " Energy";
 
         if (AI.AIEndPhase == true)
         {
@@ -140,7 +140,7 @@ public class TurnSystem : MonoBehaviour
         }
 
         isYourTurn = false;
-        seconds = 20;
+        seconds = 120;
         yourOpponentTurn += 1;
 
         if (maxEnemyDF < 7)
@@ -166,7 +166,7 @@ public class TurnSystem : MonoBehaviour
             return; //
         
         isYourTurn = true;
-        seconds = 20;
+        seconds = 120;
         yourTurn += 1;
 
         if (maxDF < 7)
@@ -270,6 +270,11 @@ public class TurnSystem : MonoBehaviour
     {
         yield return new WaitForSeconds(6f);
         protectStart = false;
+    }
+    IEnumerator EndTurnDisable()
+    {
+        yield return new WaitForSeconds(6f);
+        endTurnBTN.interactable = true;
     }
     
     void DisableButtonForDelay()

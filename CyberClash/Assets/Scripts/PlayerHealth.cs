@@ -17,9 +17,11 @@ public class PlayerHealth : MonoBehaviour
     public QuizPanelSpawner quizPanelSpawner;
 
     // Flags to track if a quiz has been triggered
-    private bool triggered75 = false;
+    private bool triggered90 = false;
+    private bool triggered70 = false;
     private bool triggered50 = false;
-    private bool triggered25 = false;
+    private bool triggered30 = false;
+    private bool triggered10 = false;
 
     // Start is called before the first frame update
     void Start()
@@ -61,20 +63,30 @@ public class PlayerHealth : MonoBehaviour
         // Check for health thresholds and trigger quizzes
         float healthPercentage = staticHP / maxHP;
 
-        if (healthPercentage <= 0.75f && !triggered75)
+        if (healthPercentage <= 0.90f && !triggered90)
         {
             quizPanelSpawner.SpawnQuizPanel();
-            triggered75 = true;
+            triggered90 = true;
+        }
+        else if (healthPercentage <= 0.70f && !triggered70)
+        {
+            quizPanelSpawner.SpawnQuizPanel();
+            triggered70 = true;
         }
         else if (healthPercentage <= 0.50f && !triggered50)
         {
             quizPanelSpawner.SpawnQuizPanel();
             triggered50 = true;
         }
-        else if (healthPercentage <= 0.25f && !triggered25)
+        else if (healthPercentage <= 0.30f && !triggered30)
         {
             quizPanelSpawner.SpawnQuizPanel();
-            triggered25 = true;
+            triggered30 = true;
+        }
+        else if (healthPercentage <= 0.10f && !triggered10)
+        {
+            quizPanelSpawner.SpawnQuizPanel();
+            triggered10 = true;
         }
     }
 }

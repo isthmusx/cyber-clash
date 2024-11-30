@@ -22,7 +22,9 @@ public class StoryRewards : MonoBehaviour
     private const string Story3Key = "Story3Done";
     private const string Story4Key = "Story4Done";
     private const string Story5Key = "Story5Done";
-    private const string Story6Key = "Story5Done";
+    private const string Story6Key = "Story6Done";
+    private const string Story7Key = "Story6Done";
+
 
     public static void MarkStoryDone(int storyNumber)
     {
@@ -51,6 +53,8 @@ public class StoryRewards : MonoBehaviour
                 return Story5Key;
             case 6:
                 return Story6Key;
+            case 7:
+                return Story7Key;
             default:
                 Debug.LogError("Invalid story number!");
                 return "";
@@ -105,7 +109,7 @@ public class StoryRewards : MonoBehaviour
             }
             else
             {
-                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+                sprite1 = Resources.Load<Sprite>("Gear/GearDarkIcon");
             }
 
             if (ScoreManager.Instance.GetScore("Story2Quiz2") == 4)
@@ -167,7 +171,7 @@ public class StoryRewards : MonoBehaviour
             }
             else
             {
-                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+                sprite1 = Resources.Load<Sprite>("Gear/GearDarkIcon");
             }
 
             if (ScoreManager.Instance.GetScore("Story3Quiz1") == 4)
@@ -214,7 +218,7 @@ public class StoryRewards : MonoBehaviour
            }
            else
            {
-               sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+               sprite1 = Resources.Load<Sprite>("Gear/GearDarkIcon");
            }
            
            if (ScoreManager.Instance.GetScore("Story4Quiz2") == 4)
@@ -276,7 +280,7 @@ public class StoryRewards : MonoBehaviour
             }
             else
             {
-                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+                sprite1 = Resources.Load<Sprite>("Gear/GearDarkIcon");
             }
 
             if (ScoreManager.Instance.GetScore("Story5Quiz2") == 4)
@@ -338,7 +342,7 @@ public class StoryRewards : MonoBehaviour
             }
             else
             {
-                sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
+                sprite1 = Resources.Load<Sprite>("Gear/GearDarkIcon");
             }
 
             if (ScoreManager.Instance.GetScore("Story6Quiz2") == 4)
@@ -380,6 +384,39 @@ public class StoryRewards : MonoBehaviour
             {
                 sprite3 = Resources.Load<Sprite>("Gear/GearDarkIcon");
             }
+            gearIcon1.sprite = sprite1;
+            gearIcon3.sprite = sprite3;
+        }
+    }
+    
+    public void Reward7()
+    {
+        if (!IsStoryDone(7))
+        {
+            EXPController.RewardXP();
+            coinsWon.GetComponent<Shop>().coins += 5000;
+            coins.text = "+ 5000 Coins";
+            unlock.text = "Clash Mode Unlocked";
+            StarManager.Instance.AwardStar("Story7");
+            StarManager.Instance.AwardStar("Story7");
+            StarManager.Instance.AwardStar("Story7");
+            sprite1 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            sprite3 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            gearIcon1.sprite = sprite1;
+            gearIcon3.sprite = sprite3;
+            PlayerPrefs.SetInt("storyComplete", 1);
+        }
+        else
+        {
+            EXPController.RewardXPLose();
+            coins.text = "+ 0 Coins";
+            unlock.text = "";
+            unlockIcon.SetActive(false);
+            StarManager.Instance.AwardStar("Story7");
+            StarManager.Instance.AwardStar("Story7");
+            StarManager.Instance.AwardStar("Story7");
+            sprite1 = Resources.Load<Sprite>("Gear/GearLightIcon");
+            sprite3 = Resources.Load<Sprite>("Gear/GearLightIcon");
             gearIcon1.sprite = sprite1;
             gearIcon3.sprite = sprite3;
         }

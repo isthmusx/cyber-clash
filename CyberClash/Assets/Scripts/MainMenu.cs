@@ -102,6 +102,11 @@ public class MainMenu : MonoBehaviour
         AI.whichEnemy = 3;
         faction = "Story6Deck";
     }
+    public static void Story7Deck()
+    {
+        AI.whichEnemy = 3;
+        faction = "Story7Deck";
+    }
 
     public static void VersusMode()
     {
@@ -130,6 +135,10 @@ public class MainMenu : MonoBehaviour
     public static void Story6()
     {
         mode = "story6";
+    }
+    public static void Story7()
+    {
+        mode = "story7";
     }
     public static void SelectSecurity()
     {
@@ -163,7 +172,7 @@ public class MainMenu : MonoBehaviour
         }
         else if (mode == "story1" && EndGame.isWin == false)
         {
-            SceneManager.LoadSceneAsync(13);
+            SceneManager.LoadSceneAsync("Story Lose");
         }
         else if (mode == "story2" && EndGame.isWin == true)
         {
@@ -171,7 +180,7 @@ public class MainMenu : MonoBehaviour
         }
         else if (mode == "story2" && EndGame.isWin == false)
         {
-            SceneManager.LoadSceneAsync(20);
+            SceneManager.LoadSceneAsync("Story 2-Lose");
         }
         else if (mode == "story3" && EndGame.isWin == true)
         {
@@ -179,7 +188,7 @@ public class MainMenu : MonoBehaviour
         }
         else if (mode == "story3" && EndGame.isWin == false)
         {
-            SceneManager.LoadSceneAsync(22);
+            SceneManager.LoadSceneAsync("Story 3-Lose");
         }
         else if (mode == "story4" && EndGame.isWin == true)
         {
@@ -187,7 +196,7 @@ public class MainMenu : MonoBehaviour
         }
         else if (mode == "story4" && EndGame.isWin == false)
         {
-            SceneManager.LoadSceneAsync(24);
+            SceneManager.LoadSceneAsync("Story 4-Lose");
         }
         else if (mode == "story5" && EndGame.isWin == true)
         {
@@ -195,7 +204,7 @@ public class MainMenu : MonoBehaviour
         }
         else if (mode == "story5" && EndGame.isWin == false)
         {
-            SceneManager.LoadSceneAsync(26);
+            SceneManager.LoadSceneAsync("Story 5-Lose1");
         }
         else if (mode == "story6" && EndGame.isWin == true)
         {
@@ -203,7 +212,15 @@ public class MainMenu : MonoBehaviour
         }
         else if (mode == "story6" && EndGame.isWin == false)
         {
-            SceneManager.LoadSceneAsync(43);
+            SceneManager.LoadSceneAsync("Story 6-Lose");
+        }
+        else if (mode == "story7" && EndGame.isWin == true)
+        {
+            SceneManager.LoadSceneAsync(49);
+        }
+        else if (mode == "story7" && EndGame.isWin == false)
+        {
+            SceneManager.LoadSceneAsync(48);
         }
         
 
@@ -218,6 +235,7 @@ public class MainMenu : MonoBehaviour
             PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
             PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
             PlayerPrefs.Save();
+            Debug.Log("new level unlocked");
         }
 
 

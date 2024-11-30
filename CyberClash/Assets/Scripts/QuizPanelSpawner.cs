@@ -39,6 +39,12 @@ public class QuizPanelSpawner : MonoBehaviour
 
     public void SpawnQuizPanel()
     {
+        if (MainMenu.mode != "story7" && MainMenu.mode != "versus")
+        {
+            Debug.Log("Quiz panel can only be spawned in 'Story7' or 'Versus' mode.");
+            return;
+        }
+        
         if (quizPanel == null || questionText == null || answerButtons.Length == 0 || quizQuestions.Length == 0 || feedbackPanel == null || feedbackText == null ||
             rewardButton1 == null || rewardButton2 == null || punishmentButton1 == null || punishmentButton2 == null)
         {
@@ -117,13 +123,13 @@ public class QuizPanelSpawner : MonoBehaviour
         
         if (rewardIndex == 1)
         {
-            PlayerHealth.staticHP += 250;  // Assuming you have an AddHealth method in PlayerHealth
+            PlayerHealth.staticHP += 100;  // Assuming you have an AddHealth method in PlayerHealth
             Debug.Log("Player received 250 health.");
             Time.timeScale = 1;
         }
         else if (rewardIndex == 2)
         {
-            EnemyHealth.staticHP -= 250;  // Assuming you have a TakeDamage method in EnemyHealth
+            EnemyHealth.staticHP -= 100;  // Assuming you have a TakeDamage method in EnemyHealth
             Debug.Log("Enemy received 250 damage.");
             Time.timeScale = 1;
         }
@@ -137,13 +143,13 @@ public class QuizPanelSpawner : MonoBehaviour
         // Implement punishment logic here based on punishmentIndex
         if (punishmentIndex == 1)
         {
-            PlayerHealth.staticHP -= 250;  // Assuming you have an AddHealth method in PlayerHealth
+            PlayerHealth.staticHP -= 100;  // Assuming you have an AddHealth method in PlayerHealth
             Debug.Log("Player received 250 damage.");
             Time.timeScale = 1;
         }
         else if (punishmentIndex == 2)
         {
-            EnemyHealth.staticHP += 250;  // Assuming you have a TakeDamage method in EnemyHealth
+            EnemyHealth.staticHP += 100;  // Assuming you have a TakeDamage method in EnemyHealth
             Debug.Log("Enemy received 250 health.");
             Time.timeScale = 1;
         }

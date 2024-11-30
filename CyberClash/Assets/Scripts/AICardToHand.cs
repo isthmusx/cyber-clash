@@ -48,6 +48,8 @@ public class AICardToHand : MonoBehaviour
 
     public int drawXcards;
 
+    public int getXdatafrag;
+
     public GameObject Hand;
 
     public int z;
@@ -126,6 +128,8 @@ public class AICardToHand : MonoBehaviour
         shieldXpower = thisCard[0].shieldXpower;
 
         drawXcards = thisCard[0].drawXcards;
+        
+        getXdatafrag = thisCard[0].getXdatafrag;
 
         nameText.text = "" + cardName;
         factionText.text = "" + cardFaction;
@@ -214,13 +218,13 @@ public class AICardToHand : MonoBehaviour
         if (this.transform.parent == battleZone.transform && isSummoned == false)
         {
             // instant effects
-
-            /*if (drawXcards > 0)
+            /*
+            if (drawXcards > 0)
             {
                 DrawX = drawXcards;
                 isSummoned = true;
             }
-
+            
             if (healXpower > 0)
             {
                 EnemyHealth.staticHP += healXpower;
@@ -241,6 +245,10 @@ public class AICardToHand : MonoBehaviour
                 TurnSystem.maxEnemyDF += 1;
                 isSummoned = true;
             }*/
+            if (TurnSystem.currentEnemyDF < TurnSystem.maxEnemyDF && getXdatafrag > 0)
+            {
+                TurnSystem.currentEnemyDF += getXdatafrag;
+            }
         }
 
         
